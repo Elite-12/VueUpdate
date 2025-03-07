@@ -1,0 +1,183 @@
+/*========== Custom Variables ==========*/
+/* App Global Font Size */
+:root {
+  --html-font-size: 16px;
+  --primary: #5D92F4;
+  --secondary: #82b1ff;
+  --success: #00D014;
+  --info: #00D0BD;
+  --warning: #FFB70F;
+  --danger: #FF3739;
+  --pink: #FA0055;
+  --blue: #2E62FF;
+  --purple: #2B314A;
+  --light: #FFFFFF;
+  --dark: #000000;
+  --base: #F4F7FA;
+  --base-light: #FAFAFA;
+
+  /* App Text Scale */
+  --gray-dark: #464D69;
+  --gray: #727891;
+  --gray-light: #A5A7B2;
+  --gray-lighter: #DDE6F3;
+
+  /* App Theme Color */
+  --theme-colors: #5D92F4, #82b1ff, #00D014, #00D0BD, #FFB70F, #FF3739, #FFFFFF, #000000, #2E62FF;
+
+  /* Settings for the <body> element */
+  --body-bg: #F4F7FA;
+  --body-color: #464D69;
+  --font-family-base: 'Montserrat', sans-serif;
+  --border-color: #EBEDF2;
+
+  /* Typography settings */
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-sm: .875rem;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  /* Heading Elements */
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.375rem;
+  --h4-font-size: 1.125rem;
+  --h5-font-size: 1rem;
+  --h6-font-size: 0.875rem;
+
+  /* Gradient Theme Color */
+  --light-primary: linear-gradient(180deg, #5D92F4 0%, #09203F 100%);
+  --light-pink: linear-gradient(180deg, #B91372 0%, #33080D 100%);
+  --light-success: linear-gradient(180deg, #00D0BD 0%, #007ADF 100%);
+  --light-purple: linear-gradient(0deg, #F53844 0%, #42378F 100%);
+  --light-warning: linear-gradient(0deg, #B02E0C 0%, #FFB70F 100%);
+  --light-gray: linear-gradient(180deg, #09203F 0%, #537895 100%);
+
+  /* App Custom Card */
+  --card-bg: #FFF;
+  --card-border-radius: 0px;
+  --card-border: 1px solid #EBECEF;
+  --card-spacing: 1.25rem;
+  --card-margin-bottom: 0rem;
+  --card-shadow: 0 1px 15px 1px rgba(69,65,78,0.08);
+  --card-hover-shadow: none;
+
+  /* Card Title */
+  --card-title-color: #464D69;
+  --card-title-font-size: 1rem;
+  --card-title-transform: capitalize;
+  --card-title-weight: 600;
+  --card-title-spacing: 1rem 1.25rem;
+  --card-title-border: none;
+  --card-footer-spacing: 1rem 1.25rem;
+
+  /* Card Contextual link */
+  --contextual-link-size: 1.25rem;
+  --contextual-link-color: #A5A7B2;
+
+  /* Breadcrumb Variable */
+  --breadcrumb-font-weight: 500;
+  --breadcrumb-font-color: #464D69;
+  --breadcrumb-font-size: 1.5rem;
+
+  /* Dashboard Tooltip Title */
+  --d-title-color: #464D69;
+  --d-title-font-size: 0.8125rem;
+  --d-title-transform: uppercase;
+
+  /* Dark theme */
+  --dark-bg: #2e3344;
+  --dark-bg-color: #fff;
+  --dark-bg-container: #303030;
+  --dark-border-color: rgba(0, 0, 0, 0.2);
+
+  /* Label Variable */
+  --label-spacing: 0.2rem 0.5rem 0.1rem;
+  --label-font-color: #FFFFFF;
+  --label-font-size: 75%;
+  --label-font-weight: 500;
+  --label-transform: uppercase;
+  --label-border-radius: 0.25rem;
+
+  --label-primary: linear-gradient(180deg, #5D92F4 0%, #09203F 100%);
+  --label-success: linear-gradient(180deg, #00D0BD 0%, #007ADF 100%);
+  --label-pink: linear-gradient(180deg, #B91372 0%, #33080D 100%);
+  --label-warning: linear-gradient(0deg, #B02E0C 0%, #FFB70F 100%);
+  --label-purple: linear-gradient(0deg, #F53844 0%, #42378F 100%);
+
+  /* Button Gradient Variable */
+  --btn-gradient-primary: linear-gradient(180deg, #5D92F4 0%, #09203F 100%);
+  --btn-gradient-success: linear-gradient(180deg, #00D0BD 0%, #007ADF 100%);
+  --btn-gradient-pink: linear-gradient(180deg, #B91372 0%, #33080D 100%);
+  --btn-gradient-warning: linear-gradient(0deg, #B02E0C 0%, #FFB70F 100%);
+  --btn-gradient-purple: linear-gradient(0deg, #F53844 0%, #42378F 100%);
+
+  /* Button Simple Variable */
+  --btn-primary: #5D92F4;
+  --btn-secondary: #82b1ff;
+  --btn-success: #00D014;
+  --btn-info: #00D0BD;
+  --btn-warning: #FFB70F;
+  --btn-danger: #FF3739;
+
+  --btn-font-weight: 500;
+  --btn-icon-font-size: 1.125rem;
+  --btn-border-radius: 3px;
+
+  /* Input Variable */
+  --input-border-color: #D7DCE4;
+
+  /* Sidebar Variable */
+  --sidebar-bg: #2E3344;
+  --sidebar-width: 250px;
+  --sidebar-nav-color: #FFFFFF;
+  --sidebar-nav-text-size: 14px;
+  --sidebar-nav-active-color: #FFFFFF;
+  --sidebar-nav-active-bg: #5D92F4;
+  --sidebar-nav-spacing: 10px;
+  --sidebar-nav-font-weight: 500;
+  --sidebar-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  --sidebar-subnav-font-size: 14px;
+  --sidebar-subnav-font-color: #FFFFFF;
+  --sidebar-icon-color: #5D92F4;
+
+  /* Header Variable */
+  --header-box-shadow: 0 4px 15px 0 rgba(0,0,0,0.09);
+
+  /* Back To Top Variable */
+  --back-to-top-bg: #5D92F4;
+
+  /* Loader Variable */
+  --loader-bg-1: #FFB70F;
+  --loader-bg-2: #5D92F4;
+  --loader-overlay: rgba(255, 255, 255, 0.9);
+
+  /* Dragula */
+  --dragula-bg: #5D92F4;
+  --dragula-color: #FFFFFF;
+
+  /* Calendar Variable */
+  --calender-head-bg: #5D92F4;
+  --calender-event-bg: #FF3739;
+
+  /* Horizontal Menu Sidebar Variable */
+  --hoz-menu-bg: #FFFFFF;
+  --hoz-nav-link-color: #464D69;
+  --hoz-nav-font-size: 0.875rem;
+  --hoz-nav-link-spacing: 0.9375rem 1.563rem;
+  --hoz-nav-link-hover-bg: #F4F7FA;
+  --hoz-menu-height: 3.125rem;
+  --hoz-sub-menu-width: 12rem;
+  --hoz-box-shadow: 0 2px 10px 0 rgba(204,204,204,0.5);
+  --hoz-sub-menu-box-shadow: 0 2px 15px 0 rgba(0,0,0,0.09);
+
+  /* Custom Background */
+  --aqua-bg: #DFEAFF;
+
+  /* Weather Background */
+  --weather-bg: url('/public/static/img/weather-1.jpg');
+}

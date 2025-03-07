@@ -1,0 +1,27 @@
+/*======== All Common Mixin Include Is Here ========*/
+/* Border Styles */
+.border {
+    border: var(--border-style) var(--border-color);
+}
+
+.border-top {
+    border-top: var(--border-style) var(--border-color);
+}
+
+.border-right {
+    border-right: var(--border-style) var(--border-color);
+}
+
+.border-bottom {
+    border-bottom: var(--border-style) var(--border-color);
+}
+
+.border-left {
+    border-left: var(--border-style) var(--border-color);
+}
+
+/* Background Opacity */
+.background-opacity {
+    bg-color: var(--bg-color);
+    bg-color: rgba(var(--bg-color-rgb), var(--opacity));
+}

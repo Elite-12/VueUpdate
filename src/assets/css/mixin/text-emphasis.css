@@ -1,0 +1,8 @@
+/* stylelint-disable declaration-no-important */
+
+/* Typography */
+.text-emphasis-variant {
+  color: var(--primary) !important; /* Example for using --primary color */
+}
+
+/* Use this class wherever you want to apply text emphasis */

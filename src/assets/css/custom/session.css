@@ -1,0 +1,189 @@
+/*============ Session ==========*/
+.session-wrapper {
+  position: relative;
+  height: 100%;
+}
+.session-wrapper .session-left {
+  background-image: url("/public/static/img/login.jpg");
+  background-size: auto auto;
+  background-size: cover;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+}
+.session-wrapper .session-left .slick-slider {
+  width: 31.25rem;
+}
+.session-wrapper .session-left .slick-slider .slick-dots li.slick-active {
+  color: var(--light);
+}
+.session-wrapper .session-left .slick-slider .slick-dots button:before {
+  color: var(--light);
+}
+.session-wrapper .session-right {
+  margin-left: 31.25rem;
+}
+.session-wrapper .session-right .session-table-cell {
+  padding-top: 5rem;
+}
+.session-wrapper .session-right .session-table-cell .session-content {
+  max-width: 31.25rem;
+  margin: 0 auto;
+}
+.slider-content img {
+  border: 4px solid, var(--light);
+  display: inline-block !important;
+}
+.slider-content p {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+.slider-content, .session-social-links * {
+  color: var(--light);
+}
+.session-social-links ul li {
+  margin-bottom: 1.25rem;
+  margin-right: 0.875rem;
+  display: inline-block;
+}
+.session-social-links ul li:last-child {
+  margin-right: 0;
+}
+.session-social-links .sessio-icon {
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+}
+.bg-sc {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  padding: 4rem 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+.lock-screen-wrapper {
+  background-image: url("/public/static/img/lock-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  padding: 4rem 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+.lock-screen-block .v-form .theme--light.v-label {
+  color: var(--light) !important;
+}
+.lock-screen-block .v-text-field > .v-input__control > .v-input__slot:before,
+.lock-screen-block .v-text-field > .v-input__control > .v-input__slot:after {
+  border-color: var(--light);
+}
+
+/* // Pricing 2  */
+.pricing-wrapper .app-card-content h2 {
+  border-bottom: 1px solid var(--gray-lighter);
+  padding: 1.25rem;
+}
+
+.list-group-flush .list-group-item,
+.list-group-flush li {
+  border-bottom: 1px solid var(--gray-lighter);
+  padding: 0.9375rem 0;
+}
+
+.list-group-flush .list-group-item:last-child,
+.list-group-flush li:last-child {
+  border: none;
+}
+
+/* Sign Up 2 */
+.session-banner {
+  background-image: url("/public/static/img/login-signup2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  padding: 4rem 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.session-block {
+  bg-color: var(--light);
+  padding: 3.125rem;
+  border-radius: 10px;
+  box-shadow: 0 12px 34px 0 rgba(0, 0, 0, 0.5);
+}
+
+.session-block .log-link a {
+  text-decoration: none;
+  color: var(--gray-light);
+}
+
+.session-block .log-link a:hover {
+  color: var(--primary);
+}
+
+.block-center {
+  transform: translate3d(0%, 50%, 0);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .session-wrapper .session-left .slick-slider {
+    width: 25rem; /* 400px */
+  }
+
+  .session-wrapper .session-right {
+    margin-left: 25rem; /* 400px */
+  }
+}
+
+@media (max-width: 1000px) {
+  .session-wrapper .session-right .session-content {
+    max-width: 18.75rem !important; /* 300px */
+  }
+}
+
+@media (max-width: 800px) {
+  .session-wrapper .session-left {
+    display: none;
+  }
+
+  .session-wrapper .session-right {
+    margin-left: 0;
+  }
+
+  .session-wrapper .session-right .session-table-cell {
+    padding: 1.875rem 1.875rem 0; /* 30px */
+  }
+
+  .session-wrapper .session-right .session-content {
+    max-width: 27.5rem !important; /* 440px */
+  }
+}

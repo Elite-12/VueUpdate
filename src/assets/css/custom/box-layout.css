@@ -1,0 +1,35 @@
+/*========== Box Layout css =========*/
+.box-layout {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  width: 1170px !important;
+}
+
+.box-layout .d-lg-half-block,
+.box-layout .d-md-block,
+.box-layout .d-lg-block,
+.box-layout .d-sm-block {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+.box-layout .b-50 {
+  max-width: 50% !important;
+  flex-basis: 50% !important;
+}
+
+.box-layout .b-100 {
+  max-width: 100% !important;
+  flex-basis: 100% !important;
+}
+
+.box-layout .Vuely-toolbar,
+.box-layout .horizontal-menu {
+  width: 1170px;
+  left: inherit;
+  right: inherit;
+}
+
+.box-layout .navigation-drawer--fixed {
+  position: absolute;
+}

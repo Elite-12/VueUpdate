@@ -1,0 +1,141 @@
+/*=============== Pricing Table ============*/
+.pricing-wrapper .switcher {
+  display: inline-block;
+}
+
+.pricing-wrapper .switcher span {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.pricing-wrapper .switcher .switch-wrap {
+  width: 60px;
+  vertical-align: middle;
+}
+
+.pricing-wrapper .pricing-list .app-card {
+  padding: 3.125rem;
+}
+
+.pricing-wrapper .price-detail,
+.plan-info-listing {
+  margin-bottom: 2.188rem;
+}
+
+.pricing-wrapper .price-detail li,
+.plan-info-listing li {
+  margin-bottom: 0.625rem;
+  font-size: 0.875rem;
+}
+
+.plan-info-listing li i {
+  margin-right: 0.9375rem;
+}
+
+.pricing-wrapper .pricing-title {
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.pricing-wrapper .amount-title {
+  font-weight: 900;
+  font-size: 2.25rem;
+}
+
+.fixed-pricing {
+  bg-color: var(--card-bg);
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+}
+
+.fixed-pricing .pricing-box {
+  border-right: 1px solid var(--border-color);
+}
+
+.pricing-body,
+.pricing-head {
+  padding: 1.875rem 3.125rem;
+}
+
+.plan-info {
+  bg-color: var(--gray-lighter);
+  padding: 0.625rem 3.125rem;
+}
+
+.testimonial-wrapper {
+  padding-top: 2.5rem;
+}
+
+.testimonial-wrapper .media-body p {
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  line-height: 30px;
+}
+
+.testimonial-wrapper .user-meta span {
+  color: var(--gray);
+}
+
+.faq-wrapper .v-card {
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  bg-color: var(--card-bg);
+  margin-bottom: 1.5rem;
+}
+
+.faq-wrapper .v-card:hover {
+  box-shadow: var(--card-hover-shadow);
+}
+
+.faq-wrapper .card-title {
+  margin-bottom: 0.9375rem;
+  font-size: 1.2rem;
+}
+
+.faq-wrapper .card-text {
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+/* Responsive Styles */
+@media (max-width: 1400px) and (min-width: 320px) {
+  .pricing-wrapper .pricing-list .pricing-body,
+  .pricing-wrapper .pricing-list .pricing-head,
+  .pricing-wrapper .pricing-list .app-card {
+    padding: 1.875rem 1.125rem;
+  }
+
+  .pricing-wrapper .pricing-list .price-list .app-block {
+    padding: 1.125rem;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 320px) {
+  .testimonial-wrapper .media-full {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+
+  .testimonial-wrapper .media-full img {
+    width: 170px !important;
+    margin-right: 0 !important;
+  }
+
+  .testimonial-wrapper .media-full .media-body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 320px) {
+  .fixed-pricing .pr-0,
+  .fixed-pricing .px-0,
+  .fixed-pricing .pl-0 {
+    padding: 12px !important;
+  }
+}

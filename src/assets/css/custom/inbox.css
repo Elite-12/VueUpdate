@@ -1,0 +1,312 @@
+/*========== Inbox ===========*/
+
+.inbox {
+   padding: 0;
+ }
+ 
+ .inbox-sidebar {
+   padding: 0 0 0 12px !important;
+ }
+ 
+ .inbox-content {
+   padding: 0 12px 0 0 !important;
+ }
+ 
+ .inbox-head {
+   border-right: 1px solid var(--border-color);
+ }
+ 
+ .inbox-head .v-responsive__content {
+   bg-color: rgba(0, 0, 0, 0.8);
+   display: flex;
+ }
+ 
+ .inbox-head .inbox-inner .mailbox-items-warp {
+   margin-bottom: 1.5rem;
+ }
+ 
+ .inbox-head .inbox-inner .v-list .v-list-item {
+   min-height: auto;
+   padding: 0.75rem 1rem;
+ }
+ 
+ .inbox-head .inbox-inner .v-list .v-list-item .v-list-item__action {
+   min-width: auto;
+   margin-right: 1rem;
+ }
+ 
+ .inbox-head .inbox-inner .v-list .v-list-item .v-list-item__action .v-icon {
+   font-size: 1.25rem;
+ }
+ 
+ .inbox-head .inbox-inner .v-list .v-list-item .v-list-item__content span {
+   font-size: var(--font-size-sm);
+ }
+ 
+ .inbox-head .inbox-inner .v-list .v-list-item .v-icon {
+   font-size: 1rem;
+ }
+ 
+ .inbox-content-wrap .inbox-page-list {
+   padding: 1.25rem 1.875rem;
+   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.09);
+ }
+ 
+ .inbox-content-wrap .inbox-page-list .mail-count {
+   font-size: var(--font-size-sm);
+ }
+ 
+ .inbox-content-wrap .inbox-page-list ul.list-inline li {
+   margin: 0 0.5rem;
+ }
+ 
+ .inbox-content-wrap .inbox-page-list ul.list-inline li a {
+   font-size: var(--font-size-sm);
+   color: var(--body-color);
+ }
+ 
+ .inbox-content-wrap .search-mail {
+   bg-color: var(--base);
+   padding: 1.25rem 1.875rem;
+ }
+ 
+ .inbox-content-wrap .search-mail .v-text-field--solo {
+   bg-color: var(--light);
+ }
+ 
+ .inbox-content-wrap .search-mail .v-input__slot {
+   margin-bottom: 0;
+ }
+ 
+ .inbox-content-wrap .search-mail .v-text-field__details {
+   display: none;
+ }
+ 
+ .inbox-content-wrap .inbox-listing .v-list .v-list-item {
+   height: auto;
+   justify-content: space-between;
+   padding: 1rem;
+   border-bottom: 1px solid var(--border-color);
+ }
+ 
+ .inbox-content-wrap .inbox-listing .v-list .v-list-item .v-list-item__content {
+   flex-direction: row;
+   align-items: center;
+   width: 90%;
+   flex-wrap: inherit;
+ }
+ 
+ .inbox-content-wrap .inbox-listing .v-list .v-list-item .v-list-item__content .v-btn,
+ .inbox-content-wrap .inbox-listing .v-list .v-list-item .v-list-item__content .media,
+ .inbox-content-wrap .inbox-listing .v-list .v-list-item .v-list-item__content .v-input--checkbox {
+   padding: 0 0.75rem;
+   flex: 0 0 auto;
+ }
+ 
+ .inbox-content-wrap .inbox-listing .v-list .v-list-item .v-list-item__content .v-input--checkbox {
+   width: 5%;
+ }
+ 
+ .inbox-content-wrap .inbox-listing .v-list .v-list-item .v-list-item__content .v-input__slot {
+   margin-bottom: 0;
+ }
+ 
+ .inbox-content-wrap .inbox-listing .v-list .v-list-item .v-list-item__content .media {
+   align-items: center;
+   width: 90%;
+ }
+ 
+ .inbox-content-wrap .inbox-listing .v-list .v-list-item .v-list-item__content .media .v-list-item__avatar {
+   width: 10%;
+ }
+ 
+ .inbox-content-wrap .inbox-listing .v-list .v-list-item .v-list-item__content .media .media-body {
+   width: 90%;
+ }
+ 
+ .inbox-content-wrap .inbox-listing .v-list .v-list-item .v-list-item__content .media .media-body > div {
+   width: 25%;
+ }
+ 
+ .inbox-content-wrap .inbox-listing .v-list .v-list-item .v-list-item__action {
+   width: 10%;
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-action-wrap {
+   padding: 1.25rem 1.5rem;
+   border-bottom: 1px solid var(--border-color);
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-action-wrap .action-list-wrap,
+ .inbox-content-wrap .email-detail-wrap .mail-action-wrap .navigate-page {
+   border: 1px solid var(--border-color);
+   display: flex;
+   align-items: center;
+   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-action-wrap .action-list-wrap li {
+   padding: 0;
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-action-wrap .action-list-wrap li:not(:last-child) {
+   border-right: 1px solid var(--border-color);
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-action-wrap .action-list-wrap li a {
+   color: var(--light);
+   height: 2.25rem;
+   width: 2.25rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-action-wrap .action-list-wrap li a i {
+   font-size: 1.25rem;
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .detail-head {
+   padding: 1rem 1.5rem;
+   border-bottom: 1px solid var(--border-color);
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .detail-head .v-btn .v-icon {
+   font-weight: var(--font-weight-bold);
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-subject-wrap {
+   padding: 1rem 1.5rem;
+   border-bottom: 1px solid var(--border-color);
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .user-detail,
+ .inbox-content-wrap .email-detail-wrap .mail-attachment-wrap {
+   padding: 1rem 1.5rem;
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-detail {
+   padding: 1rem 1.5rem 3rem 5.5rem;
+   border-bottom: 1px solid var(--border-color);
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-attachment-wrap .attachment-head {
+   padding: 1rem 0;
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-attachment-wrap .attachment-list li {
+   margin: 0 1rem;
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-attachment-wrap .attachment-list li .overlay-wrapper {
+   position: relative;
+   margin-bottom: 0.6125rem;
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-attachment-wrap .attachment-list li .overlay-wrapper img {
+   display: block;
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-attachment-wrap .attachment-list li .overlay-wrapper a.overlay-content {
+   bg-color: rgba(0, 0, 0, 0.6);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   transition: all 0.3s ease-in-out;
+   transform: scale(0.7);
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-attachment-wrap .attachment-list li:hover a.overlay-content {
+   opacity: 1;
+   transform: scale(1);
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-reply {
+   padding: 1rem 1.5rem;
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-reply .v-input__slot {
+   margin-bottom: 0;
+ }
+ 
+ .inbox-content-wrap .email-detail-wrap .mail-reply .v-text-field__details {
+   display: none;
+ }
+ 
+ @media(max-width:959px) and (min-width:320px) {
+   .inbox .inbox-head .v-card__media {
+       height: auto !important;
+   }
+   .inbox .inbox-head .inbox-sidebar-scroll {
+       height: calc(100vh - 222px) !important;
+   }
+   .inbox .inbox-sidebar {
+       display: none;
+       padding-right: 1rem !important;
+   }
+   .inbox .inbox-content {
+       padding-left: 1rem !important;
+   }
+   .inbox .inbox-content .inbox-page-list .ham-menu-sm {
+       display: block !important;
+   }
+   .inbox .inbox-content .inbox-page-list,
+   .inbox .inbox-content .search-mail {
+       padding: 0.75rem 1rem !important;
+   }
+   .inbox .inbox-content .v-text-field .v-input__control {
+       min-height: 36px !important;
+   }
+   .inbox .inbox-content .v-text-field .v-input__control input,
+   .inbox .inbox-content .v-text-field .v-input__control i {
+       font-size: 1rem;
+   }
+   .inbox .inbox-content .email-detail-wrap .v-btn--large {
+       height: 2.5rem !important;
+       padding: 0 !important;
+       font-size: 0.875rem !important;
+   }
+   .inbox .inbox-content .email-detail-wrap .v-btn--large i {
+       font-size: 0.875rem !important;
+   }
+   .inbox .inbox-content .email-detail-wrap .mail-detail {
+       padding-left: 1.5rem !important;
+   }
+   .inbox .inbox-content-scroll {
+       height: calc(100vh - 182px) !important;
+   }
+   .inbox .inbox-detail-scroll {
+       height: calc(100vh - 203px) !important;
+   }
+}
+
+
+@media(max-width: 767px) and (min-width: 320px) {
+   .inbox .inbox-listing .v-list-item {
+       padding: 0.75rem !important;
+   }
+   .inbox .inbox-listing .v-list-item .v-btn.v-btn--icon {
+       display: none !important;
+       width: 0 !important;
+       padding: 0 !important;
+   }
+   .inbox .inbox-listing .v-list-item .v-input.v-input--checkbox {
+       width: 40px !important;
+   }
+   .inbox .inbox-listing .v-list-item .media {
+       width: 100% !important;
+   }
+   .inbox .inbox-listing .v-list-item .media .media-body > div {
+       width: 100% !important;
+   }
+   .inbox .inbox-listing .v-list-item .media .media-body h6 {
+       margin: 0 !important;
+   }
+   .inbox .inbox-listing .v-list-item .media p {
+       display: none !important;
+   }
+   .inbox .inbox-listing .v-list-item .v-list-item__avatar {
+       display: none !important;
+   }
+}

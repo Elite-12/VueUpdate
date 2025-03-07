@@ -1,0 +1,48 @@
+/*======== All Brand Text Color Is Mentioned Here =======*/
+.text-primary {
+    color: #5D92F4; /* Replace with the value of var(--primary) */
+}
+
+.text-secondary {
+    color: #82b1ff; /* Replace with the value of var(--secondary) */
+}
+
+.text-success {
+    color: #00D014; /* Replace with the value of var(--success) */
+}
+
+.text-info {
+    color: #00D0BD; /* Replace with the value of var(--info) */
+}
+
+.text-warning {
+    color: #FFB70F; /* Replace with the value of var(--warning) */
+}
+
+.text-danger {
+    color: #FF3739; /* Replace with the value of var(--danger) */
+}
+
+.text-gray-dark {
+    color: #464D69; /* Replace with the value of var(--gray-dark) */
+}
+
+.text-gray {
+    color: #727891; /* Replace with the value of var(--gray) */
+}
+
+.text-gray-light {
+    color: #A5A7B2; /* Replace with the value of var(--gray-light) */
+}
+
+.text-gray-lighter {
+    color: #DDE6F3; /* Replace with the value of var(--gray-lighter) */
+}
+
+.text-blue {
+    color: #2E62FF; /* Replace with the value of var(--blue) */
+}
+
+.text-pink {
+    color: #FA0055; /* Replace with the value of var(--pink) */
+}

@@ -1,0 +1,45 @@
+/*======= All App Custom Files Include Here ======*/
+
+@import "custom/main.css";
+@import "custom/common.css";
+@import "custom/horizontal-menu.css";
+@import "custom/sidebar.css";
+@import "custom/header.css";
+@import "custom/search-bar.css";
+@import "custom/dashboard.css";
+@import "custom/courses.css";
+@import "custom/table.css";
+@import "custom/label.css";
+@import "custom/button.css";
+@import "custom/border.css";
+@import "custom/drag-drop.css";
+@import "custom/session.css";
+@import "custom/calender.css";
+@import "custom/pricing.css";
+@import "custom/gallery.css";
+@import "custom/user.css";
+@import "custom/inbox.css";
+@import "custom/chat.css";
+@import "custom/icons.css";
+@import "custom/customizer.css";
+@import "custom/effect.css";
+@import "custom/module.css";
+@import "custom/pages.css";
+@import "custom/widgets.css";
+@import "custom/ecommerce.css";
+@import "custom/timeline.css";
+
+
+
+/*=== Custome Dark Layout ===*/
+
+@import "custom/dark.css";
+/*====== Box Layout =========*/
+
+@import "custom/box-layout.css";
+/*======= App Box Layout ========*/
+
+@import "custom/app-box-layout.css";
+/*======= RTL Layout ========*/
+
+@import "custom/rtl.css";

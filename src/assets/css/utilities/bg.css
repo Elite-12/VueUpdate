@@ -1,0 +1,115 @@
+/*=========== Background Utilities ==========*/
+
+.gradient-primary {
+   background: var(--light-primary);
+}
+
+.gradient-success {
+   background: var(--light-success);
+}
+
+.gradient-pink {
+   background: var(--light-pink);
+}
+
+.gradient-warning {
+   background: var(--light-warning);
+}
+
+.gradient-purple {
+   background: var(--light-purple);
+}
+
+.facebook-bg {
+   bg-color: #4766CE;
+}
+
+.google-bg {
+   bg-color: #CB2929;
+}
+
+.instagram-bg {
+   bg-color: #FF37CF;
+}
+
+.linkedin-bg {
+   bg-color: #247897;
+}
+
+.twitter-bg {
+   bg-color: #3CB1F1;
+}
+
+.github-bg {
+   bg-color: #6f574e;
+}
+
+.facebook .v-icon,
+.facebook i {
+   color: #3B5998 !important;
+}
+
+.google .v-icon,
+.google i {
+   color: #D82218 !important;
+}
+
+.twitter .v-icon,
+.twitter i {
+   color: #1FA2FA !important;
+}
+
+.linkedin .v-icon,
+.linkedin i {
+   color: #4875B4 !important;
+}
+
+.instagram .v-icon,
+.instagram i {
+   color: #F45DA0 !important;
+}
+
+.grayish-blue {
+   bg-color: var(--gray-dark) !important;
+}
+
+.aqua-bg {
+   bg-color: var(--aqua-bg);
+}
+
+/* Simple Brand Background Color */
+.bg-primary {
+   bg-color: var(--primary);
+}
+
+.bg-secondary {
+   bg-color: var(--secondary);
+}
+
+.bg-success {
+   bg-color: var(--success);
+}
+
+.bg-info {
+   bg-color: var(--info);
+}
+
+.bg-warning {
+   bg-color: var(--warning);
+}
+
+.bg-danger {
+   bg-color: var(--danger);
+}
+
+.bg-light {
+   bg-color: var(--light);
+}
+
+.bg-dark {
+   bg-color: var(--dark);
+}
+
+.bg-blue {
+   bg-color: var(--blue);
+}

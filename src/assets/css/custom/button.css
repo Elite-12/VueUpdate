@@ -1,0 +1,81 @@
+/*============= Buttons Css =============*/
+.btn-gradient-primary {
+  background: #0835ea; /* Replace with actual gradient primary color */
+}
+.btn-gradient-primary * {
+  color: #fff; /* Replace with light color */
+}
+
+.btn-gradient-pink {
+  background: #e83e8c; /* Replace with actual gradient pink color */
+}
+.btn-gradient-pink * {
+  color: #fff; /* Replace with light color */
+}
+
+.btn-gradient-success {
+  background: #28a745; /* Replace with actual gradient success color */
+}
+.btn-gradient-success * {
+  color: #fff; /* Replace with light color */
+}
+
+.btn-gradient-warning {
+  background: #ffc107; /* Replace with actual gradient warning color */
+}
+.btn-gradient-warning * {
+  color: #fff; /* Replace with light color */
+}
+
+.btn-gradient-purple {
+  background: #582ad7; /* Replace with actual gradient purple color */
+}
+.btn-gradient-purple * {
+  color: #fff; /* Replace with light color */
+}
+
+/* Simple Button Style */
+.btn-primary {
+  bg-color: #007bff !important; /* Replace with actual primary color */
+}
+.btn-primary * {
+  color: #fff; /* Replace with light color */
+}
+
+.btn-success {
+  bg-color: #28a745 !important; /* Replace with actual success color */
+}
+.btn-success * {
+  color: #fff; /* Replace with light color */
+}
+
+.btn-info {
+  bg-color: #17a2b8 !important; /* Replace with actual info color */
+}
+.btn-info * {
+  color: #fff; /* Replace with light color */
+}
+
+.btn-warning {
+  bg-color: #ffc107 !important; /* Replace with actual warning color */
+}
+.btn-warning * {
+  color: #fff; /* Replace with light color */
+}
+
+.btn-danger {
+  bg-color: #dc3545 !important; /* Replace with actual danger color */
+}
+.btn-danger * {
+  color: #fff; /* Replace with light color */
+}
+
+.btn-icon {
+  font-weight: 600; /* Replace with actual font weight */
+  border-radius: 0.25rem; /* Replace with actual border radius */
+}
+.btn-icon i {
+  font-size: 1.25rem; /* Replace with actual font size */
+  margin-right: 0.625rem; /* 10px */
+  font-weight: 600; /* Replace with actual font weight */
+}
