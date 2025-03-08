@@ -25,7 +25,7 @@
               class="ma-2"
               color="info"
               fab
-              x-small
+              x-small 
               :disabled="!$can(UPDATE, RESOURCE)"
               @click="editDialog(message)"
             >

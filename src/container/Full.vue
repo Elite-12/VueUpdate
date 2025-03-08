@@ -30,8 +30,8 @@
 <script>
 import { mapGetters } from 'vuex'
 import Header from '@/components/Header/Header.vue'
-import Customizer from '@/components/Customizer/Customizer'
-import Tour from '@/components/Tour/Tour'
+import Customizer from '@/components/Customizer/Customizer.vue'
+import Tour from '@/components/Tour/Tour.vue'
 import AppConfig from '@/constants/AppConfig'
 
 export default {
