@@ -101,14 +101,14 @@
             <v-icon small icon="edit" />
           </v-btn>
           <v-tooltip bottom>
-            <template v-slot:activator="{ on, attrs }">
+            <template v-slot:activator="{ props }">
               <v-btn
                 fab
                 x-small
                 color="info"
                 @click.stop="selectParent(null)"
                 class="mx-2"
-                v-bind="attrs"
+                v-bind="props"
                 @click="on"
               >
                 <v-icon small icon="home" />

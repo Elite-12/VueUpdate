@@ -25,6 +25,7 @@
             <template v-slot:prepend="{ item, open }">
               <v-icon v-if="!item.file" :icon="open ? 'folder-open' : 'folder'" />
               <v-icon v-else icon="files[item.file]" />
+              {{ item.name }}
             </template>
             <template v-slot:append="{ item }">
               {{ item.ads_count }}

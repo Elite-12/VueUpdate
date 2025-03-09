@@ -103,13 +103,13 @@
                 offset-y
                 min-width="auto"
               >
-                <template v-slot:activator="{ on, attrs }">
+                <template v-slot:activator="{ props }">
                   <v-text-field
                     v-model="selectedVoucher.ends"
                     label="Ends"
                     prepend-icon="mdi-calendar"
                     readonly
-                    v-bind="attrs"
+                    v-bind="props"
                     @mousedown:control="on"
                   ></v-text-field>
                 </template>
