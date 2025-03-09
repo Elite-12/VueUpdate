@@ -115,7 +115,7 @@
     <v-dialog
       v-model="confirmationDialog"
       max-width="700px"
-      @click:outside="closeConfirmationDialog"
+      @click-outside="closeConfirmationDialog"
     >
       <v-card>
         <v-card-title>
@@ -260,11 +260,15 @@ export default {
       this.cloneDialog = false
     },
 
+    // sort(categories) {
+    //   categories === null
+    //     ? this.$store.commit('setCategoriesToSort', this.categories)
+    //     : this.$store.commit('setCategoriesToSort', categories)
+    //   this.sortDialog = true
+    // },
     sort(categories) {
-      categories === null
-        ? this.$store.commit('setCategoriesToSort', this.categories)
-        : this.$store.commit('setCategoriesToSort', categories)
-      this.sortDialog = true
+      this.$store.commit('setCategoriesToSort', categories ?? this.categories);
+      this.sortDialog = true;
     },
 
     duplicateCategory() {

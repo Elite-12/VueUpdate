@@ -132,7 +132,7 @@
                           return-object
                           item-children="childs"
                         >
-                          <template slot="prepend" slot-scope="{ item, open, leaf }">
+                          <template v-slot:prepend="{ item, open, leaf }">
                             <v-icon
                               v-if="!item.file"
                               icon="open ? 'mdi-folder-open' : 'mdi-folder'"

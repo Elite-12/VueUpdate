@@ -30,11 +30,11 @@
             return-object
             item-children="childs"
           >
-            <template slot="prepend" slot-scope="{ item, open, leaf }">
+            <template v-slot:prepend="{ item, open }">
               <v-icon v-if="!item.file" :icon="open ? 'mdi-folder-open' : 'mdi-folder'" />
               <v-icon v-else icon="files[item.file]" />
             </template>
-            <template slot="append" slot-scope="{ item, open, leaf }">
+            <template v-slot:append="{ item }">
               {{ item.ads_count }}
             </template>
           </v-treeview>

@@ -101,7 +101,7 @@
             <v-icon small icon="edit" />
           </v-btn>
           <v-tooltip bottom>
-            <template v-slot:activator="{ props }">
+            <template #activator="{ props }">
               <v-btn
                 fab
                 x-small
@@ -137,12 +137,12 @@
                           return-object
                           item-children="childs"
                         >
-                          <template slot="prepend" slot-scope="{ item, open, leaf }">
+                          <template #prepend="{ item, open }">
                             <v-icon
                               v-if="!item.file"
-                              icon="open ? 'mdi-folder-open' : 'mdi-folder'"
+                              :icon="open ? 'mdi-folder-open' : 'mdi-folder'"
                             />
-                            <v-icon v-else icon="files[item.file]" />
+                            <v-icon v-else :icon="files[item.file]" />
                           </template>
                         </v-treeview>
                       </div>
@@ -258,7 +258,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(option, index) in paymentOptions" :key="option.id" class="border-top-1">
+          <tr v-for="(option, index) in paymentOptions" :key="option.id || index" class="border-top-1">
             <td>{{ option.name }}</td>
             <td>{{ option.name_ar }}</td>
             <td>
