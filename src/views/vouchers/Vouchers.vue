@@ -67,7 +67,7 @@
       </v-btn>
     </v-container>
 
-    <template>
+    <!-- <template> -->
       <div class="text-center">
         <v-container>
           <v-row justify="center">
@@ -84,7 +84,7 @@
           </v-row>
         </v-container>
       </div>
-    </template>
+    <!-- </template> -->
 
     <!--  Dialog Model-->
     <v-dialog v-model="dialog" max-width="500px" @click:outside="closeDialog">

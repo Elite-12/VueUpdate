@@ -144,7 +144,7 @@ Vue.use(store)
 
 // Router
 Vue.use(router)
-
+console.log();
 Vue.use(breadcrumbs, {
   includeComponent: false, // {boolean} [includeComponent=false] - Include global breadcrumbs component or not
 })

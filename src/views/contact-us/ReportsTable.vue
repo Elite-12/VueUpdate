@@ -27,11 +27,11 @@
         </template>
         <v-list>
           <v-list-item link @click="makeAction('deleteAllMessage')">
-            <v-list-item-icon><v-icon icon="delete" /></v-list-item-icon>
+            <v-icon icon="delete" />
             <v-list-item-title>Delete all selected</v-list-item-title>
           </v-list-item>
           <v-list-item @click="makeAction('seenAllMessage')">
-            <v-list-item-icon><v-icon icon="mdi-check-all" /></v-list-item-icon>
+            <v-icon icon="mdi-check-all" />
             <v-list-item-title>Mark as read</v-list-item-title>
           </v-list-item>
         </v-list>
@@ -158,7 +158,7 @@
       </v-card>
     </v-dialog>
 
-    <template>
+    <!-- <template> -->
       <div class="text-center">
         <v-container>
           <v-row justify="center">
@@ -175,7 +175,7 @@
           </v-row>
         </v-container>
       </div>
-    </template>
+    <!-- </template> -->
   </div>
 </template>
 
