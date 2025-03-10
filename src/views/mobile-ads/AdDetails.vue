@@ -122,22 +122,21 @@
                         <v-card :loading="loading" height="2px" flat></v-card>
                         <v-treeview
                           v-model="tree"
-                          :open="open"
+                          v-model:opened="open"
+                          v-model:activated="active"
                           :items="categories"
-                          item-key="id"
+                          item-value="id"
                           activatable
-                          :active="active"
+                          
                           v-bind:style="rowStyle"
-                          @update:active="selectParent"
+                          @update:activated="selectParent"
                           return-object
                           item-children="childs"
                         >
-                          <template v-slot:prepend="{ item, open, leaf }">
-                            <v-icon
-                              v-if="!item.file"
-                              icon="open ? 'mdi-folder-open' : 'mdi-folder'"
-                            />
-                            <v-icon v-else icon="files[item.file]" />
+                          <template v-slot:prepend="{ item, isOpen }">
+                            <v-icon v-if="!item.file" :icon="isOpen ? 'folder_open' : 'folder'"></v-icon>
+                            <v-icon v-else :icon="files[item.file]"></v-icon>
+                            {{ item.name }}
                           </template>
                         </v-treeview>
                       </div>
@@ -253,7 +252,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(option, index) in paymentOptions" :key="option.id" class="border-top-1">
+          <tr v-for="option in paymentOptions" :key="option.id || option.index" class="border-top-1">
             <td>{{ option.name }}</td>
             <td>{{ option.name_ar }}</td>
             <td>

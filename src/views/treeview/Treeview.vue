@@ -28,15 +28,16 @@
           </div>
           <v-treeview
             v-model="tree"
-            :open="open"
+            v-model:opened="open"
             :items="slotsItems"
             activatable
-            item-key="name"
+            item-value="name"
             open-on-click
           >
-            <template v-slot:prepend="{ item, open, leaf }">
-              <v-icon v-if="!item.file" :icon="open ? 'mdi-folder-open' : 'mdi-folder'" />
-              <v-icon v-else icon="files[item.file]" />
+            <template v-slot:prepend="{ item, isOpen }">
+              <v-icon v-if="!item.file" :icon="isOpen ? 'mdi-folder-open' : 'mdi-folder'" />
+              <v-icon v-else :icon="files[item.file]" />
+              {{ item.name }}
             </template>
           </v-treeview>
         </app-card>
@@ -57,23 +58,23 @@
             <v-layout justify-space-between pa-3 d-md-flex d-block>
               <v-col xl5 lg5 md5 sm12 xs12>
                 <v-treeview
-                  :active.sync="active"
+                  v-model:activated="active"
                   :items="asyncItems"
                   :load-children="fetchUsers"
-                  :open.sync="asyncItemsOpen"
+                  v-model:opened="asyncItemsOpen"
                   activatable
                   active-class="primary--text"
                   class="grey lighten-5"
                   open-on-click
                   transition
                 >
-                  <v-icon
-                    v-if="!item.children"
-                    slot="prepend"
-                    slot-scope="{ item, active }"
-                    :color="active ? 'primary' : ''"
-                    icon="mdi-account"
-                  />
+                  <template v-slot:prepend="{ item, isActive }">
+                    <v-icon
+                      v-if="!item.children"
+                      :color="isActive ? 'primary' : ''"
+                      icon="mdi-account"
+                    />
+                  </template>
                 </v-treeview>
               </v-col>
               <v-col d-flex text-center xl7 lg7 md7 sm12 xs12>

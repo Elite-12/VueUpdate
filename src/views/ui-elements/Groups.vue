@@ -102,10 +102,9 @@
 
                 <v-item-group multiple>
                   <v-subheader>Tags</v-subheader>
-                  <v-item v-for="n in 8" :key="n">
+                  <v-item v-for="n in 8" :key="n" v-slot="{ isSelected, toggle }">
                     <v-chip
-                      slot-scope="{ active, toggle }"
-                      :input-value="active"
+                      :model-value="isSelected"
                       @click="toggle"
                       class="ma-2"
                     >
@@ -137,12 +136,10 @@
           </div>
           <v-layout align-center>
             <v-item-group v-model="window" class="mr-4 group" mandatory tag="v-col">
-              <v-item v-for="n in length" :key="n">
-                <div slot-scope="{ active, toggle }">
-                  <v-btn :input-value="active" icon @click="toggle" class="mb-3">
-                    <v-icon>mdi icon="record" />
-                  </v-btn>
-                </div>
+              <v-item v-for="n in length" :key="n" v-slot="{ active, toggle }">
+                <v-btn :input-value="active" icon @click="toggle" class="mb-3">
+                  <v-icon>mdi icon="record" </v-icon>
+                </v-btn>
               </v-item>
             </v-item-group>
 
@@ -156,7 +153,7 @@
                         <strong class="title">Title {{ n }}</strong>
                         <v-spacer></v-spacer>
                         <v-btn icon>
-                          <v-icon>mdi icon="account" />
+                          <v-icon>mdi icon="account" </v-icon>
                         </v-btn>
                       </v-layout>
                       <p v-for="(n, index) in 3" :key="index">
@@ -199,17 +196,17 @@
 
             <v-card-actions class="justify-space-between group-slider-action">
               <v-btn text @click="prev" class="group-slider-prev">
-                <v-icon>mdi-chevron icon="left" />
+                <v-icon>mdi-chevron icon="left" </v-icon>
               </v-btn>
               <v-item-group v-model="onboarding" class="text-center" mandatory>
                 <v-item v-for="n in length" :key="`btn-${n}`">
-                  <v-btn slot-scope="{ active, toggle }" :input-value="active" icon @click="toggle">
-                    <v-icon>mdi icon="record" />
+                  <v-btn v-slot="{ active, toggle }" :input-value="active" icon @click="toggle">
+                    <v-icon>mdi icon="record" </v-icon>
                   </v-btn>
                 </v-item>
               </v-item-group>
               <v-btn text @click="next" class="group-slider-next">
-                <v-icon>mdi-chevron icon="right" />
+                <v-icon>mdi-chevron icon="right" </v-icon>
               </v-btn>
             </v-card-actions>
           </v-card>

@@ -109,7 +109,6 @@
                 @click.stop="selectParent(null)"
                 class="mx-2"
                 v-bind="props"
-                @click="on"
               >
                 <v-icon small icon="home" />
               </v-btn>
@@ -127,22 +126,24 @@
                         <v-card :loading="loading" height="2px" flat></v-card>
                         <v-treeview
                           v-model="tree"
-                          :open="open"
+                          v-model:opened="open"
+                          v-model:activated="active"
                           :items="categories"
-                          item-key="id"
+                          item-value="id"
                           activatable
-                          :active="active"
+
                           v-bind:style="rowStyle"
-                          @update:active="selectParent"
+                          @update:activated="selectParent"
                           return-object
                           item-children="childs"
                         >
-                          <template #prepend="{ item, open }">
+                          <template v-slot:prepend="{ item, isOpen }">
                             <v-icon
                               v-if="!item.file"
-                              :icon="open ? 'mdi-folder-open' : 'mdi-folder'"
+                              :icon="isOpen ? 'folder_open' : 'folder'"
                             />
                             <v-icon v-else :icon="files[item.file]" />
+                            {{ item.name }}
                           </template>
                         </v-treeview>
                       </div>

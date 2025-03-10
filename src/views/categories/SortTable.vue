@@ -17,12 +17,14 @@
       </tr>
       </thead>
 
-      <draggable v-model="categories" tag="tbody">
-        <tr v-for="category in categories" :key="category.id">
-          <!--          <td>{{ f_package.id }}</td>-->
-          <td>{{ category.name }}</td>
-          <td>{{ category.name_ar }}</td>
-        </tr>
+      <draggable v-model="categories" tag="tbody" item-key="id">
+        <template #item="{ element }">
+          <tr>
+            <!--          <td>{{ f_package.id }}</td>-->
+            <td>{{ element.name }}</td>
+            <td>{{ element.name_ar }}</td>
+          </tr>
+        </template>
       </draggable>
 
     </v-table>

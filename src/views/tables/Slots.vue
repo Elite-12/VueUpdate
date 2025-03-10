@@ -18,14 +18,14 @@
             :items-per-page="5"
             item-key="name"
           >
-            <template slot="headers" slot-scope="props">
+            <template v-slot:headers="props">
               <tr>
                 <th>
                   <v-checkbox
                     color="primary"
                     hide-details
-                    @click.native="toggleAll"
-                    :input-value="props.all"
+                    @click="toggleAll"
+                    :model-value="props.all"
                     :indeterminate="props.indeterminate"
                   ></v-checkbox>
                 </th>
@@ -44,8 +44,8 @@
                 </th>
               </tr>
             </template>
-            <template slot="items" slot-scope="props">
-              <tr :active="props.selected" @click="props.selected = !props.selected">
+            <template v-slot:items="props">
+              <tr :class="{ active: selected }" @click="props.selected = !props.selected">
                 <td>
                   <v-checkbox
                     color="primary"
@@ -72,9 +72,9 @@
           colClasses="xl12 lg12 md12 sm12 xs12"
         >
           <v-data-table v-bind:headers="headers" :items="items">
-            <template slot="headerCell" slot-scope="props">
+            <template v-slot:[`column.header`]="props">
               <v-tooltip bottom>
-                <span slot="activator">
+                <span v-slot:activator>
                   {{ props.header.text }}
                 </span>
                 <span>
@@ -82,7 +82,7 @@
                 </span>
               </v-tooltip>
             </template>
-            <template slot="items" slot-scope="props">
+            <template v-slot:items="props">
               <td>{{ props.item.name }}</td>
               <td>{{ props.item.calories }}</td>
               <td>{{ props.item.fat }}</td>
@@ -101,7 +101,7 @@
           colClasses="xl12 lg12 md12 sm12 xs12"
         >
           <v-data-table :headers="headers" :items="items" hide-default-footer item-key="name">
-            <template slot="items" slot-scope="props">
+            <template v-slot:items="props">
               <tr @click="props.expanded = !props.expanded">
                 <td>{{ props.item.name }}</td>
                 <td>{{ props.item.calories }}</td>
@@ -113,7 +113,7 @@
                 <td>{{ props.item.iron }}</td>
               </tr>
             </template>
-            <template slot="expand" slot-scope="props">
+            <template v-slot:expand="{ expanded }">
               <v-card flat>
                 <v-card-text>Peek-a-boo!</v-card-text>
               </v-card>

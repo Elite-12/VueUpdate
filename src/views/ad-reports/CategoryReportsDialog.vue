@@ -5,7 +5,7 @@
       <v-data-table
         v-bind:headers="headers"
         v-bind:items="reports"
-        :options.sync="options"
+        v-model:options="options"
         :server-items-length="meta.last_page"
         item-key="id"
         :loading="loading"
