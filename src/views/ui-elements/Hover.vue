@@ -12,10 +12,9 @@
 					<div class="mb-5">
 						<p>The <code>v-hover</code> component provides a clean interface for handling hover states for any component.</p>
 					</div>
-					<v-hover>
+					<v-hover v-slot="{ isHovering }">
 						<v-card
-							slot-scope="{ hover }"
-							:class="`elevation-${hover ? 12 : 2}`"
+							:class="`elevation-${isHovering ? 12 : 2}`"
 							class="mx-auto arrow-card img-responsive"
 							width="500" 
 						>
@@ -57,9 +56,8 @@
 					<div class="mb-5">
 						<p>Create highly customized components that respond to user interaction.</p>
 					</div>
-					<v-hover>
+					<v-hover v-slot="{ isHovering }">
 						<v-card
-							slot-scope="{ hover }"
 							class="mx-auto"
 							color="white lighten-4"
 							max-width="450"
@@ -70,7 +68,7 @@
 							>
 								<v-expand-transition>
 									<div
-										v-if="hover"
+										v-if="isHovering"
 										class="d-flex transition-fast-in-fast-out primary darken-3 v-card--reveal font-2x white--text"
 										style="height: 100%;"
 									>

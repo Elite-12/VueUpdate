@@ -4,7 +4,12 @@
 
     <v-card-title>
       <v-spacer></v-spacer>
-      <v-text-field label="Search" single-line @keypress.enter="" v-model="search"></v-text-field>
+      <v-text-field
+        v-model="search"
+        label="Search"
+        single-line
+        @keyup.enter=""
+      ></v-text-field>
       <v-btn icon @click="">
         <v-icon icon="search" />
       </v-btn>

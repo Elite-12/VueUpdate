@@ -17,7 +17,7 @@
             </p>
           </div>
           <v-data-table v-bind:headers="headers" :items="items" hide-default-footer>
-            <template slot="items" slot-scope="props">
+            <template v-slot:items="props">
               <td>{{ props.item.name }}</td>
               <td>{{ props.item.calories }}</td>
               <td>{{ props.item.fat }}</td>

@@ -12,19 +12,20 @@
           </v-card-title>
           <v-treeview
             v-model="tree"
-            :open="open"
+            v-model:opened="open"
+            v-model:activated="active"
             :items="categories"
-            item-key="id"
+            item-value="id"
             activatable
-            :active="active"
+            
             v-bind:style="rowStyle"
-            @update:active="view"
+            @update:activated="view"
             return-object
             item-children="childs"
           >
-            <template v-slot:prepend="{ item, open }">
-              <v-icon v-if="!item.file" :icon="open ? 'folder-open' : 'folder'" />
-              <v-icon v-else icon="files[item.file]" />
+            <template v-slot:prepend="{ item, isOpen }">
+              <v-icon v-if="!item.file" :icon="isOpen ? 'folder_open' : 'folder'"></v-icon>
+              <v-icon v-else :icon="files[item.file]"></v-icon>
               {{ item.name }}
             </template>
             <template v-slot:append="{ item }">
@@ -203,6 +204,7 @@ export default {
 
   methods: {
     view(category) {
+      console.log('------------', category);
       this.loading = true
       this.dialog = true
       this.active = []

@@ -30,7 +30,7 @@
     </div>
 
     <ais-hits class="layout row wrap mb-12">
-      <template slot="item" slot-scope="{ item }">
+      <template v-slot:item="{ item }">
         <product-item :data="item"></product-item>
       </template>
     </ais-hits>
