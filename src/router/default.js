@@ -159,7 +159,7 @@ const ImageCropper = () => import('@/views/extensions/ImageCropper')
 const VideoPlayer = () => import('@/views/extensions/VideoPlayer')
 const Dropzone = () => import('@/views/extensions/Dropzone')
 
-export default {
+export default [{
   path: '/',
   component: Full,
   redirect: '/dashboard',
@@ -1952,3 +1952,4 @@ export default {
     },
   ],
 }
+];

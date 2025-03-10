@@ -140,7 +140,7 @@
                           <template v-slot:prepend="{ item, isOpen }">
                             <v-icon
                               v-if="!item.file"
-                              :icon="isOpen ? 'folder_open' : 'folder'"
+                              :icon="isOpen ? 'mdi-folder-open' : 'mdi-folder'"
                             />
                             <v-icon v-else :icon="files[item.file]" />
                             {{ item.name }}

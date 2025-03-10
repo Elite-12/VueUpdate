@@ -1,6 +1,8 @@
 /*========== Custome Variable ==========*/
 
 @use "sass:map"; // Import Sass's built-in map module
+@use 'sass:math';
+@use 'sass:meta';
 
 // App Global Font Size
 $html-font-size:              16px;

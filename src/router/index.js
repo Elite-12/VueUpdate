@@ -19,7 +19,7 @@ const Auth0CallBack = () => import('@/components/Auth0Callback/Auth0Callback')
 export default createRouter({
   history: createMemoryHistory(),
   routes: [
-    defaultRoutes,
+    ...defaultRoutes,
     // horizontalRoutes,
     // boxedRoutes,
     // mini,

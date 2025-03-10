@@ -24,7 +24,7 @@
             item-children="childs"
           >
             <template v-slot:prepend="{ item, isOpen }">
-              <v-icon v-if="!item.file" :icon="isOpen ? 'folder_open' : 'folder'"></v-icon>
+              <v-icon v-if="!item.file" :icon="isOpen ? 'mdi-folder-open' : 'mdi-folder'"></v-icon>
               <v-icon v-else :icon="files[item.file]"></v-icon>
               {{ item.name }}
             </template>
