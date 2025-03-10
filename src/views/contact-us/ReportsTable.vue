@@ -8,7 +8,7 @@
       <v-select
         :items="types"
         :item-value="'id'"
-        :item-text="'type'"
+        :item-title="'type'"
         label="Type"
         class="mr-md-5"
         hide-details

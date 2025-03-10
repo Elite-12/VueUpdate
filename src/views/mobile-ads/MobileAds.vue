@@ -5,9 +5,10 @@
       <!-- Actions -->
       <div class="d-md-inline-flex mb-5">
         <v-select
+          v-if="pages && pages.length"
           :items="pages"
           :item-value="'id'"
-          :item-text="'name'"
+          :item-title="'name'"
           label="Page"
           class="mr-md-5"
           return-object
@@ -176,7 +177,7 @@ export default {
 
   computed: {
     pages() {
-      return this.$store.getters['mobileAds/adPages']
+      return this.$store.getters['mobileAds/adPages']      
     },
 
     ad() {
@@ -189,7 +190,6 @@ export default {
       },
       set(page) {
         this.$store.commit('mobileAds/setSelectedPage', page)
-        console.log(this.selectedPage)
       },
     },
   },

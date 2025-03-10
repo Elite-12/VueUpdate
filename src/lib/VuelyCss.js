@@ -33,6 +33,7 @@ import '../assets/animate.css'
 
 // Video Player CSS
 import 'video.js/dist/video-js.css'
+// import 'vue-video-player/src/custom-theme.css'
 
 // Image Croppa CSS
 import 'vue-croppa/dist/vue-croppa.css'
@@ -42,5 +43,6 @@ import 'vue3-perfect-scrollbar/style.css'
 
 // CryptoIcons CSS
 import '../assets/webfont/cryptocoins.css'
+
 // Global Scss File
 import '../assets/scss/_style.scss'

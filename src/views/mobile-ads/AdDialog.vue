@@ -85,7 +85,7 @@
                         v-model="ad.referer_screen"
                         :items="screens"
                         :item-value="'id'"
-                        :item-text="'name'"
+                        :item-title="'name'"
                         label="Refers to"
                         hint="Select screen that ad will refer to"
                         persistent-hint
@@ -97,7 +97,7 @@
                         v-model="ad.screens"
                         :items="screens"
                         :item-value="'id'"
-                        :item-text="'name'"
+                        :item-title="'name'"
                         label="Appears on"
                         multiple
                         chips
@@ -124,7 +124,6 @@
                               prepend-icon="mdi-calendar"
                               readonly
                               v-bind="props"
-                              @mousedown:control="on"
                             ></v-text-field>
                           </template>
                           <v-date-picker v-model="ad.ends_at" no-title scrollable>

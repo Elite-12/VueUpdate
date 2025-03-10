@@ -30,7 +30,7 @@
           hint="Select countries to clone current categories to"
           persistent-hint
           :item-value="'conn'"
-          :item-text="'name'"
+          :item-title="'name'"
       ></v-select>
     </v-col>
     <v-card-actions>

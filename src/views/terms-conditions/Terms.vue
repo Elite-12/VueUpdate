@@ -9,7 +9,7 @@
           <v-select
               :items="langs"
               :item-value="'id'"
-              :item-text="'title'"
+              :item-title="'title'"
               label="Language"
               class="mr-md-5" return-object
               v-model="selectedLang"
