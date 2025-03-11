@@ -1,19 +1,15 @@
 /*============== Calender =============*/
-@use '../app.variables' as variables;
-@use '../mixin/common-mixin' as mixins;
-
 .comp-full-calendar {
   max-width: 100% !important;
   .full-calendar-header {
-    background-color: variables.$calender-head-bg;
+    background-color: $calender-head-bg;
     padding: 1.875rem; //30px;
-    color: variables.$light !important;
-    .prev-month,
-    .next-month {
+    color: $light !important;
+    .prev-month , .next-month {
       font-size: 1.5rem;
       vertical-align: middle;
       margin: 0 10px;
-      background-color: variables.$calender-event-bg;
+      background-color: $calender-event-bg;
       padding: 1px 13px;
       border-radius: 50%;
       text-align: center;
@@ -31,21 +27,21 @@
       }
     }
     .dates .dates-events .events-week .events-day .event-box .event-item {
-      background-color: variables.$calender-event-bg;
+      background-color: $calender-event-bg;
       height: 30px;
       line-height: 30px;
-      color: variables.$light;
+      color: $light;
       font-size: 1rem;
     }
   }
 }
-@media (max-width: 599px) and (min-width: 320px) {
-  .comp-full-calendar {
-    padding: 0 !important;
-    .full-calendar-body .weeks .week {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-  }
+@media(max-width:599px) and (min-width:320px) {
+	.comp-full-calendar {
+		padding: 0 !important;
+		.full-calendar-body .weeks .week {
+			white-space: nowrap ;
+			overflow: hidden ;
+			text-overflow: ellipsis ;	 
+		}
+	}
 }

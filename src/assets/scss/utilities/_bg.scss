@@ -1,110 +1,109 @@
 /*=========== Background Utilities ==========*/
-@use '../app.variables' as variables;
-@use '../mixin/bg' as mixins;
 
 .gradient-primary {
-  background: variables.$light-primary;
-  * {
-    color: variables.$light;
-  }
+   background: $light-primary;
+   * {
+      color: $light;
+   }
 }
 
 .gradient-success {
-  background: variables.$light-success;
-  * {
-    color: variables.$light;
-  }
+   background: $light-success;
+   * {
+      color: $light;
+   }
 }
 
 .gradient-pink {
-  background: variables.$light-pink;
-  * {
-    color: variables.$light;
-  }
+   background: $light-pink;
+   * {
+      color: $light;
+   }
 }
 
 .gradient-warning {
-  background: variables.$light-warning;
-  * {
-    color: variables.$light;
-  }
+   background: $light-warning;
+   * {
+      color: $light;
+   }
 }
 
 .gradient-purple {
-  background: variables.$light-purple;
-  * {
-    color: variables.$light;
-  }
+   background: $light-purple;
+   * {
+      color: $light;
+   }
 }
 
 .facebook-bg {
-  background-color: #4766ce;
+   background-color: #4766CE;
 }
 
 .google-bg {
-  background-color: #cb2929;
+   background-color: #CB2929;
 }
 
 .instagram-bg {
-  background-color: #ff37cf;
+   background-color: #FF37CF;
 }
 
 .linkedin-bg {
-  background-color: #247897;
+   background-color: #247897;
 }
 
 .twitter-bg {
-  background-color: #3cb1f1;
+   background-color: #3CB1F1;
 }
 
 .github-bg {
-  background-color: #6f574e;
+   background-color: #6f574e;
 }
 
 .facebook {
-  .v-icon,
-  i {
-    color: #3b5998 !important;
-  }
+   .v-icon,
+   i {
+      color: #3B5998 !important;
+   }
 }
 
 .google {
-  .v-icon,
-  i {
-    color: #d82218 !important;
-  }
+   .v-icon,
+   i {
+      color: #D82218 !important;
+   }
 }
 
 .twitter {
-  .v-icon,
-  i {
-    color: #1fa2fa !important;
-  }
+   .v-icon,
+   i {
+      color: #1FA2FA !important;
+   }
 }
 
 .linkedin {
-  .v-icon,
-  i {
-    color: #4875b4 !important;
-  }
+   .v-icon,
+   i {
+      color: #4875B4 !important;
+   }
 }
 
 .instagram {
-  .v-icon,
-  i {
-    color: #f45da0 !important;
-  }
+   .v-icon,
+   i {
+      color: #F45DA0 !important;
+   }
 }
 
 .grayish-blue {
-  background-color: variables.$gray-dark !important;
+   background-color: $gray-dark !important;
 }
 
 .aqua-bg {
-  background-color: variables.$aqua-bg;
+   background-color: $aqua-bg;
 }
 
 // Simple Brand Background Color
-@each $color, $value in variables.$theme-colors {
-  @include mixins.bg-variant('.bg-#{$color}', $value);
+@each $color,
+$value in $theme-colors {
+   @include bg-variant(".bg-#{$color}", $value);
 }

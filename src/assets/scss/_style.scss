@@ -1,11 +1,11 @@
 /*========= All App File Are Include Here ==========*/
-@use 'app.variables';
+@import "app.variables";
 
 /*==== Core Mixins ====*/
-@use 'mixin';
+@import "mixin";
 
 /*==== Core Utilities =====*/
-@use 'utilities';
+@import "utilities";
 
 /*===== Custom File =======*/
-@use 'custom';
+@import "custom";

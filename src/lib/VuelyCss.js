@@ -46,5 +46,5 @@ import 'vue3-perfect-scrollbar/style.css'
 import '../assets/webfont/cryptocoins.css'
 
 // Global Scss File
-// import '../assets/scss/_style.scss'
-import '../assets/css/style.css'
+import '../assets/scss/_style.scss'
+// import '../assets/css/style.css'

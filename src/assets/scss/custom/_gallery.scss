@@ -1,7 +1,4 @@
 /*================ Gallery Scss ==========*/
-@use '../app.variables' as variables;
-@use '../mixin/common-mixin' as mixins;
-
 figure.img-wrapper {
   position: relative;
   overflow: hidden;
@@ -26,8 +23,7 @@ figure.img-wrapper {
     opacity: 0;
     z-index: 1;
   }
-  h2,
-  h4 {
+  h2, h4 {
     margin: 0;
   }
   h2 {
@@ -37,9 +33,9 @@ figure.img-wrapper {
     text-transform: uppercase;
   }
   &:after {
-    background-color: variables.$light;
+    background-color: $light;
     position: absolute;
-    content: '';
+    content: "";
     display: block;
     top: 20px;
     left: 20px;
@@ -62,16 +58,14 @@ figure.img-wrapper {
     position: absolute;
     z-index: 1;
   }
-  &:hover figcaption,
-  &.hover figcaption {
+  &:hover figcaption, &.hover figcaption {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     opacity: 1;
     -webkit-transition-delay: 0.2s;
     transition-delay: 0.2s;
   }
-  &:hover:after,
-  &.hover:after {
+  &:hover:after, &.hover:after {
     -webkit-transform: rotateX(0);
     transform: rotateX(0);
     opacity: 0.9;

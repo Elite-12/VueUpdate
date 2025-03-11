@@ -1,10 +1,7 @@
 /*============ User Scss ===========*/
-@use '../app.variables' as variables;
-@use '../mixin/common-mixin' as mixins;
-
 .user-image {
   img {
-    box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.21);
+    box-shadow: 0 7px 14px 0 rgba(0,0,0,0.21);
   }
 }
 .social-list {
@@ -37,7 +34,7 @@
   padding: 0.9375rem; //15px;
   ul {
     li {
-      @include mixins.border(2px solid, variables.$gray-lighter, right);
+      @include border(2px solid, $gray-lighter, right);
       padding: 0 0.625rem; //10px;
       &:last-child {
         border: none;
@@ -50,9 +47,9 @@
   }
 }
 .overlap {
-  position: absolute;
-  right: -32px;
-  top: -30px;
+    position: absolute;
+    right: -32px;
+    top: -30px;
 }
 .media-listing {
   .media {
@@ -90,19 +87,18 @@
     display: block;
     width: 100%;
     border-right: none;
-    border-bottom: 1px solid variables.$gray-lighter;
+    border-bottom: 1px solid $gray-lighter;
     padding: 10px;
   }
-  .overlay-input .v-input--radio-group__input {
-    padding-left: 14px;
-    > div {
-      &:nth-child(3),
-      &:nth-child(4) {
-        width: 100% !important;
-      }
-    }
+  .overlay-input .v-input--radio-group__input{
+	  padding-left: 14px;
+	  >div{
+		  &:nth-child(3),&:nth-child(4){
+			width: 100% !important;
+		  }
+	  }
   }
-  .v-color-picker__canvas {
-    width: 100% !important;
+  .v-color-picker__canvas{
+	  width: 100% !important;
   }
 }

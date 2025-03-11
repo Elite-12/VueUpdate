@@ -100,7 +100,6 @@ router.afterEach((to, from) => {
 })
 
 // plugins
-
 Vue.use(vuetify, {
   theme: store.getters.selectedTheme.theme,
 })
@@ -123,7 +122,9 @@ Vue.use(VueFullscreen)
 Vue.use(GlobalComponents)
 Vue.use(VueVideoPlayer)
 Vue.use(Croppa)
-Vue.use(PerfectScrollbarPlugin)
+Vue.use(PerfectScrollbarPlugin, {
+  componentName: 'PerfectScrollbar'
+})
 Vue.use(countTo)
 Vue.use(VueGoogleMaps, {
   load: {

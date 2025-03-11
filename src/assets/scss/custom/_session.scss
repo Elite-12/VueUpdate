@@ -1,12 +1,9 @@
 /*============ Session ==========*/
-@use '../app.variables' as variables;
-@use '../mixin/common-mixin' as mixins;
-
 .session-wrapper {
   position: relative;
   height: 100%;
   .session-left {
-    background-image: url('/static/img/login.jpg');
+    background-image: url("/static/img/login.jpg");
     background-size: auto auto;
     background-size: cover;
     text-align: center;
@@ -24,10 +21,10 @@
       .slick-dots {
         li {
           &.slick-active {
-            color: variables.$light;
+            color: $light;
           }
           button:before {
-            color: variables.$light;
+            color: $light;
           }
         }
       }
@@ -46,7 +43,7 @@
 }
 .slider-content {
   img {
-    @include mixins.border(4px solid, variables.$light, top bottom left right);
+    @include border(4px solid, $light, top bottom left right);
     display: inline-block !important;
   }
   p {
@@ -55,21 +52,20 @@
     line-height: 1.6;
   }
 }
-.slider-content,
-.session-social-links {
+.slider-content, .session-social-links  {
   * {
-    color: variables.$light;
+    color: $light;
   }
 }
 .session-social-links {
   ul {
     li {
-      margin-bottom: 1.25rem; //20px;
-      margin-right: 0.875rem;
-      display: inline-block;
-      &:last-child {
-        margin-right: 0;
-      }
+		margin-bottom: 1.25rem; //20px;
+		margin-right: 0.875rem;
+		display:inline-block;
+		&:last-child{
+			margin-right: 0;
+		}
     }
   }
   .session-icon {
@@ -82,46 +78,44 @@
   }
 }
 .bg-sc {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  bottom: 0;
-  left: 0;
-  overflow: auto;
-  padding: 4rem 1rem;
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    padding: 4rem 1rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
 }
 .lock-screen-wrapper {
-  background-image: url('/static/img/lock-bg.png');
+  background-image: url("/static/img/lock-bg.png");
   @extend .bg-sc;
 }
 .lock-screen-block {
-  .v-form .theme--light.v-label {
-    color: variables.$light !important;
-  }
-  .v-text-field > .v-input__control > .v-input__slot {
-    &:before,
-    &:after {
-      border-color: variables.$light;
-    }
-  }
+	.v-form .theme--light.v-label{
+		color: $light !important;
+	}
+	.v-text-field > .v-input__control > .v-input__slot{
+		&:before,&:after{
+			border-color:$light;
+		}
+	}
 }
-// Pricing 2
+// Pricing 2 
 .pricing-wrapper {
   .app-card-content {
     h2 {
-      @include mixins.border(1px solid, variables.$gray-lighter, bottom);
+      @include border(1px solid, $gray-lighter, bottom);
       padding: 1.25rem;
     }
   }
 }
 .list-group-flush {
-  .list-group-item,
-  li {
-    @include mixins.border(1px solid, variables.$gray-lighter, bottom);
+  .list-group-item, li {
+    @include border(1px solid, $gray-lighter, bottom);
     padding: 0.9375rem 0; //15px 0;
     &:last-child {
       border: none;
@@ -131,20 +125,20 @@
 
 // sign up 2
 .session-banner {
-  background-image: url('/static/img/login-signup2.png');
+  background-image: url("/static/img/login-signup2.png");
   @extend .bg-sc;
 }
 .session-block {
-  background-color: variables.$light;
+  background-color: $light;
   padding: 3.125rem; //50px;
   border-radius: 10px;
-  box-shadow: 0 12px 34px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 12px 34px 0 rgba(0,0,0,0.5);
   .log-link {
     a {
       text-decoration: none;
-      color: variables.$gray-light;
+      color: $gray-light;
       &:hover {
-        color: variables.$primary;
+        color: $primary;
       }
     }
   }
@@ -153,7 +147,7 @@
   transform: translate3d(0%, 50%, 0);
 }
 
-// Responsive
+// Responsive 
 @media (max-width: 1200px) {
   .session-wrapper {
     .session-left {
