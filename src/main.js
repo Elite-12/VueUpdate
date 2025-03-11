@@ -122,9 +122,7 @@ Vue.use(VueFullscreen)
 Vue.use(GlobalComponents)
 Vue.use(VueVideoPlayer)
 Vue.use(Croppa)
-Vue.use(PerfectScrollbarPlugin, {
-  componentName: 'PerfectScrollbar'
-})
+Vue.use(PerfectScrollbarPlugin)
 Vue.use(countTo)
 Vue.use(VueGoogleMaps, {
   load: {
