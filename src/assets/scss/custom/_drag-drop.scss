@@ -1,20 +1,24 @@
 /*========= Dragula ==========*/
+@use '../app.variables' as variables;
+@use '../mixin/common-mixin' as mixins;
+
 .vue2-dragula-container {
   display: block;
   width: 100%;
   padding: 0.625rem; //10px;
-  @include background-opacity($dragula-bg,0.4);
-  div, .gu-mirror {
+  @include mixins.background-opacity(variables.$dragula-bg, 0.4);
+  div,
+  .gu-mirror {
     padding: 0.625rem; //10px;
-    @include background-opacity($dragula-bg,0.9);
+    @include mixins.background-opacity(variables.$dragula-bg, 0.9);
     transition: opacity 0.4s ease-in-out;
-    color: $dragula-color;
+    color: variables.$dragula-color;
     margin-bottom: 0.625rem; //10px;
     cursor: no-drop;
   }
 }
 .artical-user {
-  border: 2px solid $primary;
+  border: 2px solid variables.$primary;
   padding: 0.3125rem; //5px;
   width: 44px !important;
   height: 44px !important;

@@ -1,4 +1,9 @@
 /*========== Custome Variable ==========*/
+
+@use "sass:map"; // Import Sass's built-in map module
+@use 'sass:math';
+@use 'sass:meta';
+
 // App Global Font Size
 $html-font-size:              16px;
 
@@ -25,7 +30,7 @@ $gray-lighter: 			#DDE6F3 !default;
 
 //App Theme Color
 $theme-colors: () !default;
-$theme-colors: map-merge((
+$theme-colors: map.merge($theme-colors, (
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
@@ -35,7 +40,7 @@ $theme-colors: map-merge((
   "light":      $light,
   "dark":       $dark,
   "blue":       $blue,
-), $theme-colors);
+));
 
 // Settings for the `<body>` element.
 $body-bg:                       $base;

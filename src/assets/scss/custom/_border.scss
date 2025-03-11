@@ -1,31 +1,46 @@
 /*============ Border Css ===========*/
-.border          { border: 1px solid $gray-lighter !important; }
-.border-0        { border: 0 !important; }
-.border-top-0    { border-top: 0 !important; }
-.border-right-0  { border-right: 0 !important; }
-.border-bottom-0 { border-bottom: 0 !important; }
-.border-left-0   { border-left: 0 !important; }
+@use '../app.variables' as variables;
+@use '../mixin/common-mixin' as mixins;
+
+.border {
+  border: 1px solid variables.$gray-lighter !important;
+}
+.border-0 {
+  border: 0 !important;
+}
+.border-top-0 {
+  border-top: 0 !important;
+}
+.border-right-0 {
+  border-right: 0 !important;
+}
+.border-bottom-0 {
+  border-bottom: 0 !important;
+}
+.border-left-0 {
+  border-left: 0 !important;
+}
 
 .border-bottom-1 {
-  @include border(1px solid, $border-color, bottom);
+  @include mixins.border(1px solid, variables.$border-color, bottom);
 }
 .border-left-1 {
-  @include border(1px solid, $border-color, left);
+  @include mixins.border(1px solid, variables.$border-color, left);
 }
 .border-bottom-2 {
-  @include border(2px solid, $border-color, bottom);
+  @include mixins.border(2px solid, variables.$border-color, bottom);
 }
 .border-bottom-light-1 {
-  @include border(1px solid, $gray-lighter, bottom);
+  @include mixins.border(1px solid, variables.$gray-lighter, bottom);
 }
 .border-bottom-light-2 {
-  @include border(2px solid, $gray-lighter, bottom);
+  @include mixins.border(2px solid, variables.$gray-lighter, bottom);
 }
 .border-tb-1 {
-  @include border(1px solid, $gray-lighter, bottom top);
+  @include mixins.border(1px solid, variables.$gray-lighter, bottom top);
 }
 .border-top-1 {
-  @include border(1px solid, $gray-lighter,top);
+  @include mixins.border(1px solid, variables.$gray-lighter, top);
 }
 .border-white {
   border: 1px solid #fff !important;
@@ -33,27 +48,27 @@
 .rounded-circle {
   border-radius: 50% !important;
 }
-.rounded{
-  border-radius:0.25rem;
+.rounded {
+  border-radius: 0.25rem;
 }
 .border-primary {
-  border:1px solid $primary;
+  border: 1px solid variables.$primary;
 }
 .border-info {
-  border:1px solid $info;
+  border: 1px solid variables.$info;
 }
 .border-rad-sm {
   border-radius: 6px;
 }
 .border-blue {
-  @include border(3px solid, $primary, left);
+  @include mixins.border(3px solid, variables.$primary, left);
 }
 .border-purple {
-  @include border(3px solid, #582AD7, left);
+  @include mixins.border(3px solid, #582ad7, left);
 }
 .border-pink {
-  @include border(3px solid, $pink, left);
+  @include mixins.border(3px solid, variables.$pink, left);
 }
 .border-warning {
-  @include border(3px solid, $warning, left);
+  @include mixins.border(3px solid, variables.$warning, left);
 }

@@ -52,7 +52,7 @@
                   <!--									</template>-->
                   <!--								</v-list-item>-->
                   <v-list-item v-if="isSidebarAvailable()">
-                    <template class="py-0">
+                    <template class="py-0"> 
                       <v-checkbox
                         v-modal="collapseSidebar"
                         :label="$t('message.collapseSidebar')"
