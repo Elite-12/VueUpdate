@@ -43,10 +43,10 @@
                   <v-list-item-action class="ma-0">
                     <v-list-item-action-text class="d-flex">
                       <v-btn class="mr-1" icon @click="onEditClients(details)">
-                        <v-icon class="grey--text font-md" icon="edit" />
+                        <v-icon class="grey--text font-md" icon="md:edit" />
                       </v-btn>
                       <v-btn icon @click="onDeleteClients(details)">
-                        <v-icon class="grey--text font-md" icon="delete" />
+                        <v-icon class="grey--text font-md" icon="md:delete" />
                       </v-btn>
                     </v-list-item-action-text>
                   </v-list-item-action>
@@ -91,10 +91,10 @@
                   <v-list-item-action class="ma-0">
                     <v-list-item-action-text class="d-flex">
                       <v-btn class="mr-1" icon @click="onEditClients(details)">
-                        <v-icon class="grey--text font-md" icon="edit" />
+                        <v-icon class="grey--text font-md" icon="md:edit" />
                       </v-btn>
                       <v-btn icon @click="onDeleteClients(details)">
-                        <v-icon class="grey--text font-md" icon="delete" />
+                        <v-icon class="grey--text font-md" icon="md:delete" />
                       </v-btn>
                     </v-list-item-action-text>
                   </v-list-item-action>
@@ -136,10 +136,10 @@
                   <v-list-item-action class="ma-0">
                     <v-list-item-action-text class="d-flex">
                       <v-btn class="mr-1" icon @click="onEditClients(details)">
-                        <v-icon class="grey--text font-md" icon="edit" />
+                        <v-icon class="grey--text font-md" icon="md:edit" />
                       </v-btn>
                       <v-btn icon @click="onDeleteClients(details)">
-                        <v-icon class="grey--text font-md" icon="delete" />
+                        <v-icon class="grey--text font-md" icon="md:delete" />
                       </v-btn>
                     </v-list-item-action-text>
                   </v-list-item-action>

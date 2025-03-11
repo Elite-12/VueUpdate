@@ -28,7 +28,7 @@
                 <td class="text-center">${{ item.total }}</td>
                 <td class="text-center">
                   <v-btn icon class="mx-0" @click="deleteProductFromCart(item)">
-                    <v-icon class="error--text" icon="close" />
+                    <v-icon class="error--text" icon="md:close" />
                   </v-btn>
                 </td>
               </tr>

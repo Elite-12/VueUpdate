@@ -6,7 +6,7 @@
         <v-menu transition="scale-transition" origin="right top" bottom left>
           <template v-slot:activator="{ on }">
             <v-btn class="ma-0" icon @click="on">
-              <v-icon icon="more_vert" />
+              <v-icon icon="md:more_vert" />
             </v-btn>
           </template>
           <v-list class="app-card-action">

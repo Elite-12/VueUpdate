@@ -15,7 +15,7 @@
     </ul>
     <div class="ham-menu-sm d-none">
       <v-btn text icon class="my-1 mx-3" @click="toggleHorizontalLayoutSidebar">
-        <v-icon class="grey--text" icon="menu" />
+        <v-icon class="grey--text" icon="md:menu" />
       </v-btn>
     </div>
     <div>
@@ -29,7 +29,7 @@
         ></v-text-field>
         <div class="mobile-search d-none">
           <v-btn text small icon class="mobile-search-btn my-1 mx-3" @click="toggleSearchForm">
-            <v-icon class="grey--text font-md" icon="search" />
+            <v-icon class="grey--text font-md" icon="md:search" />
           </v-btn>
         </div>
       </div>

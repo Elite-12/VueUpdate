@@ -18,10 +18,10 @@
             <v-list-item-action class="ma-0">
               <v-list-item-action-text class="d-custom-flex">
                 <v-btn v-if="!comment.approved" class="mr-1" icon @click="approveComment(comment)">
-                  <v-icon icon="check" />
+                  <v-icon icon="md:check" />
                 </v-btn>
                 <v-btn icon @click="onDeleteComment(comment)">
-                  <v-icon icon="delete" />
+                  <v-icon icon="md:delete" />
                 </v-btn>
               </v-list-item-action-text>
             </v-list-item-action>

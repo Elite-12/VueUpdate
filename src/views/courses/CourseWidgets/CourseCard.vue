@@ -20,7 +20,7 @@
             <v-dialog v-model="dialog" width="500">
               <template v-slot:activator="{ on }">
                 <v-btn @click="on" icon>
-                  <v-icon icon="play_circle_filled" />
+                  <v-icon icon="md:play_circle_filled" />
                 </v-btn>
               </template>
               <iframe :src="list.demoVideoUrl" frameborder="0" allowfullscreen></iframe>
@@ -62,16 +62,16 @@
               </div>
               <span class="meta-info-block">
                 <span class="lectures fs-12 fw-normal"
-                  ><v-icon class="cmr-8" icon="play_circle_filled" />{{
+                  ><v-icon class="cmr-8" icon="md:play_circle_filled" />{{
                     list.lectures
                   }}
                   lectures</span
                 >
                 <span class="durations fs-12 fw-normal"
-                  ><v-icon class="cmr-8" icon="access_time" />{{ list.hours }} hours</span
+                  ><v-icon class="cmr-8" icon="md:access_time" />{{ list.hours }} hours</span
                 >
                 <span class="durations fs-12 fw-normal"
-                  ><v-icon class="cmr-8" icon="show_chart" />{{ list.level }} Levels</span
+                  ><v-icon class="cmr-8" icon="md:show_chart" />{{ list.level }} Levels</span
                 >
               </span>
             </div>

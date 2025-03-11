@@ -16,7 +16,7 @@
                   <div class="d-custom-flex align-items-center">
                     <div class="ham-menu-sm d-none">
                       <v-btn text icon class="mr-3 my-0" @click="toggleInboxSidebar">
-                        <v-icon class="grey--text" icon="menu" />
+                        <v-icon class="grey--text" icon="md:menu" />
                       </v-btn>
                     </div>
                     <span class="mail-count">1-10 from 23</span>

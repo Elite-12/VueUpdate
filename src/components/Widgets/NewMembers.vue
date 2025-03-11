@@ -13,10 +13,10 @@
           <v-list-item-action>
             <v-col>
               <v-btn fab dark small color="success" mr-2>
-                <v-icon dark icon="ti-check" />
+                <v-icon dark icon="md:ti-check" />
               </v-btn>
               <v-btn fab dark small color="error">
-                <v-icon dark icon="ti-close" />
+                <v-icon dark icon="md:ti-close" />
               </v-btn>
             </v-col>
           </v-list-item-action>

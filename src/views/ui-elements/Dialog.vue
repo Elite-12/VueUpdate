@@ -34,7 +34,7 @@
             <v-card>
               <v-toolbar color="primary" dark class="dialog-toolbar mb-6">
                 <v-btn icon @click.native="dialog = false" dark>
-                  <v-icon icon="close" />
+                  <v-icon icon="md:close" />
                 </v-btn>
                 <v-toolbar-title>Settings</v-toolbar-title>
                 <v-spacer></v-spacer>
@@ -43,7 +43,7 @@
                   <v-menu bottom right offset-y>
                     <template v-slot:activator="{ on }">
                       <v-btn @click="on" dark icon>
-                        <v-icon icon="more_vert" />
+                        <v-icon icon="md:more_vert" />
                       </v-btn>
                     </template>
                     <v-list>
@@ -148,7 +148,7 @@
                 <v-menu bottom left>
                   <template v-slot:activator="{ on }">
                     <v-btn icon @click="on">
-                      <v-icon icon="more_vert" />
+                      <v-icon icon="md:more_vert" />
                     </v-btn>
                   </template>
                   <v-list>

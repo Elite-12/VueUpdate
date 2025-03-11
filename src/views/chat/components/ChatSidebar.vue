@@ -4,7 +4,7 @@
       <v-toolbar-title>Chat</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
-        <v-icon icon="search" />
+        <v-icon icon="md:search" />
       </v-btn>
     </v-toolbar>
     <v-list>

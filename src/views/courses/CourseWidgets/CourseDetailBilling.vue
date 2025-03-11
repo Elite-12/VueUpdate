@@ -16,7 +16,7 @@
       >
     </div>
     <p class="price-duration error--text">
-      <v-icon class="cmr-8" icon="timer" />
+      <v-icon class="cmr-8" icon="md:timer" />
       <span class="font-weight-bold cmr-8">
         {{ CourseData.courseDetail.billingDetails.discountTime }}
       </span>
@@ -39,7 +39,7 @@
       >
         <v-list-item>
           <v-list-item-action class="my-0 mr-1">
-            <v-icon icon="feature.icon" />
+            <v-icon :icon="feature.icon" />
           </v-list-item-action>
           <template class="py-0">
             <v-list-item-title

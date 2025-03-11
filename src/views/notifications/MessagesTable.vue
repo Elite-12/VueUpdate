@@ -29,7 +29,7 @@
               :disabled="!$can(UPDATE, RESOURCE)"
               @click="editDialog(message)"
             >
-              <v-icon icon="edit" />
+              <v-icon icon="md:edit" />
             </v-btn>
           </td>
         </tr>

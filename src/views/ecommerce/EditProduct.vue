@@ -34,13 +34,13 @@
             :class="{ active: isActive == 'grid' }"
             style="cursor: pointer"
             @click="girdView()"
-            icon="apps"
+            icon="md:apps"
           />
           <v-icon
             :class="{ active: isActive == 'list' }"
             style="cursor: pointer"
             @click="listView()"
-            icon="list"
+            icon="md:list"
           />
         </div>
       </v-layout>

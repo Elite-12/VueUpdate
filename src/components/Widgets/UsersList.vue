@@ -22,7 +22,7 @@
             <v-menu origin="center center" transition="scale-transition" bottom>
               <template v-slot:activator="{ on }">
                 <v-btn @click="on" icon>
-                  <v-icon icon="more_horiz" />
+                  <v-icon icon="md:more_horiz" />
                 </v-btn>
               </template>
               <v-list>

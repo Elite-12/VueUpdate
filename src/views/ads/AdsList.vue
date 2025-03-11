@@ -71,7 +71,7 @@
               color="error"
               @click.stop="resetCategory"
             >
-              <v-icon small icon="clear" /> Remove
+              <v-icon small icon="md:clear" /> Remove
             </v-btn>
           </div>
           <v-card :loading="loading" height="2px" flat></v-card>

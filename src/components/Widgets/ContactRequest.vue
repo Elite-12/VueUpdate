@@ -17,7 +17,7 @@
       </div>
     </div>
     <v-avatar color="warning" class="overlap">
-      <v-icon dark icon="ti-id-badge" />
+      <v-icon dark icon="md:ti-id-badge" />
     </v-avatar>
   </div>
 </template>

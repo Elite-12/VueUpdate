@@ -8,14 +8,14 @@
       <div class="d-custom-flex justify-space-between">
         <div>
           <v-btn icon class="mr-3">
-            <v-icon class="white--text" icon="share" />
+            <v-icon class="white--text" icon="md:share" />
           </v-btn>
           <v-btn icon>
-            <v-icon class="white--text" icon="favorite" />
+            <v-icon class="white--text" icon="md:favorite" />
           </v-btn>
         </div>
         <v-btn icon>
-          <v-icon class="white--text" icon="more_horiz" />
+          <v-icon class="white--text" icon="md:more_horiz" />
         </v-btn>
       </div>
     </div>

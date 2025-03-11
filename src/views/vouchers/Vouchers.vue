@@ -37,7 +37,7 @@
                     :disabled="!$can(UPDATE, RESOURCE)"
                     @click="editDialog(voucher)"
                   >
-                    <v-icon icon="edit" />
+                    <v-icon icon="md:edit" />
                   </v-btn>
 
                   <v-btn
@@ -48,7 +48,7 @@
                     :disabled="!$can(DELETE, RESOURCE)"
                     @click="currentDeleteItem = voucher"
                   >
-                    <v-icon icon="delete" />
+                    <v-icon icon="md:delete" />
                   </v-btn>
                 </td>
               </tr>

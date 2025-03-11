@@ -14,7 +14,7 @@
                     <div class="thumb-wrap ml-auto" for="upload" v-for="img in 4">
                       <v-img src="https://placehold.co/625x800" style="height: 70px" />
                       <div class="edit-btn d-flex justify-center align-items-center">
-                        <v-icon dark icon="add" />
+                        <v-icon dark icon="md:add" />
                       </div>
                       <input type="file" id="upload" accept="image/*" class="upload-img" />
                     </div>

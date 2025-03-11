@@ -18,7 +18,7 @@
                     >
                       <v-img :src="img" style="height: 70px" @mouseover="doHover(img)" />
                       <div class="edit-btn d-flex justify-center align-items-center">
-                        <v-icon dark icon="edit" />
+                        <v-icon dark icon="md:edit" />
                       </div>
                       <input type="file" id="upload" accept="image/*" class="upload-img" />
                     </div>

@@ -4,7 +4,7 @@
       <v-toolbar-title class="text-center">{{ $t('message.chat') }}</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
-        <v-icon icon="search" />
+        <v-icon icon="md:search" />
       </v-btn>
     </v-toolbar>
     <v-tabs v-model="tab">
@@ -20,7 +20,7 @@
             </v-avatar>
             <v-list-item-title v-html="item.userName"></v-list-item-title>
             <v-list-item-action>
-              <v-icon v-bind:color="item.active ? 'primary' : 'grey'" icon="chat_bubble" />
+              <v-icon v-bind:color="item.active ? 'primary' : 'grey'" icon="md:chat_bubble" />
             </v-list-item-action>
           </v-list-item>
         </v-list>

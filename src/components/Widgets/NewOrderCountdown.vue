@@ -16,10 +16,10 @@
           </h3>
           <div class="d-inline-flex">
             <v-btn icon small class="mr-3">
-              <v-icon color="success" icon="check" />
+              <v-icon color="success" icon="md:check" />
             </v-btn>
             <v-btn icon small>
-              <v-icon color="error" icon="close" />
+              <v-icon color="error" icon="md:close" />
             </v-btn>
           </div>
         </div>

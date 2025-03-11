@@ -2,7 +2,7 @@
 <template>
   <div>
     <div class="app-flex justify-start align-start">
-      <v-icon class="success--text mr-3 font-2x" icon="arrow_upward" />
+      <v-icon class="success--text mr-3 font-2x" icon="md:arrow_upward" />
       <div>
         <h2 class="mb-0">12,255 Today</h2>
         <span class="fs-14 gray--text">10% increase from yesterday</span>

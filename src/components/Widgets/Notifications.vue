@@ -4,7 +4,7 @@
       <template v-for="item in notifications" :key="item.id">
         <v-list-item ripple @click="">
           <v-avatar>
-            <v-icon :color="item.iconColor" icon="item.icon" />
+            <v-icon :color="item.iconColor" :icon="item.icon" />
           </v-avatar>
           <template>
             <v-list-item-subtitle class="grey--text fs-12 fw-normal">{{

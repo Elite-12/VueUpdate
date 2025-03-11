@@ -34,7 +34,7 @@
     <div slot="footer" class="justify-space-between d-custom-flex align-items-center">
       <a href="javascript:void(0)" class="primary--text fs-14">Show details</a>
       <v-btn class="ma-0" icon>
-        <v-icon class="grey--text" icon="more_vert" />
+        <v-icon class="grey--text" icon="md:more_vert" />
       </v-btn>
     </div>
   </app-card>

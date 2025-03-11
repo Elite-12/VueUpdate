@@ -9,7 +9,7 @@
       <div class="w-50 d-custom-flex justify-space-between align-center">
         <span class="fs-12 fw-normal">1450</span>
         <v-btn small icon class="my-2">
-          <v-icon icon="more_horiz" />
+          <v-icon icon="md:more_horiz" />
         </v-btn>
       </div>
     </li>
@@ -21,7 +21,7 @@
       <div class="w-50 d-custom-flex justify-space-between align-center">
         <span class="fs-12 fw-normal">1000</span>
         <v-btn small icon class="my-2">
-          <v-icon icon="more_horiz" />
+          <v-icon icon="md:more_horiz" />
         </v-btn>
       </div>
     </li>
@@ -33,7 +33,7 @@
       <div class="w-50 d-custom-flex justify-space-between align-center">
         <span class="fs-12 fw-normal">450</span>
         <v-btn small icon class="my-2">
-          <v-icon icon="more_horiz" />
+          <v-icon icon="md:more_horiz" />
         </v-btn>
       </div>
     </li>

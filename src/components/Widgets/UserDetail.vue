@@ -38,10 +38,10 @@
         <tr>
           <td>Gender</td>
           <td v-if="user.gender === 'Male'">
-            <v-icon icon="man" />
+            <v-icon icon="md:man" />
           </td>
           <td v-else-if="user.gender === 'Female'">
-            <v-icon icon="female" />
+            <v-icon icon="md:female" />
           </td>
           <td v-else>Not Set</td>
         </tr>

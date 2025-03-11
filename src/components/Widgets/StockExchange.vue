@@ -10,7 +10,7 @@
         </template>
         <v-spacer></v-spacer>
         <span>
-          <v-icon class="succes" icon="arrow_upward" />
+          <v-icon class="succes" icon="md:arrow_upward" />
           {{ ratesData.rates.CAD.toFixed(2) }}
         </span>
       </v-list-item>
@@ -22,7 +22,7 @@
         </template>
         <v-spacer></v-spacer>
         <span>
-          <v-icon class="erro" icon="arrow_downward" />
+          <v-icon class="erro" icon="md:arrow_downward" />
           {{ ratesData.rates.EUR.toFixed(2) }}
         </span>
       </v-list-item>
@@ -34,7 +34,7 @@
         </template>
         <v-spacer></v-spacer>
         <span>
-          <v-icon class="erro" icon="arrow_downward" />
+          <v-icon class="erro" icon="md:arrow_downward" />
           {{ ratesData.rates.NZD.toFixed(2) }}
         </span>
       </v-list-item>
@@ -46,7 +46,7 @@
         </template>
         <v-spacer></v-spacer>
         <span>
-          <v-icon class="succes" icon="arrow_upward" />
+          <v-icon class="succes" icon="md:arrow_upward" />
           {{ ratesData.rates.INR.toFixed(2) }}
         </span>
       </v-list-item>
@@ -58,7 +58,7 @@
         </template>
         <v-spacer></v-spacer>
         <span>
-          <v-icon class="erro" icon="arrow_downward" />
+          <v-icon class="erro" icon="md:arrow_downward" />
           {{ ratesData.rates.SGD.toFixed(2) }}
         </span>
       </v-list-item>

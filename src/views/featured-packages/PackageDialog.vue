@@ -29,7 +29,7 @@
                       @change="changeImage($event)"
                     ></v-file-input>
                     <v-btn class="mb-30" fab x-small color="error" @click.stop="clearImageInput">
-                      <v-icon small icon="delete" />
+                      <v-icon small icon="md:delete" />
                     </v-btn>
                   </v-card-title>
                 </v-img>
@@ -58,7 +58,7 @@
                       >
                       </v-text-field>
                       <v-chip color="red" text-color="white" small>
-                        <v-icon small left icon="warning" />
+                        <v-icon small left icon="md:warning" />
                         Min Cost : {{ minCost }}
                       </v-chip>
                       <v-text-field

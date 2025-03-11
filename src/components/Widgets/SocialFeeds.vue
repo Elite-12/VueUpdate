@@ -1,7 +1,7 @@
 <template>
   <div :class="type">
     <span class="social-icon border d-custom-flex align-items-center rounded-circle">
-      <v-icon medium icon="socialIcon" />
+      <v-icon medium icon="md:socialIcon" />
     </span>
     <span>
       <span class="d-block fw-bold">{{ friends }}</span>

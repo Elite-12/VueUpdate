@@ -44,7 +44,7 @@
             x-small
             @click="handleReport(item)"
           >
-            <v-icon icon="check" />
+            <v-icon icon="md:check" />
           </v-btn>
 
           <v-btn
@@ -55,7 +55,7 @@
             x-small
             @click="openDeleteReportDialog(item)"
           >
-            <v-icon class="font-md" icon="delete" />
+            <v-icon class="font-md" icon="md:delete" />
           </v-btn>
         </template>
       </v-data-table>

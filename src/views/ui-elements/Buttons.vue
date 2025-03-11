@@ -108,16 +108,16 @@
           <p class="primary--text fw-bold">Exclusive</p>
           <v-btn-toggle v-model="toggle_exclusive">
             <v-btn text>
-              <v-icon icon="format_align_left" />
+              <v-icon icon="md:format_align_left" />
             </v-btn>
             <v-btn text>
-              <v-icon icon="format_align_center" />
+              <v-icon icon="md:format_align_center" />
             </v-btn>
             <v-btn text>
-              <v-icon icon="format_align_right" />
+              <v-icon icon="md:format_align_right" />
             </v-btn>
             <v-btn text>
-              <v-icon icon="format_align_justify" />
+              <v-icon icon="md:format_align_justify" />
             </v-btn>
           </v-btn-toggle>
         </app-card>
@@ -132,31 +132,31 @@
           <div class="mb-4">
             <p class="primary--text fw-bold">{{ $t('message.normal') }}</p>
             <v-btn icon class="mr-3" color="pink">
-              <v-icon icon="favorite" />
+              <v-icon icon="md:favorite" />
             </v-btn>
             <v-btn icon class="mr-3" color="indigo">
-              <v-icon icon="star" />
+              <v-icon icon="md:star" />
             </v-btn>
             <v-btn icon class="mr-3" color="green">
-              <v-icon icon="cached" />
+              <v-icon icon="md:cached" />
             </v-btn>
             <v-btn icon class="mr-3" color="deep-orange">
-              <v-icon icon="thumb_up" />
+              <v-icon icon="md:thumb_up" />
             </v-btn>
           </div>
           <div class="mb-4">
             <p class="primary--text fw-bold">{{ $t('message.disabled') }}</p>
             <v-btn icon class="mr-3" disabled>
-              <v-icon icon="favorite" />
+              <v-icon icon="md:favorite" />
             </v-btn>
             <v-btn icon class="mr-3" disabled>
-              <v-icon icon="star" />
+              <v-icon icon="md:star" />
             </v-btn>
             <v-btn icon class="mr-3" disabled>
-              <v-icon icon="cached" />
+              <v-icon icon="md:cached" />
             </v-btn>
             <v-btn icon class="mr-3" disabled>
-              <v-icon icon="thumb_up" />
+              <v-icon icon="md:thumb_up" />
             </v-btn>
           </div>
         </app-card>
@@ -169,22 +169,22 @@
             <p>Floating buttons are round and usually contain an icon.</p>
           </div>
           <v-btn fab class="mr-3" dark small color="primary">
-            <v-icon dark icon="remove" />
+            <v-icon dark icon="md:remove" />
           </v-btn>
           <v-btn fab class="mr-3" dark small color="pink">
-            <v-icon dark icon="favorite" />
+            <v-icon dark icon="md:favorite" />
           </v-btn>
           <v-btn fab class="mr-3" dark color="indigo">
-            <v-icon dark icon="add" />
+            <v-icon dark icon="md:add" />
           </v-btn>
           <v-btn fab class="mr-3" dark color="teal">
-            <v-icon dark icon="list" />
+            <v-icon dark icon="md:list" />
           </v-btn>
           <v-btn fab class="mr-3" dark large color="cyan">
-            <v-icon dark icon="edit" />
+            <v-icon dark icon="md:edit" />
           </v-btn>
           <v-btn fab class="mr-3" dark large color="purple">
-            <v-icon dark icon="android" />
+            <v-icon dark icon="md:android" />
           </v-btn>
         </app-card>
         <app-card
@@ -214,7 +214,7 @@
             :disabled="loading3"
           >
             Upload
-            <v-icon right dark icon="cloud_upload" />
+            <v-icon right dark icon="md:cloud_upload" />
           </v-btn>
           <v-btn
             class="gradient-pink ma-2"
@@ -233,7 +233,7 @@
           >
             Icon Loader
             <span slot="loader" class="custom-loader">
-              <v-icon light icon="cached" />
+              <v-icon light icon="md:cached" />
             </span>
           </v-btn>
         </app-card>
@@ -252,13 +252,13 @@
           </div>
           <div class="mb-4">
             <v-btn class="mr-4" color="primary" fab small dark>
-              <v-icon icon="edit" />
+              <v-icon icon="md:edit" />
             </v-btn>
             <v-btn class="mr-4" color="warning" fab dark>
-              <v-icon icon="account_circle" />
+              <v-icon icon="md:account_circle" />
             </v-btn>
             <v-btn class="mr-4" color="error" fab large dark>
-              <v-icon icon="alarm" />
+              <v-icon icon="md:alarm" />
             </v-btn>
           </div>
         </app-card>
@@ -272,10 +272,10 @@
           </div>
           <v-btn class="mr-3" outlined color="indigo">Outline Button</v-btn>
           <v-btn class="mr-3" outlined fab color="teal">
-            <v-icon icon="list" />
+            <v-icon icon="md:list" />
           </v-btn>
           <v-btn class="mr-3" outlined large fab color="pink">
-            <v-icon icon="edit" />
+            <v-icon icon="md:edit" />
           </v-btn>
         </app-card>
         <app-card

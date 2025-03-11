@@ -20,7 +20,7 @@
           ></daily-sales>
           <div slot="footer" class="justify-space-between footer-flex">
             <span class="fs-14">
-              <v-icon class="mr-1 font-md" icon="autorenew" />{{ $t('message.updated10MinAgo') }}
+              <v-icon class="mr-1 font-md" icon="md:autorenew" />{{ $t('message.updated10MinAgo') }}
             </span>
           </div>
         </app-card>
@@ -37,7 +37,7 @@
           <traffic-channel :data="trafficChannel"> </traffic-channel>
           <div slot="footer" class="justify-space-between footer-flex">
             <span class="fs-14">
-              <v-icon class="mr-1 font-md" icon="autorenew" />{{ $t('message.updated10MinAgo') }}
+              <v-icon class="mr-1 font-md" icon="md:autorenew" />{{ $t('message.updated10MinAgo') }}
             </span>
             <v-spacer></v-spacer>
             <v-btn color="primary" small>{{ $t('message.goToCampaign') }}</v-btn>

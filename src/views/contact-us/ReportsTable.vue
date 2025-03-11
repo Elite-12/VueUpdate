@@ -27,7 +27,7 @@
         </template>
         <v-list>
           <v-list-item link @click="makeAction('deleteAllMessage')">
-            <v-icon icon="delete" />
+            <v-icon icon="md:delete" />
             <v-list-item-title>Delete all selected</v-list-item-title>
           </v-list-item>
           <v-list-item @click="makeAction('seenAllMessage')">
@@ -75,11 +75,11 @@
           @click="replyDialog(item)"
           title="Reply"
         >
-          <v-icon icon="reply" />
+          <v-icon icon="md:reply" />
         </v-btn>
 
         <v-btn fab dark x-small color="error" @click="confirmDeletion(item)">
-          <v-icon dark small icon="delete" />
+          <v-icon dark small icon="md:delete" />
         </v-btn>
       </template>
     </v-data-table>

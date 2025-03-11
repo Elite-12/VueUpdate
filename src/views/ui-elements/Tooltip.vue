@@ -38,7 +38,7 @@
               <v-tooltip v-model="show" top>
                 <template v-slot:activator="{ on }">
                   <v-btn icon @click="on">
-                    <v-icon color="primary" icon="shopping_cart" />
+                    <v-icon color="primary" icon="md:shopping_cart" />
                   </v-btn>
                 </template>
                 <span>Programmatic tooltip</span>

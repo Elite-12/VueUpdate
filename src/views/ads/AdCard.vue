@@ -48,7 +48,7 @@
           </v-chip>
           <br />
           <v-chip class="ma-2" small outlined color="secondary">
-            <v-icon left icon="home" />
+            <v-icon left icon="md:home" />
             {{ details.location.city }} > {{ details.location.town }}
           </v-chip>
           <br />
@@ -60,7 +60,7 @@
             v-bind:style="rowStyle"
             @click="showAd(details)"
           >
-            <v-icon left icon="warning" />
+            <v-icon left icon="md:warning" />
             Reports : {{ details.reports_count }}
           </v-chip>
         </div>
@@ -80,7 +80,7 @@
               @click="openEnableConfirmation(details)"
               title="Enable"
             >
-              <v-icon class="font-md" icon="check" />
+              <v-icon class="font-md" icon="md:check" />
             </v-btn>
             <v-btn
               :disabled="!$can(UPDATE, RESOURCE)"
@@ -92,7 +92,7 @@
               @click="openDisableConfirmation(details)"
               title="Disable"
             >
-              <v-icon class="font-md" icon="block" />
+              <v-icon class="font-md" icon="md:block" />
             </v-btn>
             <v-btn
               :disabled="!$can(DELETE, RESOURCE)"
@@ -101,7 +101,7 @@
               x-small
               @click="openDeleteConfirmation(details)"
             >
-              <v-icon class="font-md" icon="delete" />
+              <v-icon class="font-md" icon="md:delete" />
             </v-btn>
           </v-list-item-action-text>
         </v-list-item-action>

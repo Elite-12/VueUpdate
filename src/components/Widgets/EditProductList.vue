@@ -14,12 +14,12 @@
           <td class="text-left">
             <div class="d-flex">
               <div>
-                <v-icon dark class="delete-btn" @click="deleteDialog(item)" icon="delete" />
+                <v-icon dark class="delete-btn" @click="deleteDialog(item)" icon="md:delete" />
               </div>
               <router-link
                 :to="`/${getCurrentAppLayoutHandler() + '/ecommerce/edit-detail/' + item.type + '/' + item.id}`"
               >
-                <v-icon class="edit-btn ml-3" dark style="cursor: pointer" icon="edit" />
+                <v-icon class="edit-btn ml-3" dark style="cursor: pointer" icon="md:edit" />
               </router-link>
             </div>
           </td>

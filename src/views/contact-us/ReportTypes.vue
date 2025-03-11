@@ -26,11 +26,11 @@
               :disabled="!$can(UPDATE, RESOURCE)"
               @click="editDialog(type)"
             >
-              <v-icon icon="edit" />
+              <v-icon icon="md:edit" />
             </v-btn>
 
             <v-btn fab dark x-small color="error" @click="confirmDeletion(type)">
-              <v-icon dark small icon="delete" />
+              <v-icon dark small icon="md:delete" />
             </v-btn>
           </td>
         </tr>

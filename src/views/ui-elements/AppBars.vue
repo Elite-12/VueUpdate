@@ -105,7 +105,7 @@
               <div class="flex-grow-1"></div>
 
               <v-btn icon>
-                <v-icon icon="search" />
+                <v-icon icon="md:search" />
               </v-btn>
             </v-app-bar>
             <v-sheet id="playground-example" class="overflow-y-auto" min-height="400">

@@ -36,7 +36,7 @@
             <template v-for="filter in mailboxes" :key="filter.id">
               <v-list-item @click="filterEmails(filter)">
                 <v-list-item-action class="my-0">
-                  <v-icon icon="filter.action" />
+                  <v-icon :icon="filter.action" />
                 </v-list-item-action>
                 <template class="py-0">
                   <span>{{ filter.name }}</span>

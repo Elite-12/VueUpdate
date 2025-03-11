@@ -32,7 +32,7 @@
                 x-small
                 @click="openDeleteReportDialog(item)"
               >
-                <v-icon class="font-md" icon="delete" />
+                <v-icon class="font-md" icon="md:delete" />
               </v-btn>
             </template>
           </v-data-table>

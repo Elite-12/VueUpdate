@@ -22,7 +22,7 @@
                 <td>{{ item.cardHolderName }}</td>
                 <td>
                   <v-btn icon class="mx-0" @click="deleteCard(item)">
-                    <v-icon color="grey lighten-1" icon="close" />
+                    <v-icon color="grey lighten-1" icon="md:close" />
                   </v-btn>
                 </td>
               </tr>

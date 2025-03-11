@@ -1,7 +1,7 @@
 <template>
   <div class="search-form-wrap" :class="{ 'search-slide': mobileSearchForm }">
     <v-btn fab dark small class="close-btn" @click="toggleSearchForm">
-      <v-icon dark icon="close" />
+      <v-icon dark icon="md:close" />
     </v-btn>
     <div class="d-flex align-center justify-center centered">
       <v-form>

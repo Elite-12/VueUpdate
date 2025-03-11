@@ -37,19 +37,19 @@
 
             <v-btn-toggle v-model="toggle_multiple" class="transparent" multiple>
               <v-btn :value="1" text>
-                <v-icon icon="format_bold" />
+                <v-icon icon="md:format_bold" />
               </v-btn>
 
               <v-btn :value="2" text>
-                <v-icon icon="format_italic" />
+                <v-icon icon="md:format_italic" />
               </v-btn>
 
               <v-btn :value="3" text>
-                <v-icon icon="format_underlined" />
+                <v-icon icon="md:format_underlined" />
               </v-btn>
 
               <v-btn :value="4" text>
-                <v-icon icon="format_color_fill" />
+                <v-icon icon="md:format_color_fill" />
               </v-btn>
             </v-btn-toggle>
 
@@ -57,19 +57,19 @@
 
             <v-btn-toggle v-model="toggle_exclusive" class="transparent">
               <v-btn :value="1" text>
-                <v-icon icon="format_align_left" />
+                <v-icon icon="md:format_align_left" />
               </v-btn>
 
               <v-btn :value="2" text>
-                <v-icon icon="format_align_center" />
+                <v-icon icon="md:format_align_center" />
               </v-btn>
 
               <v-btn :value="3" text>
-                <v-icon icon="format_align_right" />
+                <v-icon icon="md:format_align_right" />
               </v-btn>
 
               <v-btn :value="4" text>
-                <v-icon icon="format_align_justify" />
+                <v-icon icon="md:format_align_justify" />
               </v-btn>
             </v-btn-toggle>
           </v-toolbar>

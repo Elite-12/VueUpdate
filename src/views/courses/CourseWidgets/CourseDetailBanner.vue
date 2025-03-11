@@ -34,7 +34,7 @@
                   </p>
                   <p class="white--text">
                     <span class="language layout align-start ma-0"
-                      ><v-icon class="cmr-8" icon="chat_bubble_outline" />{{
+                      ><v-icon class="cmr-8" icon="md:chat_bubble_outline" />{{
                         CourseData.courseDetail.language
                       }}</span
                     >
@@ -55,7 +55,7 @@
                       <v-dialog v-model="dialog" width="500" height="300">
                         <template v-slot:activator="{ on }">
                           <v-btn @click="on" icon>
-                            <v-icon icon="play_circle_filled" />
+                            <v-icon icon="md:play_circle_filled" />
                           </v-btn>
                         </template>
                         <iframe

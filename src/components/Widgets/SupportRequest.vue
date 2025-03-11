@@ -9,7 +9,7 @@
           <v-badge class="primary">250</v-badge>
         </span>
         <v-btn icon>
-          <v-icon class="grey--text" icon="visibility" />
+          <v-icon class="grey--text" icon="md:visibility" />
         </v-btn>
       </li>
       <li class="justify-space-between align-center">
@@ -18,7 +18,7 @@
           <v-badge class="warning">25</v-badge>
         </span>
         <v-btn icon>
-          <v-icon class="grey--text" icon="visibility" />
+          <v-icon class="grey--text" icon="md:visibility" />
         </v-btn>
       </li>
       <li class="justify-space-between align-center">
@@ -27,7 +27,7 @@
           <v-badge class="error">125</v-badge>
         </span>
         <v-btn icon>
-          <v-icon class="grey--text" icon="visibility" />
+          <v-icon class="grey--text" icon="md:visibility" />
         </v-btn>
       </li>
     </ul>

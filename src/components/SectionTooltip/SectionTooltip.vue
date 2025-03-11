@@ -4,7 +4,7 @@
     <v-tooltip v-model="open" top>
       <template v-slot:activator="{ on }">
         <a href="javascript:void(0);" @click="on">
-          <v-icon icon="ti-help-alt" />
+          <v-icon icon="md:ti-help-alt" />
         </a>
       </template>
       <span>{{ tooltip }}</span>

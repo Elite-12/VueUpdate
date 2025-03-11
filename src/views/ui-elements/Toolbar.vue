@@ -37,16 +37,16 @@
             <v-toolbar-title class="white--text">Title</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-btn icon>
-              <v-icon icon="search" />
+              <v-icon icon="md:search" />
             </v-btn>
             <v-btn icon>
-              <v-icon icon="apps" />
+              <v-icon icon="md:apps" />
             </v-btn>
             <v-btn icon>
-              <v-icon icon="refresh" />
+              <v-icon icon="md:refresh" />
             </v-btn>
             <v-btn icon>
-              <v-icon icon="more_vert" />
+              <v-icon icon="md:more_vert" />
             </v-btn>
           </v-toolbar>
         </app-card>
@@ -60,16 +60,16 @@
             <v-toolbar-title class="white--text" slot="extension">Title</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-btn icon>
-              <v-icon icon="search" />
+              <v-icon icon="md:search" />
             </v-btn>
             <v-btn icon>
-              <v-icon icon="apps" />
+              <v-icon icon="md:apps" />
             </v-btn>
             <v-btn icon>
-              <v-icon icon="refresh" />
+              <v-icon icon="md:refresh" />
             </v-btn>
             <v-btn icon>
-              <v-icon icon="more_vert" />
+              <v-icon icon="md:more_vert" />
             </v-btn>
           </v-toolbar>
         </app-card>

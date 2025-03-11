@@ -7,7 +7,7 @@
           <v-list v-for="(details, key) in list.courseDetail" :key="key">
             <v-list-item :to="`/${getCurrentAppLayoutHandler() + '/courses/courses-detail'}`">
               <v-list-item-action>
-                <v-icon icon="play_circle_filled" />
+                <v-icon icon="md:play_circle_filled" />
               </v-list-item-action>
               <template>
                 <v-list-item-title class="ma-0 layout row wrap justify-space-between">

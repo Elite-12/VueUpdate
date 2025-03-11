@@ -25,7 +25,7 @@
     >
       <template v-slot:activator="{ on }">
         <v-btn dark icon @click="on" class="ma-0">
-          <v-icon icon="more_vert" />
+          <v-icon icon="md:more_vert" />
         </v-btn>
       </template>
       <div class="dropdown-content">

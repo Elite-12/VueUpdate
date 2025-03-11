@@ -14,13 +14,13 @@
                 </router-link>
                 <template v-if="currentPage == 'shop'">
                   <v-btn fab dark small color="primary" class="shoppingCart-btn mt-2">
-                    <v-icon dark icon="shopping_cart" />
+                    <v-icon dark icon="md:shopping_cart" />
                   </v-btn>
                 </template>
 
                 <!-- Redirect to product edit page -->
                 <template v-if="currentPage == 'edit-product'">
-                  <v-icon dark class="delete-btn" @click="deleteDialog(details)" icon="delete" />
+                  <v-icon dark class="delete-btn" @click="deleteDialog(details)" icon="md:delete" />
                   <v-btn
                     fab
                     dark
@@ -29,7 +29,7 @@
                     class="edit-btn"
                     :to="`/${getCurrentAppLayoutHandler() + '/ecommerce/edit-detail/' + details.type + '/' + details.id}`"
                   >
-                    <v-icon dark icon="edit" />
+                    <v-icon dark icon="md:edit" />
                   </v-btn>
                 </template>
               </div>

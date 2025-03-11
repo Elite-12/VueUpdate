@@ -33,17 +33,17 @@
     </div>
     <div class="detail-head d-custom-flex justify-space-between">
       <v-btn fab icon class="grey--text ma-0" small @click="backToEmails">
-        <v-icon icon="keyboard_backspace" />
+        <v-icon icon="md:keyboard_backspace" />
       </v-btn>
       <ul class="list-inline">
         <li>
           <v-btn fab icon class="grey--text ma-0" small>
-            <v-icon icon="reply" />
+            <v-icon icon="md:reply" />
           </v-btn>
         </li>
         <li>
           <v-btn fab icon class="grey--text ma-0" small>
-            <v-icon icon="local_printshop" />
+            <v-icon icon="md:local_printshop" />
           </v-btn>
         </li>
       </ul>
@@ -87,12 +87,12 @@
           <ul class="list-inline">
             <li>
               <v-btn fab icon class="grey--text ma-0" small>
-                <v-icon icon="insert_drive_file" />
+                <v-icon icon="md:insert_drive_file" />
               </v-btn>
             </li>
             <li>
               <v-btn fab icon class="grey--text ma-0" small>
-                <v-icon icon="cloud_circle" />
+                <v-icon icon="md:cloud_circle" />
               </v-btn>
             </li>
           </ul>
@@ -119,7 +119,7 @@
         <v-text-field label="Reply" solo class="mr-4"></v-text-field>
         <v-btn color="primary" class="ma-0 white--text" large>
           Send
-          <v-icon right dark icon="send" />
+          <v-icon right dark icon="md:send" />
         </v-btn>
       </div>
     </PerfectScrollbar>

@@ -19,7 +19,7 @@
         >
           <v-list-item>
             <v-list-item-action class="my-0 mr-1">
-              <v-icon icon="feature.icon" />
+              <v-icon :icon="feature.icon" />
             </v-list-item-action>
             <template class="py-0">
               <v-list-item-title

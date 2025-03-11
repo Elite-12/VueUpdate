@@ -29,18 +29,18 @@
           <p class="fs-14">
             <v-chip small class="mr-2"> Active: </v-chip>
             <v-chip small pill class="white--text" :color="ad.active ? 'green' : 'red'">
-              <v-icon x-small v-if="ad.active" icon="check" />
-              <v-icon x-small v-else icon="block" />
+              <v-icon x-small v-if="ad.active" icon="md:check" />
+              <v-icon x-small v-else icon="md:block" />
             </v-chip>
           </p>
         </div>
         <div class="action-btn text-right">
           <div>
             <v-btn fab dark x-small color="primary" @click="openDialog(ad)">
-              <v-icon dark small icon="edit" />
+              <v-icon dark small icon="md:edit" />
             </v-btn>
             <v-btn class="mt-2" fab dark x-small color="error" @click="confirm(ad)">
-              <v-icon dark small icon="delete" />
+              <v-icon dark small icon="md:delete" />
             </v-btn>
           </div>
         </div>

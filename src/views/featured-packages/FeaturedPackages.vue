@@ -48,7 +48,7 @@
                       @click="edit(f_package)"
                       :disabled="!$can(UPDATE, RESOURCE)"
                     >
-                      <v-icon small icon="edit" />
+                      <v-icon small icon="md:edit" />
                     </v-btn>
                     <v-btn
                       fab
@@ -57,7 +57,7 @@
                       @click.stop="openConfirmationDialog(f_package)"
                       :disabled="!$can(DELETE, RESOURCE)"
                     >
-                      <v-icon small icon="delete" />
+                      <v-icon small icon="md:delete" />
                     </v-btn>
                   </app-card>
                 </v-layout>

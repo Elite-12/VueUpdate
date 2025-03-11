@@ -14,7 +14,7 @@
               icon
               small
             >
-              <v-icon dark icon="menu" />
+              <v-icon dark icon="md:menu" />
             </v-btn>
             <div class="media align-items-center">
               <div class="media-left mr-4 pos-relative">
@@ -44,15 +44,15 @@
           </div>
           <div class="chat-head-right">
             <v-btn icon color="white" class="video-icon primary mr-3">
-              <v-icon icon="videocam" />
+              <v-icon icon="md:videocam" />
             </v-btn>
             <v-btn icon color="white" class="video-icon primary mr-3">
-              <v-icon icon="phone" />
+              <v-icon icon="md:phone" />
             </v-btn>
             <v-menu offset-y origin="left left" transition="scale-transition" left>
               <template v-slot:activator="{ on }">
                 <v-btn @click="on" icon>
-                  <v-icon icon="more_vert" />
+                  <v-icon icon="md:more_vert" />
                 </v-btn>
               </template>
               <v-list>
@@ -128,10 +128,10 @@
               class="mr-4"
             ></v-text-field>
             <v-btn fab small>
-              <v-icon dark icon="attachment" />
+              <v-icon dark icon="md:attachment" />
             </v-btn>
             <v-btn fab class="chat-send-btn ml-4" dark small color="primary" @click="sendMessage">
-              <v-icon dark icon="send" />
+              <v-icon dark icon="md:send" />
             </v-btn>
           </div>
         </div>

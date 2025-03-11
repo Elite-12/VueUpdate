@@ -30,13 +30,13 @@
             <div class="mail-action w-20 text-right">
               <div>
                 <v-btn fab dark small class="mr-1" color="primary" @click="onViewEmail(email)">
-                  <v-icon icon="visibility" />
+                  <v-icon icon="md:visibility" />
                 </v-btn>
                 <v-btn fab dark small class="mr-1" color="error" @click="onDeleteEmail(email)">
-                  <v-icon icon="delete" />
+                  <v-icon icon="md:delete" />
                 </v-btn>
                 <v-btn fab dark small color="success" @click="showReplyTextBox(email)">
-                  <v-icon icon="reply" />
+                  <v-icon icon="md:reply" />
                 </v-btn>
               </div>
             </div>

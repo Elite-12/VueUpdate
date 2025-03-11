@@ -44,7 +44,7 @@
               <v-list>
                 <v-list-item v-for="item in list2" v-bind:key="item.title" @click="">
                   <v-list-item-action>
-                    <v-icon v-if="item.icon" color="orange" icon="star" />
+                    <v-icon v-if="item.icon" color="orange" icon="md:star" />
                   </v-list-item-action>
                   <template>
                     <v-list-item-title v-text="item.title"></v-list-item-title>

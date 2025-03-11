@@ -11,7 +11,7 @@
         v-model="search"
       ></v-text-field>
       <v-btn icon @click="getAdmins">
-        <v-icon icon="search" />
+        <v-icon icon="md:search" />
       </v-btn>
     </v-card-title>
 
@@ -40,7 +40,7 @@
                 :disabled="!$can(Permissions.actions.update, Permissions.resources.admin)"
                 @click.stop="showAdminDialog(item)"
               >
-                <v-icon small icon="edit" />
+                <v-icon small icon="md:edit" />
               </v-btn>
 
               <v-btn
@@ -50,7 +50,7 @@
                 :disabled="!$can(Permissions.actions.delete, Permissions.resources.admin)"
                 @click.stop="showDeleteDialog(item)"
               >
-                <v-icon small icon="delete" />
+                <v-icon small icon="md:delete" />
               </v-btn>
             </template>
           </v-data-table>

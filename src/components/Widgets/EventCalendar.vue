@@ -56,10 +56,10 @@
                       <v-list-item-action>
                         <v-list-item-action-text class="d-custom-flex">
                           <v-btn small icon class="ma-1" @click="onRescheduleEvent(event, key)">
-                            <v-icon class="primary--text font-md" icon="edit" />
+                            <v-icon class="primary--text font-md" icon="md:edit" />
                           </v-btn>
                           <v-btn small icon class="ma-1" @click="onDeleteEvent(event, key)">
-                            <v-icon class="error--text font-md" icon="delete" />
+                            <v-icon class="error--text font-md" icon="md:delete" />
                           </v-btn>
                         </v-list-item-action-text>
                       </v-list-item-action>

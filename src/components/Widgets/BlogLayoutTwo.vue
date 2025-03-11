@@ -16,14 +16,14 @@
     </v-card-text>
     <v-card-actions class="px-6 py-2">
       <v-btn icon class="mr-4">
-        <v-icon color="success" icon="share" />
+        <v-icon color="success" icon="md:share" />
       </v-btn>
       <v-btn icon>
-        <v-icon color="error" icon="favorite" />
+        <v-icon color="error" icon="md:favorite" />
       </v-btn>
       <v-spacer></v-spacer>
       <v-btn icon>
-        <v-icon class="grey--text" icon="more_horiz" />
+        <v-icon class="grey--text" icon="md:more_horiz" />
       </v-btn>
     </v-card-actions>
   </div>

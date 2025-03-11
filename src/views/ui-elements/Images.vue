@@ -166,7 +166,7 @@
                 <v-divider v-if="item.divider" :key="i"></v-divider>
                 <v-list-item v-else :key="item.title" @click="">
                   <v-list-item-action>
-                    <v-icon icon="item.icon" />
+                    <v-icon :icon="item.icon" />
                   </v-list-item-action>
                   <v-list-item-title>{{ item.title }}</v-list-item-title>
                 </v-list-item>

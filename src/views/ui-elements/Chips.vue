@@ -21,7 +21,7 @@
           <v-chip class="ma-2" outlined color="secondary">Outline</v-chip>
           <v-chip class="ma-2" outlined color="primary">Colored</v-chip>
           <v-chip class="ma-2" outlined color="red">
-            <v-icon left class="error--text font-sm" icon="build" />Icon
+            <v-icon left class="error--text font-sm" icon="md:build" />Icon
           </v-chip>
         </app-card>
       </v-layout>
@@ -29,7 +29,7 @@
         <app-card :heading="$t('message.label')" colClasses="xs12 md6">
           <v-chip class="ma-2" label>Label</v-chip>
           <v-chip class="ma-2" label color="pink" text-color="white">
-            <v-icon left icon="label" />Tags
+            <v-icon left icon="md:label" />Tags
           </v-chip>
           <v-chip class="ma-2" label outlined color="red">Outline</v-chip>
         </app-card>
@@ -50,17 +50,17 @@
         <app-card :heading="$t('message.icon')" colClasses="xs12 md6">
           <v-chip class="ma-2" color="primary" text-color="white">
             <v-avatar>
-              <v-icon icon="account_circle" />
+              <v-icon icon="md:account_circle" />
             </v-avatar>
             Ranee
           </v-chip>
           <v-chip class="ma-2" color="warning" text-color="white"
             >Premium
-            <v-icon right icon="star" />
+            <v-icon right icon="md:star" />
           </v-chip>
           <v-chip class="ma-2" color="error" text-color="white">
             1 Year
-            <v-icon right icon="cake" />
+            <v-icon right icon="md:cake" />
           </v-chip>
           <v-chip class="ma-2" color="info" text-color="white">
             <v-avatar class="green darken-4">1</v-avatar>
@@ -68,7 +68,7 @@
           </v-chip>
           <v-chip class="ma-2" close color="success" text-color="white">
             <v-avatar>
-              <v-icon icon="check_circle" />
+              <v-icon icon="md:check_circle" />
             </v-avatar>
             Confirmed
           </v-chip>

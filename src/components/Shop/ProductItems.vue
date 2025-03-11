@@ -4,7 +4,7 @@
       <div class="shop-header d-custom-flex">
         <div class="ham-menu-sm d-none">
           <v-btn text icon class="mr-3 my-0" @click="toggleEcommerceSidebar">
-            <v-icon class="grey--text" icon="menu" />
+            <v-icon class="grey--text" icon="md:menu" />
           </v-btn>
         </div>
         <div class="app-selectbox-sm">

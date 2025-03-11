@@ -34,22 +34,22 @@
               <ul class="d-custom-flex list-unstyled icon-wrap">
                 <li v-show="mail.type !== 'draft'">
                   <v-btn small icon>
-                    <v-icon icon="archive" />
+                    <v-icon icon="md:archive" />
                   </v-btn>
                 </li>
                 <li>
                   <v-btn small icon @click="deleteEmail(mail)">
-                    <v-icon icon="delete" />
+                    <v-icon icon="md:delete" />
                   </v-btn>
                 </li>
                 <li v-show="mail.type !== 'draft'">
                   <v-btn small icon @click="markAsStar(mail)">
-                    <v-icon :icon="mail.starred ? 'star' : 'star_border'" />
+                    <v-icon :icon="mail.starred ? 'md:star' : 'md:star_border'" />
                   </v-btn>
                 </li>
                 <li>
                   <v-btn small icon>
-                    <v-icon icon="more_horiz" />
+                    <v-icon icon="md:more_horiz" />
                   </v-btn>
                 </li>
               </ul>

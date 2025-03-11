@@ -28,10 +28,10 @@
               @click="updateEmployeeStatus(item)"
               v-if="item.status !== 1"
             >
-              <v-icon color="grey" icon="check" />
+              <v-icon color="grey" icon="md:check" />
             </v-btn>
             <v-btn icon small class="ma-0" @click="onDeleteEmployePayroll(item)">
-              <v-icon color="grey" icon="clear" />
+              <v-icon color="grey" icon="md:clear" />
             </v-btn>
           </td>
         </tr>

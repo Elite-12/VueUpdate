@@ -58,7 +58,7 @@
               @click.stop="openCategoryDialog(category)"
               :disabled="!$can(UPDATE, RESOURCE)"
             >
-              <v-icon small icon="edit" />
+              <v-icon small icon="md:edit" />
             </v-btn>
             <v-btn
               class="mr-2"
@@ -68,7 +68,7 @@
               @click.stop="openDeleteDialog(category)"
               :disabled="!$can(DELETE, RESOURCE)"
             >
-              <v-icon small icon="delete" />
+              <v-icon small icon="md:delete" />
             </v-btn>
           </td>
         </tr>

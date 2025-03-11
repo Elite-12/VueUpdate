@@ -39,7 +39,7 @@
                   ]"
                   @click="changeSort(header.value)"
                 >
-                  <v-icon icon="arrow_upward" />
+                  <v-icon icon="md:arrow_upward" />
                   {{ header.text }}
                 </th>
               </tr>

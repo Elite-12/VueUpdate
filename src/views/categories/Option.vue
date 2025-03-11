@@ -120,7 +120,7 @@
                 color="primary"
                 @click.stop="openOptionValueDialog(optionValue)"
               >
-                <v-icon small icon="edit" />
+                <v-icon small icon="md:edit" />
               </v-btn>
               <v-btn
                 fab
@@ -129,7 +129,7 @@
                 @click.stop="openConfirmationDialog(optionValue)"
                 class="mx-2"
               >
-                <v-icon small icon="delete" />
+                <v-icon small icon="md:delete" />
               </v-btn>
             </td>
           </tr>
@@ -145,7 +145,7 @@
         color="primary"
         @click.stop="openOptionValueDialog(selectedOptionValue, true)"
       >
-        <v-icon small icon="add" />
+        <v-icon small icon="md:add" />
       </v-btn>
 
       <!--   Add to existing option   -->
@@ -157,7 +157,7 @@
         color="primary"
         @click.stop="openOptionValueDialog(selectedOptionValue, true)"
       >
-        <v-icon small icon="add" />
+        <v-icon small icon="md:add" />
       </v-btn>
     </app-card>
     <v-card-actions>

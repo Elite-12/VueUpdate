@@ -84,7 +84,7 @@
               <v-btn class="px-4" color="info">Explore</v-btn>
               <v-spacer></v-spacer>
               <v-btn icon @click.native="show = !show">
-                <v-icon :icon="show ? 'keyboard_arrow_down' : 'keyboard_arrow_up'" />
+                <v-icon :icon="show ? 'md:keyboard_arrow_down' : 'md:keyboard_arrow_up'" />
               </v-btn>
             </v-card-actions>
             <v-slide-y-transition>

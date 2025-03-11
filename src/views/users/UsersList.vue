@@ -11,7 +11,7 @@
         v-model="search"
       ></v-text-field>
       <v-btn icon @click="getUsers">
-        <v-icon icon="search" />
+        <v-icon icon="md:search" />
       </v-btn>
       <v-chip> Country:</v-chip>
       <div class="float-right">

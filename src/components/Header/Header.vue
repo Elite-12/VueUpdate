@@ -32,17 +32,17 @@
         <!--				<v-text-field text solo prepend-icon="search" :placeholder="$t('message.search')" class="search-bar"></v-text-field>-->
         <!--				<div class="mobile-search d-none">-->
         <!--					<v-btn text icon  small class="mobile-search-btn" @click="toggleSearchForm">-->
-        <!--						<v-icon class="font-md">search</v-icon>-->
+        <!--						<v-icon class="font-md">md:search</v-icon>-->
         <!--					</v-btn>-->
         <!--				</div>-->
       </div>
       <div class="navbar-right">
         <!--				<v-btn class="v-step-2 mr-2 upgrade-btn" color="primary" tag="link" @click="sidebarPath('/pages/pricing-1')">{{ $t('message.pricing') }}</v-btn>-->
         <!--				<v-btn icon large @click="toggleFullScreen" class="full-screen ma-0">-->
-        <!--					<v-icon color="grey">fullscreen</v-icon>-->
+        <!--					<v-icon color="grey">md:fullscreen</v-icon>-->
         <!--				</v-btn>-->
         <!--				<v-btn class="ma-0" icon large @click.stop="chatSidebar = !chatSidebar">-->
-        <!--					<v-icon color="grey">forum</v-icon>-->
+        <!--					<v-icon color="grey">md:forum</v-icon>-->
         <!--				</v-btn>-->
         <!--				<notifications></notifications>-->
         <!--				<cart :horizontal="horizontal"></cart>-->

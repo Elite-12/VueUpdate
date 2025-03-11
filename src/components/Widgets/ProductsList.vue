@@ -20,7 +20,7 @@
         <div class="action-btn text-right">
           <div>
             <v-btn fab dark small color="primary">
-              <v-icon dark icon="shopping_cart" />
+              <v-icon dark icon="md:shopping_cart" />
             </v-btn>
           </div>
         </div>

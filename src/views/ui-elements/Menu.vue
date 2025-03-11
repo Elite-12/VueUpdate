@@ -31,7 +31,7 @@
           <v-menu bottom right>
             <template v-slot:activator="{ on }">
               <v-btn icon @click="on">
-                <v-icon icon="more_vert" />
+                <v-icon icon="md:more_vert" />
               </v-btn>
             </template>
             <v-list>
