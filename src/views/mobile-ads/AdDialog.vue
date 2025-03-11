@@ -112,7 +112,6 @@
                           ref="menu"
                           v-model="menu"
                           :close-on-content-click="false"
-                          :return-value.sync="ad.ends_at"
                           transition="scale-transition"
                           offset-y
                           min-width="auto"
@@ -123,10 +122,10 @@
                               label="Ends"
                               prepend-icon="mdi-calendar"
                               readonly
-                              v-bind="props"
+                              v-bind="props"                             
                             ></v-text-field>
                           </template>
-                          <v-date-picker v-model="ad.ends_at" no-title scrollable>
+                          <v-date-picker v-model="formattedDate" no-title scrollable>
                             <v-spacer></v-spacer>
                             <v-btn text color="primary" @click="menu = false"> Cancel </v-btn>
                             <v-btn text color="primary" @click="$refs.menu.save(ad.ends_at)">
@@ -201,6 +200,15 @@ export default {
     screens() {
       return this.$store.getters['mobileAds/adPages']
     },
+    
+    formattedDate: {
+      get() {
+        return this.ad.ends_at ? new Date(this.ad.ends_at) : null;
+      },
+      set(value) {
+        this.ad.ends_at = value ? value.toISOString().split('T')[0] : null;
+      }
+    }
   },
 
   methods: {
