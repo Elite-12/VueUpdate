@@ -23,7 +23,7 @@
           >
           </v-file-input>
           <v-btn class="mb-30" fab x-small color="error" @click.stop="clearImageInput">
-            <v-icon small icon="md:delete" />
+            <v-icon small>md:delete</v-icon>
           </v-btn>
         </v-card-title>
 
