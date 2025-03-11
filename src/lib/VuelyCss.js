@@ -1,6 +1,7 @@
 /* ======= All App File Include Here ======= */
 // Vuetify Css
-import 'vuetify/dist/vuetify.css'
+// import 'vuetify/dist/vuetify.css'
+import 'vuetify/styles'
 
 // Editor Css
 import 'vue-wysiwyg/dist/vueWysiwyg.css'
@@ -45,4 +46,5 @@ import 'vue3-perfect-scrollbar/style.css'
 import '../assets/webfont/cryptocoins.css'
 
 // Global Scss File
-import '../assets/scss/_style.scss'
+// import '../assets/scss/_style.scss'
+import '../assets/css/style.css'

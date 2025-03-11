@@ -1,6 +1,7 @@
 import { createVuetify } from 'vuetify'
 
-import 'vuetify/dist/vuetify.min.css'
+import 'vuetify/styles'
+// import 'vuetify/dist/vuetify.min.css'
 
 import * as components from 'vuetify/components'
 import { VTreeview } from 'vuetify/labs/VTreeview'
@@ -11,12 +12,6 @@ import { aliases as mdiAliases, mdi } from 'vuetify/iconsets/mdi'
 // store
 import { store } from '../store/store'
 
-import 'vuetify/styles'
-// import '@/assets/scss/_style.scss'
-// import '@/assets/scss/_mixin.scss'
-
-
-import '../assets/scss/_style.scss'
 
 export default createVuetify({
   components: {
