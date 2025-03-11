@@ -16,30 +16,29 @@
         <v-tab :value="1">{{ $t('message.general') }}</v-tab>
         <v-tab :value="2">{{ $t('message.advance') }}</v-tab>
       </v-tabs>
-      <v-tabs-window v-model="tab">
-        <v-tabs-window-item :value="1">
-          <template>
+      <v-window v-model="tab">
+        <v-window-item :value="1">
             <PerfectScrollbar class="customizer-scroll-area" :options="settings">
               <div class="inner-toolbar">
                 <theme-provider></theme-provider>
                 <sidebar-filters-provider></sidebar-filters-provider>
                 <header-filters-provider v-if="isHeaderFilterAvaiable()"></header-filters-provider>
-                <v-col>
-                  <p>{{ $t('message.routerAnimation') }}</p>
-                  <v-select
-                    outlined
-                    :items="routerAnimations"
-                    label="Select Animation"
-                    :value="selectedRouterAnimation"
-                    @change="changeRouterAnimation($event)"
-                  ></v-select>
-                </v-col>
+                <v-row>
+                  <v-col>
+                    <p>{{ $t('message.routerAnimation') }}</p>
+                    <v-select
+                      outlined
+                      v-model="selectedRouterAnimation"
+                      :items="routerAnimations"
+                      label="Select Animation"
+                      @update:model-value="selectedRouterAnimation"
+                    ></v-select>
+                  </v-col>
+                </v-row>
               </div>
             </PerfectScrollbar>
-          </template>
-        </v-tabs-window-item>
-        <v-tabs-window-item :value="2">
-          <template>
+        </v-window-item>
+        <v-window-item :value="2">
             <PerfectScrollbar class="customizer-scroll-area" :options="settings">
               <div class="inner-toolbar sidebar-overlay-color">
                 <v-list class="mb-5 theme-layouts">
@@ -55,29 +54,29 @@
                   <v-list-item v-if="isSidebarAvailable()">
                     <template class="py-0">
                       <v-checkbox
+                        v-modal="collapseSidebar"
                         :label="$t('message.collapseSidebar')"
                         color="primary"
                         @change="emitCollapseSidebar"
-                        :input-value="collapseSidebar"
                       ></v-checkbox>
                     </template>
                   </v-list-item>
                   <v-list-item>
                     <template class="py-0">
                       <v-checkbox
+                        v-modal="rtlLayout"
                         :label="$t('message.rtlLayout')"
                         color="primary"
                         @change="emitRtlLayout($event)"
-                        :input-value="rtlLayout"
                       ></v-checkbox>
                     </template>
                   </v-list-item>
                   <v-list-item v-if="isSidebarAvailable()">
                     <v-checkbox
+                      v-modal="backgroundImage"
                       :label="$t('message.backgroundImage')"
                       color="primary"
                       @change="emitEnableBackgroundImage"
-                      :input-value="backgroundImage"
                     ></v-checkbox>
                   </v-list-item>
                 </v-list>
@@ -105,9 +104,9 @@
                 </div>
               </div>
             </PerfectScrollbar>
-          </template>
-        </v-tabs-window-item>
-      </v-tabs-window>
+        </v-window-item>
+      </v-window>
+
     </v-navigation-drawer>
     <div class="app-customizer">
       <a class="customizer-toggle primary v-step-4" href="javascript:;" @click="toggleCustomizer">
