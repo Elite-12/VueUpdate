@@ -84,7 +84,7 @@
                       @click.stop="openConfirmationDialog"
                       :disabled="!$can(DELETE, RESOURCE)"
                     >
-                      <v-icon small icon="delete" />
+                      <v-icon small icon="md:delete" />
                       Delete
                     </v-btn>
                   </div>

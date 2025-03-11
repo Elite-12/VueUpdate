@@ -23,7 +23,7 @@
           >
           </v-file-input>
           <v-btn class="mb-30" fab x-small color="error" @click.stop="clearImageInput">
-            <v-icon small icon="delete" />
+            <v-icon small icon="md:delete" />
           </v-btn>
         </v-card-title>
 
@@ -42,7 +42,7 @@
               color="primary"
               @click.stop="openCategoryNameDialog"
             >
-              <v-icon small icon="edit" />
+              <v-icon small icon="md:edit" />
             </v-btn>
           </h3>
           <h3 class="fw-bold">{{ category.name_ar }}</h3>
@@ -216,7 +216,7 @@
                 @click.stop="openOptionDialog(option, index)"
                 :disabled="loading || !$can(UPDATE, RESOURCE)"
               >
-                <v-icon small icon="edit" />
+                <v-icon small icon="md:edit" />
               </v-btn>
               <v-btn
                 fab
@@ -226,7 +226,7 @@
                 class="mx-2"
                 :disabled="loading || !$can(UPDATE, RESOURCE)"
               >
-                <v-icon small icon="delete" />
+                <v-icon small icon="md:delete" />
               </v-btn>
             </td>
           </tr>
@@ -240,7 +240,7 @@
         @click.stop="openOptionDialog(null, null, true)"
         :disabled="loading || !$can(UPDATE, RESOURCE)"
       >
-        <v-icon small icon="add" />
+        <v-icon small icon="md:add" />
       </v-btn>
     </app-card>
 
