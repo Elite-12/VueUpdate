@@ -98,7 +98,7 @@
             color="primary"
             @click.stop="parentDialog = true"
           >
-            <v-icon small icon="edit" />
+            <v-icon small icon="md:edit" />
           </v-btn>
           <v-tooltip bottom>
             <template #activator="{ props }">
@@ -110,7 +110,7 @@
                 class="mx-2"
                 v-bind="props"
               >
-                <v-icon small icon="home" />
+                <v-icon small icon="md:home" />
               </v-btn>
             </template>
             <span>Make this main category (has no parent)</span>

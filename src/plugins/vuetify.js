@@ -5,7 +5,8 @@ import 'vuetify/dist/vuetify.min.css'
 import * as components from 'vuetify/components'
 import { VTreeview } from 'vuetify/labs/VTreeview'
 import * as directives from 'vuetify/directives'
-import { aliases, md } from 'vuetify/iconsets/md'
+import { aliases as mdAliases, md } from 'vuetify/iconsets/md'
+import { aliases as mdiAliases, mdi } from 'vuetify/iconsets/mdi'
 
 // store
 import { store } from '../store/store'
@@ -30,11 +31,9 @@ export default createVuetify({
     },
   },
   icons: {
-    defaultSet: 'md',
+    defaultSet: 'mdi',
     
-    aliases,
-    sets: {
-      md,
-    },
+    aliases: { ...mdAliases, ...mdiAliases },
+    sets: { md, mdi },
   },
 })
