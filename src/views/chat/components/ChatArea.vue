@@ -50,8 +50,8 @@
               <v-icon icon="md:phone" />
             </v-btn>
             <v-menu offset-y origin="left left" transition="scale-transition" left>
-              <template v-slot:activator="{ on }">
-                <v-btn @click="on" icon>
+              <template v-slot:activator="{ props }">
+                <v-btn v-bind="props" icon>
                   <v-icon icon="md:more_vert" />
                 </v-btn>
               </template>

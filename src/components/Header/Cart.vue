@@ -9,8 +9,8 @@
     transition="slide-y-transition"
     nudge-top="-20"
   >
-    <template v-slot:activator="{ on }">
-      <v-btn text icon @click="on">
+    <template v-slot:activator="{ props }">
+      <v-btn text icon v-bind="props">
         <v-badge right overlap>
           <span slot="badge">{{ cart.length }}</span>
           <i class="zmdi grey--text zmdi-shopping-cart zmdi-hc-fw font-lg"></i>

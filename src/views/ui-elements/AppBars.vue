@@ -30,8 +30,8 @@
             </v-btn>
 
             <v-menu left bottom>
-              <template v-slot:activator="{ on }">
-                <v-btn icon @click="on">
+              <template v-slot:activator="{ props }">
+                <v-btn icon v-bind="props">
                   <v-icon icon="mdi-dots-vertical" />
                 </v-btn>
               </template>

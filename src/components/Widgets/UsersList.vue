@@ -20,8 +20,8 @@
           </template>
           <v-list-item-action>
             <v-menu origin="center center" transition="scale-transition" bottom>
-              <template v-slot:activator="{ on }">
-                <v-btn @click="on" icon>
+              <template v-slot:activator="{ props }">
+                <v-btn v-bind="props" icon>
                   <v-icon icon="md:more_horiz" />
                 </v-btn>
               </template>
@@ -50,8 +50,8 @@
     ></delete-confirmation-dialog>
     <hr class="ma-0" />
     <v-dialog v-model="dialog2" max-width="500px">
-      <template v-slot:activator="{ on }">
-        <v-btn color="primary" small class="ma-4" @click="on" @click="updateUserModal">{{
+      <template v-slot:activator="{ props }">
+        <v-btn color="primary" small class="ma-4" v-bind="props" @click="updateUserModal">{{
           $t('message.addNew')
         }}</v-btn>
       </template>

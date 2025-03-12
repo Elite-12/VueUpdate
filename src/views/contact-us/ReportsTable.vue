@@ -21,7 +21,7 @@
       ></v-select>
       <v-menu offset-y>
         <template v-slot:activator="{ props }">
-          <v-btn icon v-bind="props" @click="on">
+          <v-btn icon v-bind="props">
             <v-icon icon="mdi-menu-down-outline" />
           </v-btn>
         </template>

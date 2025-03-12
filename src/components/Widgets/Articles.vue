@@ -20,8 +20,8 @@
           <td class="fw-semi-bold">{{ item.visitors }}</td>
           <td>
             <v-menu origin="center center" transition="scale-transition" left>
-              <template v-slot:activator="{ on }">
-                <v-btn @click="on" icon>
+              <template v-slot:activator="{ props }">
+                <v-btn v-bind="props" icon>
                   <v-icon icon="md:more_vert" />
                 </v-btn>
               </template>

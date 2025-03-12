@@ -5,8 +5,8 @@
       <v-layout row wrap>
         <app-card :heading="$t('message.activator')" colClasses="xs12 sm4 md4">
           <v-menu offset-y>
-            <template v-slot:activator="{ on }">
-              <v-btn color="primary" dark @click="on">Dropdown</v-btn>
+            <template v-slot:activator="{ props }">
+              <v-btn color="primary" dark v-bind="props">Dropdown</v-btn>
             </template>
             <v-list>
               <v-list-item v-for="item in list1" :key="item.title" @click="">
@@ -17,8 +17,8 @@
         </app-card>
         <app-card :heading="$t('message.hover')" colClasses="xs12 sm4 md4">
           <v-menu open-on-hover top offset-y>
-            <template v-slot:activator="{ on }">
-              <v-btn color="error" dark @click="on">Dropdown</v-btn>
+            <template v-slot:activator="{ props }">
+              <v-btn color="error" dark v-bind="props">Dropdown</v-btn>
             </template>
             <v-list>
               <v-list-item v-for="item in list1" :key="item.title" @click="">
@@ -29,8 +29,8 @@
         </app-card>
         <app-card :heading="$t('message.menus')" colClasses="xs12 sm4 md4">
           <v-menu bottom right>
-            <template v-slot:activator="{ on }">
-              <v-btn icon @click="on">
+            <template v-slot:activator="{ props }">
+              <v-btn icon v-bind="props">
                 <v-icon icon="md:more_vert" />
               </v-btn>
             </template>

@@ -7,8 +7,8 @@
     transition="slide-y-transition"
     nudge-top="-10"
   >
-    <template v-slot:activator="{ on }">
-      <v-btn icon large @click="on" class="user-block-wrap ml-3 d-none">
+    <template v-slot:activator="{ props }">
+      <v-btn icon large v-bind="props" class="user-block-wrap ml-3 d-none">
         <img
           src="/static/avatars/user-13.jpg"
           alt="avatar"

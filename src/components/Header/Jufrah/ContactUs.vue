@@ -8,8 +8,8 @@
     nudge-top="-10"
     class="v-step-3"
   >
-    <template v-slot:activator="{ on }">
-      <v-btn text icon @click="on">
+    <template v-slot:activator="{ props }">
+      <v-btn text icon v-bind="props">
         <v-badge
           right
           overlap

@@ -23,8 +23,8 @@
       nudge-right="0"
       transition="slide-y-transition"
     >
-      <template v-slot:activator="{ on }">
-        <v-btn dark icon @click="on" class="ma-0">
+      <template v-slot:activator="{ props }">
+        <v-btn dark icon v-bind="props" class="ma-0">
           <v-icon icon="md:more_vert" />
         </v-btn>
       </template>

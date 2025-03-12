@@ -8,8 +8,8 @@
     transition="slide-y-transition"
     nudge-top="-10"
   >
-    <template v-slot:activator="{ on }">
-      <v-btn class="notification-icon ma-0" @click="on" icon large>
+    <template v-slot:activator="{ props }">
+      <v-btn class="notification-icon ma-0" v-bind="props" icon large>
         <i
           class="zmdi grey--text zmdi-notifications-active animated infinite wobble zmdi-hc-fw font-lg"
         ></i>

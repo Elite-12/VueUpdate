@@ -14,8 +14,8 @@
           <v-btn class="ma-2" color="success" @click.stop="dialog2 = true">Open Dialog 2</v-btn>
           <v-btn class="ma-2" color="error" @click.stop="dialog3 = true">Open Dialog 3</v-btn>
           <v-menu bottom offset-y>
-            <template v-slot:activator="{ on }">
-              <v-btn color="warning" @click="on">A Menu</v-btn>
+            <template v-slot:activator="{ props }">
+              <v-btn color="warning" v-bind="props">A Menu</v-btn>
             </template>
             <v-list>
               <v-list-item v-for="(item, i) in items" :key="i" @click="">
@@ -41,8 +41,8 @@
                 <v-toolbar-items>
                   <v-btn dark text @click.native="dialog = false">Save</v-btn>
                   <v-menu bottom right offset-y>
-                    <template v-slot:activator="{ on }">
-                      <v-btn @click="on" dark icon>
+                    <template v-slot:activator="{ props }">
+                      <v-btn v-bind="props" dark icon>
                         <v-icon icon="md:more_vert" />
                       </v-btn>
                     </template>
@@ -59,8 +59,8 @@
                   >Open Dialog 2</v-btn
                 >
                 <v-tooltip right>
-                  <template v-slot:activator="{ on }">
-                    <v-btn color="primary" @click="on">Tool Tip Activator</v-btn>
+                  <template v-slot:activator="{ props }">
+                    <v-btn color="primary" v-bind="props">Tool Tip Activator</v-btn>
                   </template>
                   Tool Tip
                 </v-tooltip>
@@ -146,8 +146,8 @@
                 <span>Dialog 3</span>
                 <v-spacer></v-spacer>
                 <v-menu bottom left>
-                  <template v-slot:activator="{ on }">
-                    <v-btn icon @click="on">
+                  <template v-slot:activator="{ props }">
+                    <v-btn icon v-bind="props">
                       <v-icon icon="md:more_vert" />
                     </v-btn>
                   </template>
@@ -195,8 +195,8 @@
             <p>Example of a dialog with scrollable content.</p>
           </div>
           <v-dialog v-model="dialog5" scrollable max-width="300px">
-            <template v-slot:activator="{ on }">
-              <v-btn color="warning" dark @click="on">Open Dialog</v-btn>
+            <template v-slot:activator="{ props }">
+              <v-btn color="warning" dark v-bind="props">Open Dialog</v-btn>
             </template>
             <v-card>
               <v-card-title>Select Country</v-card-title>

@@ -8,8 +8,8 @@
     nudge-top="-10"
     class="v-step-3"
   >
-    <template v-slot:activator="{ on }">
-      <v-btn icon large @click="on" class="ml-2">
+    <template v-slot:activator="{ props }">
+      <v-btn icon large v-bind="props" class="ml-2">
         <img class="img-responsive" :src="`/static/flag-icons/${selectedCountry.icon}.png`" />
       </v-btn>
     </template>
@@ -41,7 +41,6 @@ export default {
   methods: {
     changeCountry(country) {
       this.$store.dispatch('changeCountry', country)
-
       // Reload page
       this.$router.go(0)
     },
