@@ -26,41 +26,134 @@
 		},
 		methods: {
 			changeTheme(theme) {
+				console.log('this.$vuetify.theme.themes.light=======',this.$vuetify.theme.themes.light)
+				console.log('theme.theme=======', theme.theme)
 				switch (theme.id) {
 					case 1:
 						this.$store.dispatch("changeTheme", theme);
-						this.$vuetify.theme.themes.light = theme.theme;
-						this.$vuetify.theme.themes.dark = theme.theme;						
+						this.$vuetify.theme.themes.light.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.light.error = theme.theme.error;
+						this.$vuetify.theme.themes.light.info = theme.theme.info;
+						this.$vuetify.theme.themes.light.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.light.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.light.success = theme.theme.success;
+						this.$vuetify.theme.themes.light.warning = theme.theme.warning;
+						
+						this.$vuetify.theme.themes.dark.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.dark.error = theme.theme.error;
+						this.$vuetify.theme.themes.dark.info = theme.theme.info;
+						this.$vuetify.theme.themes.dark.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.dark.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.dark.success = theme.theme.success;
+						this.$vuetify.theme.themes.dark.warning = theme.theme.warning;
 						break;
 					case 2:
 						this.$store.dispatch("changeTheme", theme);
-						this.$vuetify.theme.themes.light = theme.theme;
-						this.$vuetify.theme.themes.dark = theme.theme;						
+						this.$vuetify.theme.themes.light.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.light.error = theme.theme.error;
+						this.$vuetify.theme.themes.light.info = theme.theme.info;
+						this.$vuetify.theme.themes.light.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.light.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.light.success = theme.theme.success;
+						this.$vuetify.theme.themes.light.warning = theme.theme.warning;
+						
+						this.$vuetify.theme.themes.dark.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.dark.error = theme.theme.error;
+						this.$vuetify.theme.themes.dark.info = theme.theme.info;
+						this.$vuetify.theme.themes.dark.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.dark.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.dark.success = theme.theme.success;
+						this.$vuetify.theme.themes.dark.warning = theme.theme.warning;
 						break;
 					case 3:
 						this.$store.dispatch("changeTheme", theme);
-						this.$vuetify.theme.themes.light = theme.theme;
-						this.$vuetify.theme.themes.dark = theme.theme;						
+						this.$vuetify.theme.themes.light.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.light.error = theme.theme.error;
+						this.$vuetify.theme.themes.light.info = theme.theme.info;
+						this.$vuetify.theme.themes.light.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.light.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.light.success = theme.theme.success;
+						this.$vuetify.theme.themes.light.warning = theme.theme.warning;
+						
+						this.$vuetify.theme.themes.dark.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.dark.error = theme.theme.error;
+						this.$vuetify.theme.themes.dark.info = theme.theme.info;
+						this.$vuetify.theme.themes.dark.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.dark.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.dark.success = theme.theme.success;
+						this.$vuetify.theme.themes.dark.warning = theme.theme.warning;
 						break;
 					case 4:
 						this.$store.dispatch("changeTheme", theme);
-						this.$vuetify.theme.themes.light = theme.theme;
-						this.$vuetify.theme.themes.dark = theme.theme;						
+						this.$vuetify.theme.themes.light.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.light.error = theme.theme.error;
+						this.$vuetify.theme.themes.light.info = theme.theme.info;
+						this.$vuetify.theme.themes.light.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.light.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.light.success = theme.theme.success;
+						this.$vuetify.theme.themes.light.warning = theme.theme.warning;
+						
+						this.$vuetify.theme.themes.dark.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.dark.error = theme.theme.error;
+						this.$vuetify.theme.themes.dark.info = theme.theme.info;
+						this.$vuetify.theme.themes.dark.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.dark.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.dark.success = theme.theme.success;
+						this.$vuetify.theme.themes.dark.warning = theme.theme.warning;
 						break;
 					case 5:
 						this.$store.dispatch("changeTheme", theme);
-						this.$vuetify.theme.themes.light = theme.theme;
-						this.$vuetify.theme.themes.dark = theme.theme;						
+						this.$vuetify.theme.themes.light.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.light.error = theme.theme.error;
+						this.$vuetify.theme.themes.light.info = theme.theme.info;
+						this.$vuetify.theme.themes.light.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.light.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.light.success = theme.theme.success;
+						this.$vuetify.theme.themes.light.warning = theme.theme.warning;
+						
+						this.$vuetify.theme.themes.dark.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.dark.error = theme.theme.error;
+						this.$vuetify.theme.themes.dark.info = theme.theme.info;
+						this.$vuetify.theme.themes.dark.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.dark.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.dark.success = theme.theme.success;
+						this.$vuetify.theme.themes.dark.warning = theme.theme.warning;
 						break;
 					case 6:
 						this.$store.dispatch("changeTheme", theme);
-						this.$vuetify.theme.themes.light = theme.theme;
-						this.$vuetify.theme.themes.dark = theme.theme;						
+						this.$vuetify.theme.themes.light.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.light.error = theme.theme.error;
+						this.$vuetify.theme.themes.light.info = theme.theme.info;
+						this.$vuetify.theme.themes.light.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.light.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.light.success = theme.theme.success;
+						this.$vuetify.theme.themes.light.warning = theme.theme.warning;
+						
+						this.$vuetify.theme.themes.dark.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.dark.error = theme.theme.error;
+						this.$vuetify.theme.themes.dark.info = theme.theme.info;
+						this.$vuetify.theme.themes.dark.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.dark.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.dark.success = theme.theme.success;
+						this.$vuetify.theme.themes.dark.warning = theme.theme.warning;
 						break;
 					default:
 						this.$store.dispatch("changeTheme", theme);
-						this.$vuetify.theme.themes.light = theme.theme;
-						this.$vuetify.theme.themes.dark = theme.theme;						
+						this.$vuetify.theme.themes.light.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.light.error = theme.theme.error;
+						this.$vuetify.theme.themes.light.info = theme.theme.info;
+						this.$vuetify.theme.themes.light.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.light.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.light.success = theme.theme.success;
+						this.$vuetify.theme.themes.light.warning = theme.theme.warning;
+						
+						this.$vuetify.theme.themes.dark.accent = theme.theme.accent;
+						this.$vuetify.theme.themes.dark.error = theme.theme.error;
+						this.$vuetify.theme.themes.dark.info = theme.theme.info;
+						this.$vuetify.theme.themes.dark.primary = theme.theme.primary;
+						this.$vuetify.theme.themes.dark.secondary = theme.theme.secondary;
+						this.$vuetify.theme.themes.dark.success = theme.theme.success;
+						this.$vuetify.theme.themes.dark.warning = theme.theme.warning;
 						break;
 				}
 			}
