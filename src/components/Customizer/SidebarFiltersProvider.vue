@@ -9,7 +9,9 @@
         v-for="sidebarFilter in sidebarFilters"
         :key="sidebarFilter.id"
       >
-        <span :class="sidebarFilter.class"></span>
+        <template v-slot:prepend>
+          <span :class="sidebarFilter.class"></span>
+        </template>
       </v-list-item>
     </v-list>
   </div>
@@ -26,6 +28,7 @@ export default {
   methods: {
     // color filter handler
     emitSidebarFilters(value) {
+      console.log('===========',value.class)
       this.$store.dispatch('changeSidebarFilter', value)
     },
     // function which return app current layout

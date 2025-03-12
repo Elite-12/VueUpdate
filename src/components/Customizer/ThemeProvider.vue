@@ -2,9 +2,16 @@
 	<div class="theme-color">
 		<h5 class="text-sm-center mb-4">{{$t('message.selectTheme')}}</h5>
 		<v-list>
-			<v-list-item :ripple="false" v-for="theme in themes" :key="theme.id" @click="changeTheme(theme)"
-				:class="{'active-theme': selectedTheme === theme}">
-				<span :class="theme.bgColor"></span>
+			<v-list-item
+				v-ripple="false"
+				v-for="theme in themes"
+				:key="theme.id"
+				@click="changeTheme(theme)"
+				:class="{'active-theme': selectedTheme === theme}"
+			>
+				<template v-slot:prepend>
+					<span :class="theme.bgColor"></span>
+				</template>
 			</v-list-item>
 		</v-list>
 	</div>
