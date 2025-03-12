@@ -3,7 +3,7 @@
     <h5 class="text-sm-center mb-4">{{ $t('message.sidebarFilters') }}</h5>
     <v-list>
       <v-list-item
-        :ripple="false"
+        v-ripple="false"
         :class="{ 'active-theme': sidebarFilter === sidebarSelectedFilter }"
         @click="emitSidebarFilters(sidebarFilter)"
         v-for="sidebarFilter in sidebarFilters"
