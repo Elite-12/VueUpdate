@@ -138,7 +138,7 @@
             <v-item-group v-model="window" class="mr-4 group" mandatory tag="v-col">
               <v-item v-for="n in length" :key="n" v-slot="{ active, toggle }">
                 <v-btn :input-value="active" icon @click="toggle" class="mb-3">
-                  <v-icon>mdi icon="record" </v-icon>
+                  <v-icon>mdi-record</v-icon>
                 </v-btn>
               </v-item>
             </v-item-group>
@@ -196,12 +196,12 @@
 
             <v-card-actions class="justify-space-between group-slider-action">
               <v-btn text @click="prev" class="group-slider-prev">
-                <v-icon>mdi-chevron icon="left" </v-icon>
+                <v-icon>mdi-chevron-left</v-icon>
               </v-btn>
               <v-item-group v-model="onboarding" class="text-center" mandatory>
                 <v-item v-for="n in length" :key="`btn-${n}`">
                   <v-btn v-slot="{ active, toggle }" :input-value="active" icon @click="toggle">
-                    <v-icon>mdi icon="record" </v-icon>
+                    <v-icon>mdi-record</v-icon>
                   </v-btn>
                 </v-item>
               </v-item-group>

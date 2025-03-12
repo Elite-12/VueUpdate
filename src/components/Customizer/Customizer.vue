@@ -52,28 +52,24 @@
                   <!--									</template>-->
                   <!--								</v-list-item>-->
                   <v-list-item v-if="isSidebarAvailable()">
-                    <template class="py-0"> 
-                      <v-checkbox
-                        v-modal="collapseSidebar"
-                        :label="$t('message.collapseSidebar')"
-                        color="primary"
-                        @change="emitCollapseSidebar"
-                      ></v-checkbox>
-                    </template>
+                    <v-checkbox
+                      v-model="collapseSidebar"
+                      :label="$t('message.collapseSidebar')"
+                      color="primary"
+                      @change="emitCollapseSidebar"
+                    ></v-checkbox>
                   </v-list-item>
                   <v-list-item>
-                    <template class="py-0">
-                      <v-checkbox
-                        v-modal="rtlLayout"
-                        :label="$t('message.rtlLayout')"
-                        color="primary"
-                        @change="emitRtlLayout($event)"
-                      ></v-checkbox>
-                    </template>
+                    <v-checkbox
+                      v-model="rtlLayout"
+                      :label="$t('message.rtlLayout')"
+                      color="primary"
+                      @change="emitRtlLayout($event)"
+                    ></v-checkbox>
                   </v-list-item>
                   <v-list-item v-if="isSidebarAvailable()">
                     <v-checkbox
-                      v-modal="backgroundImage"
+                      v-model="backgroundImage"
                       :label="$t('message.backgroundImage')"
                       color="primary"
                       @change="emitEnableBackgroundImage"

@@ -12,19 +12,19 @@
         {{ $t('message' + '.' + t.tab_name) }}
       </v-tab>
     </v-tabs>
-    <v-tabs-window v-model="active">
-      <v-tabs-window-item :value="'categories'">
+    <v-window v-model="active">
+      <v-window-item :value="'categories'">
         <br />
         <v-layout row wrap>
           <v-col xs12 sm12 md12 lg-12>
             <categories-table></categories-table>
           </v-col>
         </v-layout>
-      </v-tabs-window-item>
+      </v-window-item>
 
-      <v-tabs-window-item :value="'settings'">
+      <v-window-item :value="'settings'">
         <br />
-        <template>
+        
           <v-layout row wrap class="px-5">
             <v-chip class="mr-4 mt-4"> Auto Disable:</v-chip>
             <v-switch
@@ -110,10 +110,10 @@
           >
             Save
           </v-btn>
-        </template>
-      </v-tabs-window-item>
+        
+      </v-window-item>
 
-      <v-tabs-window-item :value="'latest_reports'">
+      <v-window-item :value="'latest_reports'">
         <br />
         <v-layout row wrap>
           <v-col xs12 sm12 md12 lg-12>
@@ -121,7 +121,7 @@
             <reports-table></reports-table>
           </v-col>
         </v-layout>
-        <template>
+        
           <div class="text-center">
             <v-container>
               <v-row justify="center">
@@ -138,9 +138,9 @@
               </v-row>
             </v-container>
           </div>
-        </template>
-      </v-tabs-window-item>
-    </v-tabs-window>
+        
+      </v-window-item>
+    </v-window>
     <!-- Ad Details Dialog -->
     <v-dialog
       v-model="adDialog"

@@ -128,6 +128,27 @@
   }
 }
 
+.inner-toolbar .header-filter .v-list .v-list-item {
+  .primary {
+    background: variables.$primary;
+  }
+  .light {
+    background: variables.$light;
+  }
+  .warning {
+    background: variables.$warning;
+  }
+  .success {
+    background: variables.$success;
+  }
+  .error {
+    background: variables.$danger;
+  }
+  .info {
+    background: variables.$info;
+  }
+}
+
 /*======== Responsive ========*/
 
 @media (max-width: 767px) and (min-width: 320px) {

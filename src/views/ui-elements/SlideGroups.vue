@@ -87,7 +87,7 @@
                         v-if="active"
                         color="white"
                         size="48"
-                        v-text="'mdi-close-circle-outline'"
+                        icon="mdi-close-circle-outline"
                       ></v-icon>
                     </v-scale-transition>
                   </v-row>
