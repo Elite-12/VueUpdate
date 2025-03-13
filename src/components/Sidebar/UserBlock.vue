@@ -9,11 +9,9 @@
         class="img-responsive"
       />
     </v-avatar>
-    <template class="ml-3">
-      <v-list-item-title
-        ><span>{{ admin.name }}</span></v-list-item-title
-      >
-    </template>
+    
+    <span>{{ admin.name }}</span>
+    
     <v-menu
       bottom
       offset-y
@@ -28,22 +26,29 @@
           <v-icon icon="md:more_vert" />
         </v-btn>
       </template>
+
       <div class="dropdown-content">
-        <div class="dropdown-top white--text primary">
+        <div class="dropdown-top white--text bg-primary">
           <span class="white--text fs-14 fw-bold d-block">{{ admin.name }}</span>
           <span class="d-block fs-12 fw-normal">{{ admin.email }}</span>
         </div>
         <v-list class="dropdown-list">
-          <template v-for="userLink in userLinks" v-if="userLink.id !== 4" :key="userLink.id">
-            <v-list-item :to="getMenuLink(userLink.path)">
-              <i :class="userLink.icon"></i>
-              <span>{{ $t(userLink.title) }}</span>
+          <template v-for="userLink in userLinks" :key="userLink.id">
+            <v-list-item
+              v-if="userLink.id !== 4"
+              :to="getMenuLink(userLink.path)"
+            >
+              <template v-slot:prepend>
+                <i :class="userLink.icon"></i>
+              </template>
+              <v-list-item-title><span>{{ $t(userLink.title) }}</span></v-list-item-title>
             </v-list-item>
-          </template>
-          <template v-else>
-            <v-list-item @click="logoutUser" :key="userLink.id">
-              <i :class="userLink.icon"></i>
-              <span>{{ $t(userLink.title) }}</span>
+
+            <v-list-item v-else @click="logoutUser">
+              <template v-slot:prepend>
+                <i :class="userLink.icon"></i>
+              </template>
+              <v-list-item-title>{{ $t(userLink.title) }}</v-list-item-title>
             </v-list-item>
           </template>
         </v-list>
