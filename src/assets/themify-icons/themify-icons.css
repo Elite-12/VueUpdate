@@ -31,6 +31,7 @@
 }
 .ti-user:before {
 	content: "\e602";
+	color: #5D92F4;
 }
 .ti-unlock:before {
 	content: "\e603";
@@ -415,6 +416,7 @@
 }
 .ti-power-off:before {
 	content: "\e682";
+	color: #FF3739;
 }
 .ti-plug:before {
 	content: "\e683";

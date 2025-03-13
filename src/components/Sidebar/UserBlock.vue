@@ -41,14 +41,18 @@
               <template v-slot:prepend>
                 <i :class="userLink.icon"></i>
               </template>
-              <v-list-item-title><span>{{ $t(userLink.title) }}</span></v-list-item-title>
+              <v-list-item-title>
+                <span>{{ $t(userLink.title) }}</span>
+              </v-list-item-title>
             </v-list-item>
 
             <v-list-item v-else @click="logoutUser">
               <template v-slot:prepend>
                 <i :class="userLink.icon"></i>
               </template>
-              <v-list-item-title>{{ $t(userLink.title) }}</v-list-item-title>
+              <v-list-item-title>
+                <span>{{ $t(userLink.title) }}</span>
+              </v-list-item-title>
             </v-list-item>
           </template>
         </v-list>
