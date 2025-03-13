@@ -12,7 +12,12 @@ table {
     height: 30px;
   }
 }
-.v-data-table table {
+
+.mySpecificFlex {
+  display: block;
+}
+
+.v-data-table, .v-table table {
   thead,
   tbody,
   tfoot {

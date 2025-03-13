@@ -20,7 +20,7 @@
     </v-card-title>
 
     <v-container grid-list-xl pt-0>
-      <v-layout row wrap>
+      <v-layout class="mySpecificFlex" row wrap>
         <app-card customClasses="mb-30" colClasses="xl12 lg12 md12 sm12 xs12">
           <v-table>
             <thead>

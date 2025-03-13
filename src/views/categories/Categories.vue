@@ -2,7 +2,7 @@
   <div class="hover-wrapper">
     <page-title-bar></page-title-bar>
     <v-container grid-list-xl pt-0>
-      <v-layout row wrap>
+      <v-layout class="mySpecificFlex" row wrap>
         <app-card customClasses="mb-20" colClasses="xl12 lg12 md12 sm12 xs12">
           <v-card-title>
             <v-chip> Country:</v-chip>

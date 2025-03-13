@@ -1,75 +1,77 @@
 <template>
   <div>
-    <v-table>
-      <thead>
-        <tr>
-          <th class="text-left">ID</th>
-          <th class="text-left">Type</th>
-          <th class="text-left">Title</th>
-          <th class="text-left">Title Ar</th>
-          <th class="text-left">Body</th>
-          <th class="text-left">Body Ar</th>
-          <th class="text-center"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="message in messages" :key="message.id">
-          <td>{{ message.id }}</td>
-          <td>{{ getType(message.type_id) }}</td>
-          <td>{{ message.title }}</td>
-          <td>{{ message.title_ar }}</td>
-          <td>{{ message.body }}</td>
-          <td>{{ message.body_ar }}</td>
-          <td>
+    <v-layout class="mySpecificFlex">
+      <v-table>
+        <thead>
+          <tr>
+            <th class="text-left">ID</th>
+            <th class="text-left">Type</th>
+            <th class="text-left">Title</th>
+            <th class="text-left">Title Ar</th>
+            <th class="text-left">Body</th>
+            <th class="text-left">Body Ar</th>
+            <th class="text-center"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="message in messages" :key="message.id">
+            <td>{{ message.id }}</td>
+            <td>{{ getType(message.type_id) }}</td>
+            <td>{{ message.title }}</td>
+            <td>{{ message.title_ar }}</td>
+            <td>{{ message.body }}</td>
+            <td>{{ message.body_ar }}</td>
+            <td>
+              <v-btn
+                class="ma-2"
+                color="info"
+                fab
+                x-small 
+                :disabled="!$can(UPDATE, RESOURCE)"
+                @click="editDialog(message)"
+              >
+                <v-icon icon="md:edit" />
+              </v-btn>
+            </td>
+          </tr>
+        </tbody>
+      </v-table>
+
+      <!-- Dialog Model -->
+      <v-dialog v-model="dialog" max-width="500px" @click:outside="closeDialog">
+        <v-card>
+          <v-card-title>
+            {{ getType(selectedMessage.type_id) }}
+          </v-card-title>
+          <v-card-text>
+            <v-text-field label="Title" v-model="selectedMessage.title" required></v-text-field>
+            <v-text-field
+              label="Title Arabic"
+              v-model="selectedMessage.title_ar"
+              required
+            ></v-text-field>
+            <v-text-field label="Body" v-model="selectedMessage.body" required></v-text-field>
+            <v-text-field
+              label="Body Arabic"
+              v-model="selectedMessage.body_ar"
+              required
+            ></v-text-field>
+
             <v-btn
-              class="ma-2"
-              color="info"
-              fab
-              x-small 
-              :disabled="!$can(UPDATE, RESOURCE)"
-              @click="editDialog(message)"
+              @click="updateMessage"
+              :disabled="loading"
+              color="success"
+              class="mr-3 mt-2"
+              :loading="loading"
             >
-              <v-icon icon="md:edit" />
+              <div>Save</div>
             </v-btn>
-          </td>
-        </tr>
-      </tbody>
-    </v-table>
 
-    <!-- Dialog Model -->
-    <v-dialog v-model="dialog" max-width="500px" @click:outside="closeDialog">
-      <v-card>
-        <v-card-title>
-          {{ getType(selectedMessage.type_id) }}
-        </v-card-title>
-        <v-card-text>
-          <v-text-field label="Title" v-model="selectedMessage.title" required></v-text-field>
-          <v-text-field
-            label="Title Arabic"
-            v-model="selectedMessage.title_ar"
-            required
-          ></v-text-field>
-          <v-text-field label="Body" v-model="selectedMessage.body" required></v-text-field>
-          <v-text-field
-            label="Body Arabic"
-            v-model="selectedMessage.body_ar"
-            required
-          ></v-text-field>
-
-          <v-btn
-            @click="updateMessage"
-            :disabled="loading"
-            color="success"
-            class="mr-3 mt-2"
-            :loading="loading"
-          >
-            <div>Save</div>
-          </v-btn>
-
-          <v-btn class="float-right mt-2" color="warning" @click.stop="closeDialog">Cancel</v-btn>
-        </v-card-text>
-      </v-card>
-    </v-dialog>
+            <v-btn class="float-right mt-2" color="warning" @click.stop="closeDialog">Cancel</v-btn>
+          </v-card-text>
+        </v-card>
+      </v-dialog>
+    </v-layout>
   </div>
 </template>
 
