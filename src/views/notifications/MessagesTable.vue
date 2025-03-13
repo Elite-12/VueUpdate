@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-layout class="mySpecificFlex">
+    <v-layout class="myBlockFlex">
       <v-table>
         <thead>
           <tr>

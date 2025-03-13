@@ -13,8 +13,20 @@ table {
   }
 }
 
-.mySpecificFlex {
+.myBlockFlex {
   display: block;
+}
+
+.myUseFlex {
+  display: flex;
+}
+
+.myUnSetBackground {
+  background: unset;
+}
+
+.myUnSetShadow {
+  box-shadow: unset;
 }
 
 .v-data-table, .v-table table {

@@ -3,24 +3,29 @@
     <page-title-bar></page-title-bar>
 
     <v-card-title>
-      <v-spacer></v-spacer>
-      <v-text-field
-        v-model="search"
-        label="Search"
-        single-line
-        @keyup.enter=""
-      ></v-text-field>
-      <v-btn icon @click="">
-        <v-icon icon="md:search" />
-      </v-btn>
-      <v-chip> Country:</v-chip>
-      <div class="float-right">
-        <country-provider></country-provider>
-      </div>
+      
+      <v-col
+        class="ms-auto d-flex align-center"
+        md="8"
+      >
+        <v-text-field
+          v-model="search"
+          label="Search"
+          single-line
+          @keyup.enter=""
+        ></v-text-field>
+        <v-btn class="myUnSetBackground myUnSetShadow" icon @click="">
+          <v-icon icon="md:search" />
+        </v-btn>
+        <v-chip> Country:</v-chip>
+        <div class="float-right">
+          <country-provider></country-provider>
+        </div>
+      </v-col>
     </v-card-title>
 
     <v-container grid-list-xl pt-0>
-      <v-layout class="mySpecificFlex" row wrap>
+      <v-layout class="myBlockFlex" row wrap>
         <app-card customClasses="mb-30" colClasses="xl12 lg12 md12 sm12 xs12">
           <v-table>
             <thead>
