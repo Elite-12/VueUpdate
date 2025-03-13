@@ -41,7 +41,7 @@
                       "
                       style="min-height: 38px"
                     >
-                      <template class="p-0" v-if="subItem !== null">
+                      <template v-if="subItem !== null">
                         <v-list-item-title>
                           {{ textTruncate($t(subItem.title)) }}
                           <template v-if="subItem.label == 'New'">

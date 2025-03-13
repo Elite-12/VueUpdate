@@ -13,16 +13,13 @@
     <span>{{ admin.name }}</span>
     
     <v-menu
-      bottom
-      offset-y
-      left
+      location="bottom"
+      offset="0,10"
       content-class="userblock-dropdown"
-      nudge-top="-10"
-      nudge-right="0"
       transition="slide-y-transition"
     >
       <template v-slot:activator="{ props }">
-        <v-btn dark icon v-bind="props" class="ma-0">
+        <v-btn icon dark v-bind="props" class="ma-0">
           <v-icon icon="md:more_vert" />
         </v-btn>
       </template>

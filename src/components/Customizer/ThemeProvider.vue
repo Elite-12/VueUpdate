@@ -10,7 +10,7 @@
 				:class="{'active-theme': selectedTheme === theme}"
 			>
 				<template v-slot:prepend>
-					<span :class="theme.bgColor"></span>
+					<span :class="theme.bgColor" icon></span>
 				</template>
 			</v-list-item>
 		</v-list>

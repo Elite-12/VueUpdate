@@ -33,7 +33,7 @@ const state = {                                       // dark mode
     routerAnimations,                                      // router animations
     selectedRouterAnimation: getSavedSetting('selectedRouterAnimation', routerAnimations[0]),          // selected router animation
     themes,                                                // themes
-    selectedTheme: getSavedSetting('selectedTheme', themes[0]),                              // selected theme
+    selectedTheme: getSavedSetting('selectedTheme', themes[1]),                              // selected theme
     headerFilters,                                         // header filters
     activeHeaderFilter: getSavedSetting('activeHeaderFilter', headerFilters[1]),                  // selected header filter
     mobileSearchForm: false								   // Is Mobile Search Form Open
