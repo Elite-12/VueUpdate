@@ -12,7 +12,24 @@ table {
     height: 30px;
   }
 }
-.v-data-table table {
+
+.myBlockFlex {
+  display: block;
+}
+
+.myUseFlex {
+  display: flex;
+}
+
+.myUnSetBackground {
+  background: unset;
+}
+
+.myUnSetShadow {
+  box-shadow: unset;
+}
+
+.v-data-table, .v-table table {
   thead,
   tbody,
   tfoot {

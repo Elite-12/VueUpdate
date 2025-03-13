@@ -1,5 +1,6 @@
 <template>
   <div class="contact-tab-wrapper">
+    
     <v-tabs v-model="active" slider-color="primary">
       <v-tab
         v-for="t in tabHead"

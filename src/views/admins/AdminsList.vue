@@ -3,20 +3,24 @@
     <page-title-bar></page-title-bar>
 
     <v-card-title>
-      <v-spacer></v-spacer>
-      <v-text-field
-        label="Search"
-        single-line
-        @keypress.enter="getAdmins"
-        v-model="search"
-      ></v-text-field>
-      <v-btn icon @click="getAdmins">
-        <v-icon icon="md:search" />
-      </v-btn>
+      <v-col
+        class="ms-auto d-flex align-center"
+        md="8"
+      >
+        <v-text-field
+          label="Search"
+          single-line
+          @keypress.enter="getAdmins"
+          v-model="search"
+        ></v-text-field>
+        <v-btn class="myUnSetBackground myUnSetShadow" icon @click="getAdmins">
+          <v-icon icon="md:search" />
+        </v-btn>
+      </v-col>
     </v-card-title>
 
     <v-container grid-list-xl pt-0>
-      <v-layout row wrap>
+      <v-layout class="myBlockFlex" row wrap>
         <app-card customClasses="mb-30" colClasses="xl12 lg12 md12 sm12 xs12">
           <v-data-table
             v-bind:headers="headers"

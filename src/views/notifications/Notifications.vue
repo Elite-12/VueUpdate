@@ -2,7 +2,7 @@
   <div class="contact-wrapper">
     <page-title-bar></page-title-bar>
     <v-container fluid pt-0 grid-list-xl>
-      <v-layout row wrap>
+      <v-layout class="myBlockFlex" row wrap>
         <app-card colClasses="xl12 lg12 md12 sm12 xs12" customClasses="mb-0 client-wrapper">
           <div class="contact-tab-wrapper">
             <v-tabs v-model="active" slider-color="primary">

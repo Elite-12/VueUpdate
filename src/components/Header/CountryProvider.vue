@@ -9,7 +9,7 @@
     class="v-step-3"
   >
     <template v-slot:activator="{ props }">
-      <v-btn icon large v-bind="props" class="ml-2">
+      <v-btn icon large v-bind="props" class="ml-2 myUnSetBackground myUnSetShadow">
         <img class="img-responsive" :src="`/static/flag-icons/${selectedCountry.icon}.png`" />
       </v-btn>
     </template>
