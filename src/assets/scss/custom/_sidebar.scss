@@ -270,6 +270,15 @@
   }
 }
 
+
+// ---------------SideBar(white)-------------------
+.Vuely-sidebar {
+  color: white;
+}
+// ---------------SideBar(white)-------------------
+
+
+
 .sidebar-overlay-dark::before {
   background: variables.$sidebar-bg;
 }
@@ -322,50 +331,59 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      .v-list-item--link {
-        min-height: 1.75rem;
-        width: 1.75rem;
-        border-radius: 100%;
-        overflow: hidden;
-        margin: 0 0.25rem;
-        position: relative;
-        flex: 0 0 auto;
+      .v-list-item--link  {
+        padding: 0;
+        
         &:after {
-          position: absolute;
-          content: '';
-          border: 2px solid variables.$light;
-          transform: scale(2);
-          opacity: 0;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          margin: 0.25rem;
-          border-radius: 100%;
-          transition: all 0.3s ease-in-out;
-        }
-        &:before {
           display: none;
         }
-        span {
-          height: 1.75rem;
+
+        .v-list-item__prepend {
+          min-height: 1.75rem;
           width: 1.75rem;
+          border-radius: 100% !important;
+          overflow: hidden;
+          margin: 0 0.25rem;
           position: relative;
-          display: inline-block;
-          &:before {
+          flex: 0 0 auto;
+          &:after {
             position: absolute;
             content: '';
+            border: 2px solid variables.$light;
+            transform: scale(2);
+            opacity: 0;
+            top: 0;
             left: 0;
             right: 0;
-            top: 0;
             bottom: 0;
+            margin: 0.25rem;
+            border-radius: 100% !important;
+            transition: all 0.3s ease-in-out;
+          }
+          &:before {
+            display: none;
+          }
+          span {
+            height: 1.75rem;
+            width: 1.75rem;
+            position: relative;
+            display: inline-block;
+            &:before {
+              position: absolute;
+              content: '';
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+            }
           }
         }
-      }
-      .active-theme {
-        &:after {
-          transform: scale(1);
-          opacity: 1;
+
+        &.active-theme {        
+          .v-list-item__prepend:after {
+            transform: scale(1);
+            opacity: 1;
+          }       
         }
       }
     }
@@ -384,15 +402,23 @@
   .header-filter {
     .v-list {
       .v-list-item--link:nth-child(2) {
-        border: 1px solid variables.$dark;
-        max-height: 1.6875rem;
-        width: 1.6875rem;
-        &:after {
-          border-color: variables.$dark;
+        .v-list-item__prepend {
+          border: 1px solid variables.$dark;
+          max-height: 1.6875rem;
+          width: 1.6875rem;
+          &:after {
+            border-color: variables.$dark;
+          }
         }
       }
     }
   }
+
+  .sidebar-filter {
+    padding-left: 0; 
+    padding-right: 0; 
+  }
+
   .img-holder {
     border: 3px solid transparent;
     &.active {

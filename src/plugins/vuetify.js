@@ -19,6 +19,7 @@ export default createVuetify({
   },
   directives,
   theme: {
+    // defaultTheme: "light",
     themes: {
       light: store.getters.selectedTheme.theme,
       dark: store.getters.selectedTheme.theme,

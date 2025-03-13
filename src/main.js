@@ -100,9 +100,7 @@ router.afterEach((to, from) => {
 })
 
 // plugins
-Vue.use(vuetify, {
-  theme: store.getters.selectedTheme.theme,
-})
+Vue.use(vuetify)
 Vue.use(PusherPlugin, { apiKey: '242c0a48d7776cc97add', cluster: 'eu' })
 const termsEditorOptions = {
   hideModules: {
