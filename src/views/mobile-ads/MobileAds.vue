@@ -13,7 +13,7 @@
           class="mr-md-5"
           return-object
           v-model="selectedPage"
-          @change="changePage"
+          @update:modelValue="changePage"
         ></v-select>
       </div>
 

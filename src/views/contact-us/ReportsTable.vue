@@ -14,7 +14,7 @@
         hide-details
         return-object
         v-model="type"
-        @change="filter"
+        @update:modelValue="filter"
         clearable
         outlined
         dense
