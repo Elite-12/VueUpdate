@@ -364,7 +364,6 @@ export default [{
     {
       path: '/featured-package-maker',
       component: FeaturedPackageMaker,
-      name: 'terms',
       meta: {
         requiresAuth: true,
         title: 'message.featuredPackagesMaker',

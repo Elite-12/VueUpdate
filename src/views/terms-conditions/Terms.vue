@@ -17,7 +17,7 @@
           ></v-select>
         </div>
 
-        <wysiwyg v-model="currentTerms.terms" @change="saved=false"/>
+        <QuillEditor v-model:content="currentTerms.terms" contentType="html" @change="saved=false" />
 
         <v-btn
             color="primary"
@@ -60,6 +60,12 @@ export default {
       selectedLang: languages[0],
       saved: true,
       loading: false,
+
+      editorConfig: {
+        menubar: false,
+        readonly: false,
+        branding: false,
+      }
     };
   },
   methods: {

@@ -32,7 +32,6 @@ const actions = {
       JufrahAdminAPI.get(url)
         .then((response) => {
           context.commit('setTerms', response.data)
-          console.log(response.data)
           resolve(response)
         })
         .catch((error) => {
