@@ -1,6 +1,7 @@
 /**
  * Vuely Global Components
  */
+import { QuillEditor } from '@vueup/vue-quill'
 import AppSectionLoader from '@/components/AppSectionLoader/AppSectionLoader'
 
 // delete Confirmation Dialog
@@ -24,6 +25,7 @@ import SectionTooltip from '@/components/SectionTooltip/SectionTooltip'
 
 const GlobalComponents = {
   install(Vue) {
+    Vue.component('QuillEditor', QuillEditor);
     Vue.component('appCard', AppCard)
     Vue.component('sectionTooltip', SectionTooltip)
     Vue.component('statsCard', StatsCard)

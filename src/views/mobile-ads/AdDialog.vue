@@ -213,7 +213,7 @@ export default {
 
   methods: {
     changeImage(file, lang) {
-      console.log(file)
+      console.log("file_path: ", file)
       if (lang === 'en') {
         this.ad.src = URL.createObjectURL(file)
         this.ad.image = file
