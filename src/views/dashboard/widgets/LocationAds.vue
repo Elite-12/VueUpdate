@@ -4,8 +4,11 @@
       <span class="mr-3 label">{{ city.name }}</span>
       <div class="progress-wrap">
         <span>({{ city.ads_count }}) {{ Math.round((city.ads_count / totalAds) * 100) }}%</span>
-        <v-progress-linear :value="Math.round((city.ads_count / totalAds) * 100)" height="24"
-                           color="info"></v-progress-linear>
+        <v-progress-linear 
+          :model-value="Math.round((city.ads_count / totalAds) * 100)" 
+          height="24"             
+          color="info">
+        </v-progress-linear>
       </div>
     </div>
   </div>

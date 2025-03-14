@@ -4,7 +4,7 @@
       <span class="mr-3 label">{{ category.name }}</span>
       <div class="progress-wrap">
         <span>({{ category.ads_count }}) {{ Math.round((category.ads_count / totalAds) * 100) }}%</span>
-        <v-progress-linear :value="Math.round((category.ads_count / totalAds) * 100)" height="24" color="info"></v-progress-linear>
+        <v-progress-linear :model-value="Math.round((category.ads_count / totalAds) * 100)" height="24" color="info"></v-progress-linear>
       </div>
     </div>
   </div>
