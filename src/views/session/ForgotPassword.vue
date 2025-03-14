@@ -1,4 +1,3 @@
-<
 <template>
   <div class="session-wrapper">
     <div class="session-left">
