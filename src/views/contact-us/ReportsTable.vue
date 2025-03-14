@@ -41,7 +41,7 @@
       :headers="headers"
       :items="messages"
       show-select
-      v-model="selected"
+      v-model:selected="selected"
       hide-default-footer
       :items-per-page="25"
     >
@@ -57,7 +57,7 @@
           :loading="loading"
           color="teal accent-4"
           fab
-          x-small
+          icon size="x-small"
           title="Mark as seen"
           @click="seen(item)"
         >
@@ -70,16 +70,16 @@
           class="ma-2"
           color="info"
           fab
-          x-small
+          icon size="x-small"
           :disabled="!$can(UPDATE, RESOURCE)"
           @click="replyDialog(item)"
           title="Reply"
         >
-          <v-icon icon="md:reply" />
+          <v-icon size="16" icon="md:reply" />
         </v-btn>
 
-        <v-btn fab dark x-small color="error" @click="confirmDeletion(item)">
-          <v-icon dark small icon="md:delete" />
+        <v-btn fab dark icon size="x-small" color="error" @click="confirmDeletion(item)">
+          <v-icon dark size="16" icon="md:delete" />
         </v-btn>
       </template>
     </v-data-table>
