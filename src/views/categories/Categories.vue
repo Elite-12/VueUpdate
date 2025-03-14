@@ -33,7 +33,7 @@
               <v-btn
                 :disabled="!item.has_childs"
                 color="primary"
-                x-small
+                size="x-small"
                 class="ml-2"
                 @click.stop="sort(item.childs)"
               >

@@ -39,22 +39,22 @@
               <v-btn
                 class="mr-2"
                 fab
-                x-small
+                icon size="x-small"
                 color="primary"
                 :disabled="!$can(Permissions.actions.update, Permissions.resources.admin)"
                 @click.stop="showAdminDialog(item)"
               >
-                <v-icon small icon="md:edit" />
+                <v-icon size="16" icon="md:edit" />
               </v-btn>
 
               <v-btn
                 fab
-                x-small
+                icon size="x-small"
                 color="error"
                 :disabled="!$can(Permissions.actions.delete, Permissions.resources.admin)"
                 @click.stop="showDeleteDialog(item)"
               >
-                <v-icon small icon="md:delete" />
+                <v-icon size="16" icon="md:delete" />
               </v-btn>
             </template>
           </v-data-table>

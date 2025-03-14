@@ -36,11 +36,11 @@
         </div>
         <div class="action-btn text-right">
           <div>
-            <v-btn fab dark x-small color="primary" @click="openDialog(ad)">
-              <v-icon dark small icon="md:edit" />
+            <v-btn fab dark icon size="x-small" color="primary" @click="openDialog(ad)">
+              <v-icon dark size="16" icon="md:edit" />
             </v-btn>
-            <v-btn class="mt-2" fab dark x-small color="error" @click="confirm(ad)">
-              <v-icon dark small icon="md:delete" />
+            <v-btn class="mt-2" fab dark icon size="x-small" color="error" @click="confirm(ad)">
+              <v-icon dark size="16" icon="md:delete" />
             </v-btn>
           </div>
         </div>
