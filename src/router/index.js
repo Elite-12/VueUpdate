@@ -1,4 +1,4 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createWebHistory, createRouter } from 'vue-router'
 
 //routes
 import defaultRoutes from './default'
@@ -17,7 +17,7 @@ const ResetPassword = () => import('@/views/session/ResetPassword')
 const Auth0CallBack = () => import('@/components/Auth0Callback/Auth0Callback')
 
 export default createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(),
   routes: [
     ...defaultRoutes,
     // horizontalRoutes,
