@@ -67,6 +67,9 @@ export default createRouter({
         title: 'message.resetPassword',
         breadcrumb: null,
       },
+    },  {
+      path: '/:pathMatch(.*)*',
+      redirect: '/admins/profile',
     },
   ],
 })

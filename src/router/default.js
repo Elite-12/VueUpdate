@@ -1640,7 +1640,7 @@ export default [{
     },
     // users
     {
-      path: '*/admins/profile',
+      path: '/admins/profile',
       component: UserProfile,
       meta: {
         requiresAuth: true,
