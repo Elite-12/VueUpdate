@@ -22,8 +22,8 @@
             @change="changeImage($event)"
           >
           </v-file-input>
-          <v-btn class="mb-30" fab x-small color="error" @click.stop="clearImageInput">
-            <v-icon small>md:delete</v-icon>
+          <v-btn class="mb-30" fab icon size="x-small" color="error" @click.stop="clearImageInput">
+            <v-icon size="16">md:delete</v-icon>
           </v-btn>
         </v-card-title>
 
@@ -38,11 +38,11 @@
             <v-btn
               class="float-right mb-30"
               fab
-              x-small
               color="primary"
+              icon size="x-small"
               @click.stop="openCategoryNameDialog"
             >
-              <v-icon small icon="md:edit" />
+              <v-icon size="16" icon="md:edit" />
             </v-btn>
           </h3>
           <h3 class="fw-bold">{{ category.name_ar }}</h3>
@@ -94,23 +94,23 @@
           <v-btn
             class="float-right mt-2"
             fab
-            x-small
             color="primary"
+            icon size="x-small"
             @click.stop="parentDialog = true"
           >
-            <v-icon small icon="md:edit" />
+            <v-icon size="16" icon="md:edit" />
           </v-btn>
           <v-tooltip bottom>
             <template #activator="{ props }">
               <v-btn
                 fab
-                x-small
                 color="info"
                 @click.stop="selectParent(null)"
                 class="mx-2"
+                icon size="x-small"
                 v-bind="props"
               >
-                <v-icon small icon="md:home" />
+                <v-icon size="16" icon="md:home" />
               </v-btn>
             </template>
             <span>Make this main category (has no parent)</span>
@@ -211,22 +211,20 @@
             <td>
               <v-btn
                 fab
-                x-small
                 color="primary"
                 @click.stop="openOptionDialog(option, index)"
                 :disabled="loading || !$can(UPDATE, RESOURCE)"
               >
-                <v-icon small icon="md:edit" />
+                <v-icon icon="md:edit" />
               </v-btn>
               <v-btn
                 fab
-                x-small
                 color="error"
                 @click.stop="openConfirmationDialog(option)"
                 class="mx-2"
                 :disabled="loading || !$can(UPDATE, RESOURCE)"
               >
-                <v-icon small icon="md:delete" />
+                <v-icon icon="md:delete" />
               </v-btn>
             </td>
           </tr>
@@ -235,12 +233,11 @@
       <v-btn
         class="mt-6"
         fab
-        x-small
         color="primary"
         @click.stop="openOptionDialog(null, null, true)"
         :disabled="loading || !$can(UPDATE, RESOURCE)"
       >
-        <v-icon small icon="md:add" />
+        <v-icon icon="md:add" />
       </v-btn>
     </app-card>
 
