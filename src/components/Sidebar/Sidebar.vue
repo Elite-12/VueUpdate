@@ -16,20 +16,21 @@
                   <v-list-group
                     :ripple="false"
                     :key="item.title"
-                    prepend-icon="arrow_right"
-                    append-icon=""
-                    no-action
                     v-model="item.active"
+                    append-icon="blank"
                   >
-                    <v-list-item slot="activator" :ripple="false">
-                      <v-list-item-title v-if="item.items != null">
-                        <i class="mr-3 zmdi" :class="item.action"></i>
-                        <span>{{ textTruncate($t(item.title)) }}</span>
-                        <template v-if="item.label == 'New'">
-                          <span class="sidebar-label">{{ item.label }}</span>
-                        </template>
-                      </v-list-item-title>
-                    </v-list-item>
+                    <template v-slot:activator="{ props, isOpen }">
+                      <v-list-item v-bind="props" :ripple="false">
+                        <v-icon start>{{ isOpen ? 'mdi-chevron-down' : 'mdi-chevron-right' }}</v-icon>
+                        <v-list-item-title v-if="item.items != null">
+                          <i class="mr-3 zmdi" :class="item.action"></i>
+                          <span>{{ textTruncate($t(item.title)) }}</span>
+                          <template v-if="item.label == 'New'">
+                            <span class="sidebar-label">{{ item.label }}</span>
+                          </template>
+                        </v-list-item-title>
+                      </v-list-item>
+                    </template>
                     <v-list-item
                       :ripple="false"
                       v-for="subItem in item.items"
@@ -64,29 +65,30 @@
                     :ripple="false"
                     class="not-submenu"
                     :key="item.title"
-                    prepend-icon="arrow_right"
-                    append-icon=""
-                    no-action
                     v-model="item.active"
+                    append-icon="blank"
                   >
-                    <v-list-item slot="activator" :ripple="false">
-                      <v-list-item-title>
-                        <router-link
-                          :to="
-                            !item.exact ? `/${getCurrentAppLayoutHandler() + item.path}` : item.path
-                          "
-                        >
-                          <i class="mr-3 zmdi" :class="item.action"></i>
-                          <span>{{ textTruncate($t(item.title)) }}</span>
-                          <template v-if="item.label == 'New'">
-                            <span class="sidebar-label">New</span>
-                          </template>
-                          <template v-if="contactUsReports.total">
-                            <span class="sidebar-label">{{ contactUsReports.total }}</span>
-                          </template>
-                        </router-link>
-                      </v-list-item-title>
-                    </v-list-item>
+                    <template v-slot:activator="{ props, isOpen }">
+                      <v-list-item v-bind="props" :ripple="false">
+                        <v-icon v-if="false" start>{{ isOpen ? 'mdi-chevron-down' : 'mdi-chevron-right' }}</v-icon>
+                        <v-list-item-title>
+                          <router-link
+                            :to="
+                              !item.exact ? `/${getCurrentAppLayoutHandler() + item.path}` : item.path
+                            "
+                          >
+                            <i class="mr-3 zmdi" :class="item.action"></i>
+                            <span>{{ textTruncate($t(item.title)) }}</span>
+                            <template v-if="item.label == 'New'">
+                              <span class="sidebar-label">New</span>
+                            </template>
+                            <template v-if="contactUsReports.total">
+                              <span class="sidebar-label">{{ contactUsReports.total }}</span>
+                            </template>
+                          </router-link>
+                        </v-list-item-title>
+                      </v-list-item>
+                    </template>
                   </v-list-group>
                 </template>
               </template>

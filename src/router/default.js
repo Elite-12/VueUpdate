@@ -132,8 +132,8 @@ const QuillEditor = () => import('@/views/editor/QuillEditor')
 const WYSIWYG = () => import('@/views/editor/WYSIWYG')
 
 // form componenets
-const FormValidation = () => import('@/views/forms/FormValidation')
-const Stepper = () => import('@/views/forms/Stepper')
+const FormValidation = () => import('@/views/permissions/forms/FormValidation')
+const Stepper = () => import('@/views/permissions/forms/Stepper')
 
 // Data table componenets
 const SimpleTable = () => import('@/views/tables/SimpleTable')
@@ -1788,7 +1788,7 @@ export default [{
     },
     // forms components
     {
-      path: '/default/forms/form-validation',
+      path: '/default/permissions/forms/form-validation',
       component: FormValidation,
       meta: {
         requiresAuth: true,
@@ -1805,7 +1805,7 @@ export default [{
     },
     // forms components
     {
-      path: '/default/forms/stepper',
+      path: '/default/permissions/forms/stepper',
       component: Stepper,
       meta: {
         requiresAuth: true,
