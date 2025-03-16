@@ -392,9 +392,8 @@ export default {
   },
 
   methods: {
-    changeImage(file) {
-      console.log(file)
-      console.log('test')
+    changeImage(event) {
+      const file = event.target.files[0]
       this.changed = true
       this.category.src = URL.createObjectURL(file)
       this.category.image = file

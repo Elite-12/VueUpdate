@@ -142,8 +142,8 @@ export default {
   },
 
   methods: {
-    changeImage(file) {
-      this.changed = true
+    changeImage(event) {
+      const file = event.target.files[0]
       this.selectedPackage.src = URL.createObjectURL(file)
       this.selectedPackage.image = file
     },

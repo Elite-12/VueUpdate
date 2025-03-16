@@ -2,7 +2,7 @@
 <template>
   <div class="app-default-layout">
     <template v-if="loading">
-      <SquareLoader :loading="true"></SquareLoader>
+      <DotLoader :loading="true"></DotLoader>
     </template>
     <template v-else>
       <!-- App Header -->

@@ -104,8 +104,8 @@ export default {
   },
 
   methods: {
-    changeImage(file) {
-      console.log(file)
+    changeImage(event) {
+      const file = event.target.files[0]
       this.campaign.src = URL.createObjectURL(file)
       this.campaign.image = file
     },

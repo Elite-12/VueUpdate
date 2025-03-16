@@ -212,8 +212,8 @@ export default {
   },
 
   methods: {
-    changeImage(file, lang) {
-      console.log("file_path: ", file)
+    changeImage(event, lang) {
+      const file = event.target.files[0]
       if (lang === 'en') {
         this.ad.src = URL.createObjectURL(file)
         this.ad.image = file
