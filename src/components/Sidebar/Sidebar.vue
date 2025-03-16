@@ -17,12 +17,12 @@
                     :ripple="false"
                     :key="item.title"
                     v-model="item.active"
-                    append-icon="blank"
+                    append-icon="none"
                   >
                     <template v-slot:activator="{ props, isOpen }">
                       <v-list-item v-bind="props" :ripple="false">
-                        <v-icon start>{{ isOpen ? 'mdi-chevron-down' : 'mdi-chevron-right' }}</v-icon>
                         <v-list-item-title v-if="item.items != null">
+                          <v-icon start>{{ isOpen ? 'md:arrow_drop_down' : 'md:arrow_right' }}</v-icon>
                           <i class="mr-3 zmdi" :class="item.action"></i>
                           <span>{{ textTruncate($t(item.title)) }}</span>
                           <template v-if="item.label == 'New'">

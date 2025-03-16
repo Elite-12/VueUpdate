@@ -204,7 +204,6 @@ export default {
 
   methods: {
     view(category) {
-      console.log('------------', category);
       this.loading = true
       this.dialog = true
       this.active = []

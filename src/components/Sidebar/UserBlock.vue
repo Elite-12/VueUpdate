@@ -9,8 +9,9 @@
         class="img-responsive"
       />
     </v-avatar>
-    
-    <span>{{ admin.name }}</span>
+    <v-list-item-content class="ml-3">
+      <span>{{ admin.name }}</span>
+    </v-list-item-content>
     
     <v-menu
       location="bottom"
@@ -19,7 +20,7 @@
       transition="slide-y-transition"
     >
       <template v-slot:activator="{ props }">
-        <v-btn icon dark v-bind="props" class="ma-0">
+        <v-btn icon dark v-bind="props" class="ma-0 ml-16 myUnSetShadow myUnSetBackground">
           <v-icon icon="md:more_vert" />
         </v-btn>
       </template>

@@ -22,14 +22,14 @@
     .v-list {
       .sidebar-profile {
         margin-bottom: 0.9375rem; //15px;
-        .v-list-item__avatar {
+        .v-avatar {
           margin-right: 0.9375rem; //15px;
         }
         .v-btn {
           height: 2rem;
           width: 2rem;
         }
-        .v-list-item__title {
+        .v-list-item__content {
           color: variables.$sidebar-nav-color;
         }
       }
@@ -60,7 +60,8 @@
             }
           }
           .v-list-item,
-          .v-list-item__title {
+          .v-list-item__content,
+          .v-list-item-title {
             font-weight: variables.$sidebar-nav-font-weight;
             font-size: variables.$sidebar-nav-text-size;
             padding-left: 0;
@@ -107,7 +108,7 @@
         }
       }
       .v-list-group__items {
-        .v-list-item__title {
+        .v-list-item-title {
           font-weight: variables.$sidebar-nav-font-weight;
           font-size: variables.$sidebar-nav-text-size;
           padding-left: 0;
