@@ -5,6 +5,7 @@
       v-model="customizerIn"
       :width="300"
       :right="!rtlLayout"
+      location="right"
       app
       temporary
       class="clearfix"
