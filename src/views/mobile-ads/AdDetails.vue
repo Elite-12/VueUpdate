@@ -8,7 +8,7 @@
         height="200px"
         contain
       >
-        <v-card-title>
+        <v-card-title class="d-flex">
           <v-file-input
             :rules="rules"
             accept="image/png, image/jpeg, image/bmp"
