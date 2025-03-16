@@ -28,11 +28,11 @@
         <v-list>
           <v-list-item link @click="makeAction('deleteAllMessage')">
             <v-icon icon="md:delete" />
-            <v-list-item-title>Delete all selected</v-list-item-title>
+            <span>Delete all selected</span>
           </v-list-item>
           <v-list-item @click="makeAction('seenAllMessage')">
             <v-icon icon="mdi-check-all" />
-            <v-list-item-title>Mark as read</v-list-item-title>
+            <span>Mark as read</span>
           </v-list-item>
         </v-list>
       </v-menu>
