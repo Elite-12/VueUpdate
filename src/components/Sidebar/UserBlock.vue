@@ -9,9 +9,7 @@
         class="img-responsive"
       />
     </v-avatar>
-    <v-list-item-content class="ml-3">
-      <span>{{ admin.name }}</span>
-    </v-list-item-content>
+    <span class="ml-3">{{ admin.name }}</span>
     
     <v-menu
       location="bottom"
