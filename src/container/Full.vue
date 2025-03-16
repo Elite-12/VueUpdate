@@ -2,7 +2,7 @@
 <template>
   <div class="app-default-layout">
     <template v-if="loading">
-      <SquareLoader :loading="true"></SquareLoader>
+      <SquareLoader class="spinner" :loading="true"></SquareLoader>
     </template>
     <template v-else>
       <!-- App Header -->
