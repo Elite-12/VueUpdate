@@ -26,8 +26,8 @@ import '../assets/themify-icons/themify-icons.css'
 import 'leaflet/dist/leaflet.css'
 
 // Slick Slider
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+// import 'slick-carousel/slick/slick.css'
+// import 'slick-carousel/slick/slick-theme.css'
 
 // animate css
 import '../assets/animate.css'
