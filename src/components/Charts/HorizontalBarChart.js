@@ -2,11 +2,11 @@
  * Horizontal Bar Chart
  */
 
-import { HorizontalBar } from 'vue-chartjs'
+import { Bar } from 'vue-chartjs'
 import { ChartConfig } from '@/constants/chart-config'
 
 export default {
-  extends: HorizontalBar,
+  extends: Bar,
   props: ['labels', 'label', 'chartdata', 'height'],
   data() {
     return {

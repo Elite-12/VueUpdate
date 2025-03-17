@@ -72,14 +72,16 @@
           colClasses="xl12 lg12 md12 sm12 xs12"
         >
           <v-data-table v-bind:headers="headers" :items="items">
-            <template v-slot:[`column.header`]="props">
+            <template v-slot:[`column.header`]="{column}">
               <v-tooltip bottom>
-                <span v-slot:activator>
-                  {{ props.header.text }}
-                </span>
-                <span>
-                  {{ props.header.text }}
-                </span>
+                <template v-slot:activator="{ props }">
+                  <span v-bind="props">
+                    {{ column.text }}
+                  </span>
+                  <span>
+                    {{ column.text }}
+                  </span>
+                </template>
               </v-tooltip>
             </template>
             <template v-slot:items="props">
@@ -113,7 +115,7 @@
                 <td>{{ props.item.iron }}</td>
               </tr>
             </template>
-            <template v-slot:expand="{ expanded }">
+            <template v-slot:expand>
               <v-card flat>
                 <v-card-text>Peek-a-boo!</v-card-text>
               </v-card>
