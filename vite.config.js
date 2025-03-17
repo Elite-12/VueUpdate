@@ -9,6 +9,9 @@ export default defineConfig({
   build: {
     target: 'esnext', // Modern JS for browsers
     outDir: 'dist', // Ensure the output directory is correct
+    commonjsOptions: {
+      transformMixedEsModules: true, // Allows both CJS and ESM
+    },
   },
   plugins: [
     vue(),
