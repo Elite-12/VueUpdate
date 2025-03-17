@@ -29,6 +29,13 @@ import 'leaflet/dist/leaflet.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
+if (typeof window !== 'undefined') {
+    import('slick-carousel').then((module) => {
+        // Initialize your slick carousel here if necessary
+        console.log('Slick Carousel loaded on the client side');
+    });
+}
+
 // animate css
 import '../assets/animate.css'
 
