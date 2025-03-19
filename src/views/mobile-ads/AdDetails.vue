@@ -75,7 +75,7 @@
         </v-card-text>
         <v-card-actions>
           <!--          <v-btn color="primary" disabled @click.stop="">Save</v-btn>-->
-          <v-btn color="warning" @click.stop="closeCategoryNameDialog">Close</v-btn>
+          <v-btn class="bg-warning" color="white" @click.stop="closeCategoryNameDialog">Close</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -146,7 +146,7 @@
               </v-card-text>
               <v-card-actions>
                 <!--                <v-btn color="primary" disabled @click.stop="" ref="saveBtn">Save</v-btn>-->
-                <v-btn color="warning" @click.stop="closeParentDialog">Close</v-btn>
+                <v-btn class="bg-warning" color="white" @click.stop="closeParentDialog">Close</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>

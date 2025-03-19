@@ -65,14 +65,14 @@
               </v-card-text>
               <v-card-actions>
                 <v-row justify="space-between" class="mb-4 pr-2 pl-2">
-                  <v-btn color="warning" @click.stop="close">Close</v-btn>
+                  <v-btn class="bg-warning" color="white" @click.stop="close">Close</v-btn>
                   <div>
                     <v-btn
                       v-if="!isNew"
                       :right="true"
-                      color="info"
+                      color="white"
                       @click.stop="duplicateCategory"
-                      class="mr-2"
+                      class="mr-2 bg-info"
                       :disabled="!$can(CREATE, RESOURCE)"
                     >
                       Duplicate
@@ -80,7 +80,8 @@
                     <v-btn
                       v-if="!isNew"
                       :right="true"
-                      color="error"
+                      color="white"
+                      class="bg-error"
                       @click.stop="openConfirmationDialog"
                       :disabled="!$can(DELETE, RESOURCE)"
                     >

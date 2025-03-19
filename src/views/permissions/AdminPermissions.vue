@@ -135,7 +135,7 @@
                 </v-table>
               </v-card-text>
               <v-card-actions>
-                <v-btn color="error" @click.stop="closeDialog">Close</v-btn>
+                <v-btn class="bg-error" color="white" @click.stop="closeDialog">Close</v-btn>
               </v-card-actions>
             </v-card>
             <v-overlay :value="loading">

@@ -167,8 +167,8 @@
 
           <v-card-actions class="pa-0">
             <v-spacer></v-spacer>
-            <v-btn color="primary" @click="open = false" class="px-4">Cancel</v-btn>
-            <v-btn color="error" @click="editClientItem" class="px-4">Update</v-btn>
+            <v-btn color="white" @click="open = false" class="px-4 bg-error">Cancel</v-btn>
+            <v-btn color="white" @click="editClientItem" class="px-4 bg-error">Update</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>

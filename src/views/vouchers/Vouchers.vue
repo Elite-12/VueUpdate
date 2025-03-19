@@ -148,10 +148,10 @@
       <v-card :loading="deleteLoading">
         <v-card-title> Are you sure you want to delete this voucher </v-card-title>
         <v-card-actions>
-          <v-btn text color="warning" @click="currentDeleteItem = null" :disabled="deleteLoading"
+          <v-btn text class="be-warning" color="white" @click="currentDeleteItem = null" :disabled="deleteLoading"
             >cancel</v-btn
           >
-          <v-btn text color="error" :loading="deleteLoading" @click="deleteVoucher()">delete</v-btn>
+          <v-btn text class="be-error" color="white" :loading="deleteLoading" @click="deleteVoucher()">delete</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

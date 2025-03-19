@@ -105,8 +105,8 @@
               scrollable
             >
               <v-spacer></v-spacer>
-              <v-btn color="error" @click="menu1 = false">Cancel</v-btn>
-              <v-btn color="primary" @click="$refs.menu1.save(date1)">OK</v-btn>
+              <v-btn class="bg-error" color="white" @click="menu1 = false">Cancel</v-btn>
+              <v-btn class="bg-primary" color="white" @click="$refs.menu1.save(date1)">OK</v-btn>
             </v-date-picker>
           </v-menu>
           <p>

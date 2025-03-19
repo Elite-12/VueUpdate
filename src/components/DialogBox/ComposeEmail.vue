@@ -11,8 +11,8 @@
       </v-card-text>
       <v-card-actions class="px-5 pb-5 mx-1">
         <v-spacer></v-spacer>
-        <v-btn color="error" @click.native="closeDialog">Close</v-btn>
-        <v-btn color="primary" @click.native="closeDialog">Compose</v-btn>
+        <v-btn class="bg-error" color="white" @click.native="closeDialog">Close</v-btn>
+        <v-btn class="bg-primary" color="white" @click.native="closeDialog">Compose</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>

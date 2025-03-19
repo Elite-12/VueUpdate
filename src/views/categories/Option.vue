@@ -74,7 +74,8 @@
         <v-card-actions>
           <v-btn
             v-if="this.$store.getters.selectedOptionIndex !== null"
-            color="primary"
+            color="white"
+            class="bg-primary"
             @click.stop="optionValueHandler"
             :loading="loading"
             :disabled="loading"
@@ -82,13 +83,14 @@
           </v-btn>
           <v-btn
             v-else
-            color="primary"
+            color="white"
+            class="bg-primary"
             @click.stop="saveOptionValueToLocal"
             :loading="loading"
             :disabled="loading"
             >Add
           </v-btn>
-          <v-btn color="warning" @click.stop="closeOptionValueDialog">Close</v-btn>
+          <v-btn class="bg-warning" color="white" @click.stop="closeOptionValueDialog">Close</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

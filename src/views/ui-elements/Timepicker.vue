@@ -69,8 +69,8 @@
               ></v-text-field>
             </template>
             <v-time-picker v-model="time2" actions>
-              <v-btn color="error" @click="modal2 = false">Cancel</v-btn>
-              <v-btn color="primary" @click="$refs.dialog.save(time2)">Save</v-btn>
+              <v-btn class="bg-error" color="white" @click="modal2 = false">Cancel</v-btn>
+              <v-btn class="bg-primary" color="white" @click="$refs.dialog.save(time2)">Save</v-btn>
             </v-time-picker>
           </v-dialog>
         </app-card>

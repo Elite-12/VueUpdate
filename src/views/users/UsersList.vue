@@ -65,8 +65,8 @@
                 <v-btn v-if="selectedUser.blocked" color="error" @click.stop="blockDialog = true"
                   >Unblock</v-btn
                 >
-                <v-btn v-else color="error" @click.stop="blockDialog = true">Block</v-btn>
-                <v-btn color="warning" @click.stop="dialog = false">Close</v-btn>
+                <v-btn v-else class="bg-error" color="white" @click.stop="blockDialog = true">Block</v-btn>
+                <v-btn class="bg-warning" color="white" @click.stop="dialog = false">Close</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -77,9 +77,9 @@
                 <p v-else>Are you sure you want to block this user ?</p>
               </v-card-title>
               <v-card-actions>
-                <v-btn v-if="selectedUser.blocked" color="error" @click.stop="unblock">Yes</v-btn>
-                <v-btn v-else color="error" @click.stop="block">Yes</v-btn>
-                <v-btn color="secondary" @click.stop="blockDialog = false">Cancel</v-btn>
+                <v-btn v-if="selectedUser.blocked" class="bg-error" color="white" @click.stop="unblock">Yes</v-btn>
+                <v-btn v-else class="bg-error" color="white" @click.stop="block">Yes</v-btn>
+                <v-btn class="bg-secondary" color="white" @click.stop="blockDialog = false">Cancel</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>

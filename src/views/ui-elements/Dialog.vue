@@ -225,8 +225,8 @@
               </v-card-text>
               <v-divider></v-divider>
               <v-card-actions>
-                <v-btn color="secondary" @click.native="dialog5 = false">Close</v-btn>
-                <v-btn color="success" @click.native="dialog5 = false">Save</v-btn>
+                <v-btn  class="bg-secondary" color="white" @click.native="dialog5 = false">Close</v-btn>
+                <v-btn class="bg-success" color="white" @click.native="dialog5 = false">Save</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>

@@ -35,14 +35,14 @@
             <v-btn
               @click="save"
               :disabled="loading"
-              color="primary"
-              class="mr-3 mt-2"
+              color="white"
+              class="mr-3 mt-2 bg-primary"
               :loading="loading"
             >
               <div>Save</div>
             </v-btn>
 
-            <v-btn class="float-right mt-2" color="warning" @click.stop="close">Cancel</v-btn>
+            <v-btn class="float-right mt-2 bg-warning" color="white" @click.stop="close">Cancel</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
