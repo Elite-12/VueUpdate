@@ -71,7 +71,7 @@ const actions = {
   block(context, user) {
     Nprogress.start()
 
-    JufrahAdminAPI.put(endpoints.block + user.id)
+    JufrahAdminAPI.put(endpoints.block + user.index)
       .then((response) => {
         context.commit('updateSelectedUser', response.data.data)
       })

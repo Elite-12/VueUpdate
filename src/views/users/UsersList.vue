@@ -38,7 +38,7 @@
             :footer-props="{
               showFirstLastPage: true,
             }"
-            @click:row="showUser"
+            @click:row="(event, user) => showUser(user)"
             class="table-cursor"
             v-bind:style="rowStyle"
           >
