@@ -60,7 +60,7 @@
             <div class="footer-flex">
               <v-spacer></v-spacer>
               <span class="grey--text d-custom-flex align-items-center">
-                <i class="zmdi zmdi-replay mr-2"></i>
+                <i class="zmdi zmdi-replay mr-2" @click="fetchStats"></i>
                 <span class="fs-12 fw-normal">{{ $t('message.updated10MinAgo') }}</span>
               </span>
             </div>
@@ -79,7 +79,7 @@
             <div class="footer-flex">
               <v-spacer></v-spacer>
               <span class="grey--text d-custom-flex align-items-center">
-                <i class="zmdi zmdi-replay mr-2"></i>
+                <i class="zmdi zmdi-replay mr-2" @click="fetchStats"></i>
                 <span class="fs-12 fw-normal">{{ $t('message.updated10MinAgo') }}</span>
               </span>
             </div>
