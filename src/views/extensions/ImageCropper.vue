@@ -18,7 +18,7 @@
                 :remove-button-color="'red'"
                 :initial-position="'center'"
               >
-                <img slot="placeholder" src="public/static/img/bg-1.jpg" />
+                <img slot="placeholder" src="/static/img/bg-1.jpg" />
               </croppa>
               <div class="d-custom-flex justify-space-between py-3 format-btn-wrap">
                 <v-btn @click="rotate()" class="primary">Rotate</v-btn>

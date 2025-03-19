@@ -1,8 +1,8 @@
 // Product Sales Widget
-import { HorizontalBar } from 'vue-chartjs'
+import { Bar } from 'vue-chartjs'
 
 export default {
-   extends: HorizontalBar,
+   extends: Bar,
    data: function () {
       return {
          gradient1: null,

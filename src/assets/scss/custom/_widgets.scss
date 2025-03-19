@@ -1162,7 +1162,7 @@
 
 /*================== Trending News Widget ===================*/
 .trending-news-widegt {
-  background-image: url(public/static/img/profile-bg.jpg);
+  background-image: url(/static/img/profile-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1459,7 +1459,7 @@
 
 .user-profile-widget {
   .avatar-wrap {
-    background: url(public/static/img/blog-6.jpg) no-repeat center center;
+    background: url(/static/img/blog-6.jpg) no-repeat center center;
     background-size: cover;
     z-index: 0;
     padding: 4.5rem;

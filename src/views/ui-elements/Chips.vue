@@ -8,7 +8,7 @@
           <v-chip class="ma-2">Example Chip</v-chip>
           <v-chip class="ma-2" close>
             <v-avatar>
-              <img src=" https://randomuser.me/api/portraits/men/35.jpg " alt="trevor " />
+              <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="trevor " />
             </v-avatar>
             Trevor Hansen
           </v-chip>
