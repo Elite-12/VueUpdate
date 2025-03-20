@@ -30,7 +30,7 @@
             v-bind:headers="headers"
             v-bind:items="users"
             :search="search"
-            :options.sync="options"
+            v-model:options="options"
             :server-items-length="meta.total"
             item-key="id"
             :loading="loading"
@@ -106,11 +106,11 @@ export default {
       search: '',
       options: {},
       headers: [
-        { text: 'ID', align: 'left', value: 'id' },
-        { text: 'Name', value: 'name' },
-        { text: 'Mobile', value: 'mobile' },
-        { text: 'Email', value: 'email' },
-        { text: 'Blocked', value: 'blocked' },
+        { title: 'ID', align: 'left', value: 'id' },
+        { title: 'Name', value: 'name' },
+        { title: 'Mobile', value: 'mobile' },
+        { title: 'Email', value: 'email' },
+        { title: 'Blocked', value: 'blocked' },
       ],
       dialog: false,
       blockDialog: false,
