@@ -30,10 +30,29 @@ const selectedTheme = computed(() => store.getters.selectedTheme)
 
 const changeTheme = (theme) => {
 	store.dispatch("changeTheme", theme)
-	const themeColors = theme.theme
+	const themeColors = {
+		...theme.theme,
+		background: vuetifyTheme.current.value.dark ? 'var(--dark-bg)' : 'var(--light-bg)',
+		surface: vuetifyTheme.current.value.dark ? 'var(--dark-bg)' : 'var(--light-bg)',
+	}
 	
 	// Update both light and dark themes
-	vuetifyTheme.themes.value.light.colors = { ...themeColors }
-	vuetifyTheme.themes.value.dark.colors = { ...themeColors }
+	vuetifyTheme.themes.value.light = {
+		...vuetifyTheme.themes.value.light,
+		colors: {
+			...themeColors,
+			background: 'var(--light-bg)',
+			surface: 'var(--light-bg)',
+		},
+	}
+	
+	vuetifyTheme.themes.value.dark = {
+		...vuetifyTheme.themes.value.dark,
+		colors: {
+			...themeColors,
+			background: 'var(--dark-bg)',
+			surface: 'var(--dark-bg)',
+		},
+	}
 }
 </script>

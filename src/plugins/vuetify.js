@@ -22,11 +22,19 @@ export default createVuetify({
     defaultTheme: 'light',
     themes: {
       light: {
-        colors: store.getters.selectedTheme.theme,
+        colors: {
+          ...store.getters.selectedTheme.theme,
+          background: 'var(--light-bg)',
+          surface: 'var(--light-bg)',
+        },
         dark: false,
       },
       dark: {
-        colors: store.getters.selectedTheme.theme,
+        colors: {
+          ...store.getters.selectedTheme.theme,
+          background: 'var(--dark-bg)',
+          surface: 'var(--dark-bg)',
+        },
         dark: true,
       },
     },
