@@ -3,64 +3,66 @@
     <page-title-bar></page-title-bar>
     <app-section-loader :status="loader"></app-section-loader>
     <v-container grid-list-xl fluid>
-      <v-layout row wrap>
-        <v-col xl12 md12 lg12 sm12 xs12>
+      <v-row wrap>
+        <v-col xl="12" md="12" lg="12" sm="12" xs="12">
           <div>
             <div class="pricing-wrapper">
               <div class="pricing-list">
-                <v-layout row wrap row-eq-height>
-                  <app-card
-                    colClasses="xs12 sm4 md4 lg4 w-full"
-                    customClasses="text-center"
-                    :fullBlock="true"
-                    v-for="f_package in packages"
-                    :key="f_package.id"
-                  >
-                    <div class="pricing-icon mb-30">
-                      <img
-                        :src="f_package.src ? f_package.src : '/static/img/pricing-icon.png'"
-                        alt="package card"
-                        class="img-responsive"
-                        width=""
-                        height=""
-                      />
-                    </div>
-                    <h2 class="primary--text pricing-title">{{ f_package.name }}</h2>
-                    <h2 class="primary--text pricing-title">{{ f_package.name_ar }}</h2>
-                    <div class="mb-4">
-                      <h2 class="amount-title">$ {{ f_package.cost }}</h2>
-                      <span class="text-muted small">
-                        <v-chip> Duration:</v-chip>
-                        {{ f_package.duration_in_days }} Days</span
+                <v-row wrap row-eq-height>
+                  <v-row>
+                    <v-col v-for="f_package in packages" :key="f_package.id" cols="12" sm="4" md="4" lg="4">
+                      <app-card
+                        
+                        customClasses="text-center"
+                        :fullBlock="true"
+                        
                       >
-                    </div>
-                    <ul class="price-detail list-unstyled">
-                      <li>
-                        <v-chip> Limit:</v-chip>
-                        {{ f_package.limit ? f_package.limit + ' Days' : 'Unlimited' }}
-                      </li>
-                    </ul>
-                    <v-btn
-                      class="mr-2"
-                      color="primary"
-                      fab
-                      small
-                      @click="edit(f_package)"
-                      :disabled="!$can(UPDATE, RESOURCE)"
-                    >
-                      <v-icon small icon="md:edit" />
-                    </v-btn>
-                    <v-btn
-                      fab
-                      small
-                      color="error"
-                      @click.stop="openConfirmationDialog(f_package)"
-                      :disabled="!$can(DELETE, RESOURCE)"
-                    >
-                      <v-icon small icon="md:delete" />
-                    </v-btn>
-                  </app-card>
-                </v-layout>
+                        <div class="pricing-icon mb-30">
+                          <img
+                            :src="f_package.src ? f_package.src : '/static/img/pricing-icon.png'"
+                            alt="package card"
+                            class="img-responsive"
+                            style="width:13rem"
+                          />
+                        </div>
+                        <h2 class="primary--text pricing-title">{{ f_package.name }}</h2>
+                        <h2 class="primary--text pricing-title">{{ f_package.name_ar }}</h2>
+                        <div class="mb-4">
+                          <h2 class="amount-title">$ {{ f_package.cost }}</h2>
+                          <span class="text-muted small">
+                            <v-chip> Duration:</v-chip>
+                            {{ f_package.duration_in_days }} Days</span
+                          >
+                        </div>
+                        <ul class="price-detail list-unstyled">
+                          <li>
+                            <v-chip> Limit:</v-chip>
+                            {{ f_package.limit ? f_package.limit + ' Days' : 'Unlimited' }}
+                          </li>
+                        </ul>
+                        <v-btn
+                          class="mr-2"
+                          color="primary"
+                          fab
+                          small
+                          @click="edit(f_package)"
+                          :disabled="!$can(UPDATE, RESOURCE)"
+                        >
+                          <v-icon small icon="md:edit" />
+                        </v-btn>
+                        <v-btn
+                          fab
+                          small
+                          color="error"
+                          @click.stop="openConfirmationDialog(f_package)"
+                          :disabled="!$can(DELETE, RESOURCE)"
+                        >
+                          <v-icon small icon="md:delete" />
+                        </v-btn>
+                      </app-card>
+                    </v-col>
+                  </v-row>
+                </v-row>
               </div>
             </div>
           </div>
@@ -114,7 +116,7 @@
         >
           Sort
         </v-btn>
-      </v-layout>
+      </v-row>
     </v-container>
   </div>
 </template>
