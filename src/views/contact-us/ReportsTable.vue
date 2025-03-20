@@ -168,7 +168,7 @@
                   v-model="page"
                   class="my-4"
                   :length="lastPage"
-                  @input="changePage"
+                  @update:model-value="changePage"
                 ></v-pagination>
               </v-container>
             </v-col>
