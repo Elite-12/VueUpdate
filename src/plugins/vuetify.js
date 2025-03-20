@@ -19,10 +19,16 @@ export default createVuetify({
   },
   directives,
   theme: {
-    // defaultTheme: "light",
+    defaultTheme: 'light',
     themes: {
-      light: store.getters.selectedTheme.theme,
-      dark: store.getters.selectedTheme.theme,
+      light: {
+        colors: store.getters.selectedTheme.theme,
+        dark: false,
+      },
+      dark: {
+        colors: store.getters.selectedTheme.theme,
+        dark: true,
+      },
     },
   },
   icons: {

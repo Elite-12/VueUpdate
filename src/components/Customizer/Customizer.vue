@@ -9,6 +9,7 @@
       app
       temporary
       class="clearfix"
+      style="background-color: white;"
     >
       <v-toolbar color="primary" dark>
         <v-toolbar-title>{{ $t('message.themeOptions') }}</v-toolbar-title>
