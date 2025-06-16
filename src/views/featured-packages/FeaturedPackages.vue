@@ -10,23 +10,27 @@
               <div class="pricing-list">
                 <v-row wrap row-eq-height>
                   <v-row>
-                    <v-col v-for="f_package in packages" :key="f_package.id" cols="12" sm="4" md="4" lg="4">
-                      <app-card
-                        
-                        customClasses="text-center"
-                        :fullBlock="true"
-                        
-                      >
-                        <div class="pricing-icon mb-30">
+                    <v-col
+                      v-for="f_package in packages"
+                      :key="f_package.id"
+                      cols="12"
+                      sm="4"
+                      md="4"
+                      lg="4"
+                    >
+                      <app-card customClasses="text-center" :fullBlock="true">
+                        <div class="pricing-icon mb-30" style="height: 200px; display: flex; align-items: center; justify-content: center;">
                           <img
                             :src="f_package.src ? f_package.src : '/static/img/pricing-icon.png'"
                             alt="package card"
                             class="img-responsive"
-                            style="width:13rem"
+                            style="width: 13rem; height: 13rem; object-fit: contain;"
                           />
                         </div>
                         <h2 class="primary--text pricing-title">{{ f_package.name }}</h2>
-                        <h2 class="primary--text pricing-title">{{ f_package.name_ar }}</h2>
+                        <h2 class="primary--text pricing-title">
+                          {{ f_package.name_ar }}
+                        </h2>
                         <div class="mb-4">
                           <h2 class="amount-title">$ {{ f_package.cost }}</h2>
                           <span class="text-muted small">
