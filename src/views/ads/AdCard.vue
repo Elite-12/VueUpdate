@@ -11,15 +11,39 @@
           <v-icon left icon="mdi-star" />
           Featured
         </v-chip>
+        <h5 class="primary--text mb-4 text-wrap" v-bind:style="rowStyle" @click="showAd(details)">
+          {{ details.title }}
+        </h5>
+        <div class="xs12 md6 mb-4">
+          <v-chip class="ma-2 text-wrap" small outlined color="pink">
+            <v-icon left icon="mdi-file-tree" />
+            <span class="text-truncate">{{ details.category.name }}</span>
+          </v-chip>
+          <br />
+          <v-chip class="ma-2 text-wrap" small outlined color="secondary">
+            <v-icon left icon="md:home" />
+            <span class="text-truncate">{{ details.location.city }} > {{ details.location.town }}</span>
+          </v-chip>
+          <br />
+          <v-chip
+            v-if="details.reports_count > 0"
+            class="ma-2 mb-7 text-wrap"
+            small
+            color="error"
+            v-bind:style="rowStyle"
+            @click="showAd(details)"
+          >
+            <v-icon left icon="md:warning" />
+            <span class="text-truncate">Reports : {{ details.reports_count }}</span>
+          </v-chip>
+        </div>
         <v-hover>
           <v-card slot-scope="{ hover }" class="mx-auto" color="white lighten-4" max-width="450">
-            <div class="tab-image">
+            <div class="tab-image" style="height: 200px; display: flex; align-items: center; justify-content: center;">
               <v-img
                 lazy-src="https://placehold.co/250"
-                :src="
-                  details.images[0] ? details.images[0].thumbnail : 'https://placehold.co/200'
-                "
-                max-height="350"
+                :src="details.images[0] ? details.images[0].thumbnail : 'https://placehold.co/200'"
+                style="width: 100%; height: 200px; object-fit: contain;"
               >
                 <v-expand-transition>
                   <div
@@ -37,39 +61,11 @@
           </v-card>
         </v-hover>
       </v-col>
-      <v-col xs12 lg12 md12 sm-12 text-center pt-0>
-        <h5 class="primary--text" v-bind:style="rowStyle" @click="showAd(details)">
-          {{ details.title }}
-        </h5>
-        <div class="xs12 md6">
-          <v-chip class="ma-2" small outlined color="pink">
-            <v-icon left icon="mdi-file-tree" />
-            {{ details.category.name }}
-          </v-chip>
-          <br />
-          <v-chip class="ma-2" small outlined color="secondary">
-            <v-icon left icon="md:home" />
-            {{ details.location.city }} > {{ details.location.town }}
-          </v-chip>
-          <br />
-          <v-chip
-            v-if="details.reports_count > 0"
-            class="ma-2 mb-7"
-            small
-            color="error"
-            v-bind:style="rowStyle"
-            @click="showAd(details)"
-          >
-            <v-icon left icon="md:warning" />
-            Reports : {{ details.reports_count }}
-          </v-chip>
-        </div>
-      </v-col>
     </v-layout>
     <v-list three-line class="icon">
       <v-list-item :ripple="false" class="pl-0">
         <v-list-item-action class="ma-0">
-          <v-list-item-action-text class="d-flex">
+          <v-list-item-action-text class="d-flex flex-wrap">
             <v-btn
               :disabled="!$can(UPDATE, RESOURCE)"
               v-if="tab === 'blocked'"
@@ -164,5 +160,25 @@ export default {
   position: absolute;
   width: 100%;
   background-color: rgba(13, 106, 127, 0.5);
+}
+
+.text-wrap {
+  white-space: normal !important;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 150px;
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .text-truncate {
+    max-width: 120px;
+  }
 }
 </style>
