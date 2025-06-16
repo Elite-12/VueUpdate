@@ -24,19 +24,31 @@
     <v-tabs-window v-model="active">
       <v-tabs-window-item :value="'all'">
         <br />
-        <v-layout row wrap>
-          <template v-for="(details, index) in ads" :key="'details' + index">
-            <ad-card
-              :id="index"
-              :details="details"
-              :show-ad="showAd"
-              :open-delete-confirmation="openDeleteConfirmation"
-              :open-disable-confirmation="openDisableConfirmation"
-              :open-enable-confirmation="openEnableConfirmation"
-              :tab="selectedTab"
-            ></ad-card>
-          </template>
-        </v-layout>
+        <v-container fluid style="max-width: 1920px; margin: 0 auto;">
+          <v-row>
+            <v-col
+              v-for="(details, index) in ads"
+              :key="'details' + index"
+              cols="12"
+              sm="6"
+              md="4"
+              lg="3"
+              xl="3"
+              class="d-flex"
+            >
+              <ad-card
+                :id="index"
+                :details="details"
+                :show-ad="showAd"
+                :open-delete-confirmation="openDeleteConfirmation"
+                :open-disable-confirmation="openDisableConfirmation"
+                :open-enable-confirmation="openEnableConfirmation"
+                :tab="selectedTab"
+                class="flex-grow-1"
+              ></ad-card>
+            </v-col>
+          </v-row>
+        </v-container>
       </v-tabs-window-item>
       <v-tabs-window-item :value="'featured'">
         <br />
