@@ -9,7 +9,7 @@
         @change="changeFilter(t)"
         :value="t.key"
       >
-        {{ $t('message' + '.' + t.tab_name) }}
+        {{ $t("message" + "." + t.tab_name) }}
         <v-chip
           v-if="t.key === 'reported' && reportedCount > 0"
           class="ml-2 white--text text-sm-body-2"
@@ -94,6 +94,7 @@
           fab
           small
           @click="closeAdDialog"
+          style="position: fixed; right: 50px; z-index: 9999;"
         >
           X
         </v-btn>
@@ -125,8 +126,8 @@
 </template>
 
 <script>
-import AdDetailsPage from './AdDetailsPage'
-import AdCard from './AdCard'
+import AdDetailsPage from "./AdDetailsPage";
+import AdCard from "./AdCard";
 
 export default {
   components: {
@@ -143,150 +144,148 @@ export default {
       selectAdToEnable: null,
       open: false,
       tabHead: [
-        { key: 'all', tab_name: 'allAds' },
-        { key: 'featured', tab_name: 'featured' },
-        { key: 'blocked', tab_name: 'blocked' },
-        { key: 'reported', tab_name: 'reported' },
+        { key: "all", tab_name: "allAds" },
+        { key: "featured", tab_name: "featured" },
+        { key: "blocked", tab_name: "blocked" },
+        { key: "reported", tab_name: "reported" },
       ],
       rowStyle: {
-        cursor: 'pointer',
+        cursor: "pointer",
       },
-      selectedTab: 'all',
-    }
+      selectedTab: "all",
+    };
   },
   methods: {
     closeAdDialog() {
-      this.adDialog = false
-      this.$store.commit('resetSelectedAd')
+      this.adDialog = false;
+      this.$store.commit("resetSelectedAd");
     },
     showAd(ad) {
-      this.selectedAd = ad
-      this.$store.commit('setSelectedAd', ad)
-      this.adDialog = true
-      this.$store.dispatch('fetchAdReports')
+      this.selectedAd = ad;
+      this.$store.commit("setSelectedAd", ad);
+      this.adDialog = true;
+      this.$store.dispatch("fetchAdReports");
     },
 
     disableAd() {
-      this.selectAdToDisable.block = true
-      this.loading = true
-      this.$store.dispatch('activateAd', this.selectAdToDisable).finally(() => {
-        this.loading = false
-        this.$refs.disableConfirmationDialog.close()
-      })
+      this.selectAdToDisable.block = true;
+      this.loading = true;
+      this.$store.dispatch("activateAd", this.selectAdToDisable).finally(() => {
+        this.loading = false;
+        this.$refs.disableConfirmationDialog.close();
+      });
     },
 
     enableAd() {
-      this.selectAdToEnable.block = false
-      this.loading = true
-      this.$store.dispatch('activateAd', this.selectAdToEnable).finally(() => {
-        this.loading = false
-        this.$refs.enableConfirmationDialog.close()
-      })
+      this.selectAdToEnable.block = false;
+      this.loading = true;
+      this.$store.dispatch("activateAd", this.selectAdToEnable).finally(() => {
+        this.loading = false;
+        this.$refs.enableConfirmationDialog.close();
+      });
     },
 
     deleteAd() {
-      this.loading = true
-      this.$store.dispatch('deleteAd', this.selectAdToDelete).finally(() => {
-        this.loading = false
-        this.$refs.deleteConfirmationDialog.close()
-        location.reload()
-      })
+      this.loading = true;
+      this.$store.dispatch("deleteAd", this.selectAdToDelete).finally(() => {
+        this.loading = false;
+        this.$refs.deleteConfirmationDialog.close();
+        location.reload();
+      });
     },
 
     openDeleteConfirmation(ad) {
-      this.$refs.deleteConfirmationDialog.openDialog()
-      this.selectAdToDelete = ad
+      this.$refs.deleteConfirmationDialog.openDialog();
+      this.selectAdToDelete = ad;
     },
 
     openDisableConfirmation(ad) {
-      this.$refs.disableConfirmationDialog.openDialog()
-      this.selectAdToDisable = ad
+      this.$refs.disableConfirmationDialog.openDialog();
+      this.selectAdToDisable = ad;
     },
 
     openEnableConfirmation(ad) {
-      this.$refs.enableConfirmationDialog.openDialog()
-      this.selectAdToEnable = ad
+      this.$refs.enableConfirmationDialog.openDialog();
+      this.selectAdToEnable = ad;
     },
 
     openDialog() {
-      this.open = true
+      this.open = true;
     },
     close() {
-      this.open = false
+      this.open = false;
     },
 
     changeFilter(t) {
-      this.options.page = 1
-      this.selectedTab = t.key
-      this.$store.commit('resetAds')
-      if (t.key === 'blocked') {
-        this.options.blocked = true
-        delete this.options.featured
-        delete this.options.reported
-      } else if (t.key === 'featured') {
-        this.options.featured = true
-        delete this.options.blocked
-        delete this.options.reported
-      } else if (t.key === 'reported') {
-        this.options.reported = true
-        this.options.blocked = false
-        delete this.options.featured
+      this.options.page = 1;
+      this.selectedTab = t.key;
+      this.$store.commit("resetAds");
+      if (t.key === "blocked") {
+        this.options.blocked = true;
+        delete this.options.featured;
+        delete this.options.reported;
+      } else if (t.key === "featured") {
+        this.options.featured = true;
+        delete this.options.blocked;
+        delete this.options.reported;
+      } else if (t.key === "reported") {
+        this.options.reported = true;
+        this.options.blocked = false;
+        delete this.options.featured;
       } else {
         // All ads tab
-        delete this.options.featured
-        delete this.options.reported
-        this.options.blocked = false
+        delete this.options.featured;
+        delete this.options.reported;
+        this.options.blocked = false;
       }
-      this.$store.dispatch('fetchAds', this.options)
+      this.$store.dispatch("fetchAds", this.options);
     },
 
     breadcrumb(ad) {
-      let breadcrumb = ''
+      let breadcrumb = "";
       if (ad.breadcrumb.length > 0) {
-        ad.breadcrumb.forEach((categoryName) => (breadcrumb += categoryName + ' > '))
-      } else breadcrumb = ad.category.name
-      return breadcrumb
+        ad.breadcrumb.forEach((categoryName) => (breadcrumb += categoryName + " > "));
+      } else breadcrumb = ad.category.name;
+      return breadcrumb;
     },
   },
 
   computed: {
     ads() {
-      return this.$store.getters.ads
+      return this.$store.getters.ads;
     },
 
     options() {
-      return this.$store.getters.filterOptions
+      return this.$store.getters.filterOptions;
     },
 
     selectedAd: {
       get: function () {
-        return this.$store.getters.selectedAd
+        return this.$store.getters.selectedAd;
       },
 
       set: function (value) {
-        this.$store.commit('setSelectedAd', value)
+        this.$store.commit("setSelectedAd", value);
       },
     },
 
     reportedCount() {
-      return this.$store.getters.reportedCount
+      return this.$store.getters.reportedCount;
     },
   },
-}
+};
 </script>
 
 <style scoped>
 .close-icon {
   position: fixed;
   right: 50px;
-  z-index: 100;
-  /*float: right;*/
-  /*top: 0;*/
+  z-index: 9999;
 }
 </style>
 
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const active = ref('all')
+const active = ref("all");
 </script>
