@@ -2,7 +2,7 @@
   <div>
     <v-list class="card-list top-selling management-wrap">
       <div class="sec-title mb-4">
-        <h4>Cateory Details</h4>
+        <h4>Category Details</h4>
       </div>
       <v-list-item class="py-4">
         <template class="py-0">
