@@ -98,19 +98,25 @@
       @click:outside="closeAdDialog"
       @close="closeAdDialog"
       ref="adDialog"
+      max-width="1200px"
+      persistent
     >
-      <v-card>
-        <v-btn
-          class="my-3 ml-2 mr-2 float-right close-icon white--text"
-          color="blue-grey lighten-2"
-          fab
-          small
-          @click="closeAdDialog"
-          style="position: fixed; right: 50px; z-index: 9999;"
-        >
-          X
-        </v-btn>
-        <ad-details-page></ad-details-page>
+      <v-card class="ad-details-modal">
+        <v-card-title class="d-flex justify-space-between align-center pa-4">
+          <h1 class="mb-0 ml-3">Ad Details</h1>
+          <v-btn
+            icon
+            small
+            @click="closeAdDialog"
+            class="close-btn"
+          >
+            <v-icon class="text-black">mdi-close</v-icon>
+          </v-btn>
+        </v-card-title>
+        <v-divider></v-divider>
+        <v-card-text class="pa-0">
+          <ad-details-page></ad-details-page>
+        </v-card-text>
       </v-card>
     </v-dialog>
     <delete-confirmation-dialog

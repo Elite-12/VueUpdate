@@ -37,52 +37,54 @@
         </v-list>
       </v-menu>
     </div>
-    <v-data-table
-      :headers="headers"
-      :items="messages"
-      show-select
-      v-model:selected="selected"
-      hide-default-footer
-      :items-per-page="25"
-    >
-      <template #[`item.country`]="{ item }">
-        <img class="img-responsive mr-3" :src="`/static/flag-icons/${item.country}.png`" />
-      </template>
-      <template #[`item.type_id`]="{ item }">
-        {{ getType(item.type_id) }}
-      </template>
-      <template #[`item.actions`]="{ item }">
-        <v-btn
-          :disabled="loading || item.seen || !$can(UPDATE, RESOURCE)"
-          :loading="loading"
-          color="teal accent-4"
-          fab
-          icon size="x-small"
-          title="Mark as seen"
-          @click="seen(item)"
-        >
-          <p>
-            <i class="zmdi zmdi-check-all font-lg mt-4 white--text"></i>
-          </p>
-        </v-btn>
+    <div >
+      <v-data-table
+        :headers="headers"
+        :items="messages"
+        show-select
+        v-model:selected="selected"
+        hide-default-footer
+        :items-per-page="25"
+      >
+        <template #[`item.country`]="{ item }">
+          <img class="img-responsive mr-3" :src="`/static/flag-icons/${item.country}.png`" />
+        </template>
+        <template #[`item.type_id`]="{ item }">
+          {{ getType(item.type_id) }}
+        </template>
+        <template #[`item.actions`]="{ item }">
+          <v-btn
+            :disabled="loading || item.seen || !$can(UPDATE, RESOURCE)"
+            :loading="loading"
+            color="teal accent-4"
+            fab
+            icon size="x-small"
+            title="Mark as seen"
+            @click="seen(item)"
+          >
+            <p>
+              <i class="zmdi zmdi-check-all font-lg mt-4 white--text"></i>
+            </p>
+          </v-btn>
 
-        <v-btn
-          class="ma-2"
-          color="info"
-          fab
-          icon size="x-small"
-          :disabled="!$can(UPDATE, RESOURCE)"
-          @click="replyDialog(item)"
-          title="Reply"
-        >
-          <v-icon size="16" icon="md:reply" />
-        </v-btn>
+          <v-btn
+            class="ma-2"
+            color="info"
+            fab
+            icon size="x-small"
+            :disabled="!$can(UPDATE, RESOURCE)"
+            @click="replyDialog(item)"
+            title="Reply"
+          >
+            <v-icon size="16" icon="md:reply" />
+          </v-btn>
 
-        <v-btn fab dark icon size="x-small" color="error" @click="confirmDeletion(item)">
-          <v-icon dark size="16" icon="md:delete" />
-        </v-btn>
-      </template>
-    </v-data-table>
+          <v-btn fab dark icon size="x-small" color="error" @click="confirmDeletion(item)">
+            <v-icon dark size="16" icon="md:delete" />
+          </v-btn>
+        </template>
+      </v-data-table>
+    </div>
 
     <!-- Reply Dialog Model -->
     <v-dialog v-model="dialog" max-width="500px" @click:outside="closeDialog">
@@ -385,3 +387,4 @@ export default {
   },
 }
 </script>
+

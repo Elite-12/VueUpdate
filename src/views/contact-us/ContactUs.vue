@@ -3,7 +3,9 @@
     <page-title-bar></page-title-bar>
     <v-container fluid pt-0 grid-list-xl>
       <v-layout row wrap>
-        <app-card colClasses="xl12 lg12 md12 sm12 xs12" customClasses="mb-0 client-wrapper">
+        <div class="scrollable-card">
+
+          <app-card colClasses="xl12 lg12 md12 sm12 xs12" customClasses="mb-0 client-wrapper">
           <div class="contact-tab-wrapper">
             <v-tabs v-model="active" slider-color="primary">
               <v-tab
@@ -20,11 +22,9 @@
             <v-tabs-window v-model="active">
               <v-tabs-window-item :value="'messages'">
                 <br />
-                <v-layout row wrap>
-                  <v-col xs12 sm12 md12 lg-12>
-                    <reports-table></reports-table>
-                  </v-col>
-                </v-layout>
+                <!-- <div class="table-responsive"> -->
+                  <reports-table></reports-table>
+                <!-- </div> -->
               </v-tabs-window-item>
 
               <v-tabs-window-item :value="'types'">
@@ -38,6 +38,7 @@
             </v-tabs-window>
           </div>
         </app-card>
+        </div>
       </v-layout>
     </v-container>
   </div>
@@ -101,12 +102,31 @@ export default {
 </script>
 
 <style scoped>
+.scrollable-card {
+  overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+}
 .close-icon {
   position: fixed;
   right: 50px;
   z-index: 100;
   /*float: right;*/
   /*top: 0;*/
+}
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.table-responsive ::v-deep .v-data-table {
+  min-width: 900px;
+  width: 100%;
+}
+
+.table-responsive ::v-deep .v-data-table__wrapper {
+  overflow-x: auto;
 }
 </style>
 

@@ -103,6 +103,7 @@
           <app-card
             :heading="'📱 ' + $t('message.devicesShare')"
             customClasses="device-share-widget"
+            :footer="true"
           >
             <device-share></device-share>
           </app-card>

@@ -26,7 +26,7 @@
           >
             <div class="thumbnail mb-2">
               <img
-                  :src="user.photo ? user.photo : 'https://apsec.iafor.org/wp-content/uploads/sites/37/2017/02/IAFOR-Blank-Avatar-Image.jpg'"
+                  :src="user.photo ? user.photo : 'https://placehold.co/150'"
                   width="245" height="250"
                   class="img-responsive mx-auto">
               <v-card-title>{{ user.mobile }}</v-card-title>
