@@ -68,7 +68,6 @@
                       :input-value="false"
                       :loading="loading"
                       :disabled="loading"
-                      @change=""
                     ></v-switch>
 
                     <v-text-field
@@ -143,7 +142,6 @@
                       :input-value="false"
                       :loading="loading"
                       :disabled="loading"
-                      @change=""
                     ></v-switch>
                   </div>
                 </div>

@@ -27,6 +27,7 @@ export default defineConfig({
     host: '127.0.0.1',
     port: 3000, // Change to an available port
   },
+  publicDir: 'public', // Ensure public directory is served
   base: '/',
   css: {
     sourceMap: true,

@@ -65,7 +65,7 @@
     <v-list three-line class="icon">
       <v-list-item :ripple="false" class="pl-0">
         <v-list-item-action class="ma-0">
-          <v-list-item-action-text class="d-flex flex-wrap">
+          <v-list-item-action-text class="d-flex flex-wrap action-buttons">
             <v-btn
               :disabled="!$can(UPDATE, RESOURCE)"
               v-if="tab === 'blocked'"
@@ -148,15 +148,12 @@ export default {
 .featured-label {
   position: absolute;
   z-index: 100;
-  /*margin-left: -48px;*/
-  /*margin-top: 40px;*/
 }
 
 .v-card--reveal {
   align-items: center;
   bottom: 0;
   justify-content: center;
-  /*opacity: .8;*/
   position: absolute;
   width: 100%;
   background-color: rgba(13, 106, 127, 0.5);
@@ -174,6 +171,11 @@ export default {
   white-space: nowrap;
   max-width: 150px;
   display: inline-block;
+}
+
+.action-buttons {
+  position: relative;
+  z-index: 1000;
 }
 
 @media (max-width: 600px) {
